@@ -13128,7 +13128,7 @@ body {
             background: #f5f5f5; } }
 
 .home-header {
-  background: url("img/bgBlue.png");
+  background: url("https://hikornienko.github.io/demosfen/img/bgBlue.png");
   padding: 2rem 0; }
   .home-header img {
     width: 100%; }
@@ -13196,7 +13196,7 @@ body {
     margin-bottom: 1rem; }
 
 .section_two {
-  background: url("/demosfen/img/bgBlue.png") #f4fcff;
+  background: url("https://hikornienko.github.io/demosfen/img/bgBlue.png") #f4fcff;
   padding: 2rem 0;
   position: relative;
   z-index: 1;
@@ -13271,7 +13271,7 @@ body {
       height: 100px; } }
 
 .section_four .course-one {
-  background: url("/demosfen/img/bgRed.jpg"); }
+  background: url("https://hikornienko.github.io/demosfen/img/bgRed.jpg"); }
   .section_four .course-one .course-img-shaddow {
     background: #fff7f4;
     -webkit-box-shadow: 58px 25px 246px 200px #fff7f4;
@@ -13284,7 +13284,7 @@ body {
     color: #fff; }
 
 .section_four .course-two {
-  background: url("/demosfen/img/bgGold.jpg"); }
+  background: url("https://hikornienko.github.io/demosfen/img/bgGold.jpg"); }
   .section_four .course-two .course-img-shaddow {
     background: #fdfff4;
     -webkit-box-shadow: 58px 25px 246px 200px #fdfff4;
@@ -13297,7 +13297,7 @@ body {
     color: #fff; }
 
 .section_four .course-three {
-  background: url("/demosfen/img/bgBlue2.jpg"); }
+  background: url("https://hikornienko.github.io/demosfen/img/bgBlue2.jpg"); }
   .section_four .course-three .course-img-shaddow {
     background: #f4fffb;
     -webkit-box-shadow: 58px 25px 246px 200px #f4fffb;
@@ -13414,7 +13414,7 @@ body {
   font-size: 2rem; }
 
 .section_five {
-  background: url("/demosfen/img/bgBlue.png") #f4fcff;
+  background: url("https://hikornienko.github.io/demosfen/img/bgBlue.png") #f4fcff;
   padding: 1rem 0 3rem; }
   .section_five-button-one, .section_five-button-two {
     display: block;
