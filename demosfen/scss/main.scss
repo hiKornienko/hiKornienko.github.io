@@ -228,7 +228,7 @@ body {
 //=== home header ===//
 
 .home-header {
-  background: url("/img/bgBlue.png");
+  background: url("img/bgBlue.png");
   padding: 2rem 0;
 
   & img {
@@ -328,7 +328,7 @@ body {
 
 //=== section two ===///
 .section_two{
-  background:url('/img/bgBlue.png') #f4fcff;
+  background:url('/demosfen/img/bgBlue.png') #f4fcff;
   padding:2rem 0;
   position:relative;
   z-index: 1;
@@ -430,7 +430,7 @@ body {
 //=== section four ===//
 .section_four{
   & .course-one{
-    background: url('/img/bgRed.jpg');
+    background: url('/demosfen/img/bgRed.jpg');
     .course-img-shaddow{
       background: #fff7f4;
       -webkit-box-shadow: 58px 25px 246px 200px rgba(255,247,244,1);
@@ -446,7 +446,7 @@ body {
     }
   }
   & .course-two{
-    background: url('/img/bgGold.jpg');
+    background: url('/demosfen/img/bgGold.jpg');
     .course-img-shaddow{
       background: #fdfff4;
       -webkit-box-shadow: 58px 25px 246px 200px rgba(253,255,244,1);
@@ -462,7 +462,7 @@ body {
     }
   }
   & .course-three{
-    background: url('/img/bgBlue2.jpg');
+    background: url('/demosfen/img/bgBlue2.jpg');
     .course-img-shaddow{
       background: #f4fffb;
       -webkit-box-shadow: 58px 25px 246px 200px rgba(244,255,251,1);
@@ -595,7 +595,7 @@ body {
 
 //=== section five ===//
 .section_five{
-  background:url('/img/bgBlue.png') #f4fcff;
+  background:url('/demosfen/img/bgBlue.png') #f4fcff;
   padding: 1rem 0 3rem;
   &-button-one,&-button-two{
     display: block;
