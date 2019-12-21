@@ -48,10 +48,13 @@ body {
     color: #fff;
 
     &:before {
-      font-family: 'Font Awesome 5 Free';
-      content: '\f6d1';
-      font-size: 1.6rem;
-      margin-right: 0.7rem;
+      background: url('/img/logo_icon.png') no-repeat;
+      background-size: contain;
+      padding-right: 2rem;
+      min-height:1.5rem;
+      min-width:2rem;
+      content: '';
+      margin-right: 0.4rem;
     }
   }
 
