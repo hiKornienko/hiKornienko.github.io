@@ -66,7 +66,8 @@ body {
   }
 
   .menu {
-    margin:0;
+    margin: 0;
+
     & li {
       list-style-type: none;
 
@@ -102,7 +103,7 @@ body {
         border-radius: 4px;
         text-transform: uppercase;
         text-align: center;
-        padding: 0.6rem;
+        padding: 0.4rem;
 
         &:hover {
           border: 2px solid $link_color;
@@ -121,7 +122,7 @@ body {
         border-radius: 4px;
         text-transform: uppercase;
         text-align: center;
-        padding: 0.6rem;
+        padding: 0.4rem;
         margin-bottom: 1rem;
 
         & i {
@@ -229,7 +230,33 @@ body {
 
 .home-header {
   background: url("https://hikornienko.github.io/demosfen/img/bgBlue.png");
-  padding: 2rem 0;
+  background-size: 63px 109px;
+  overflow: hidden;
+
+  & .container {
+    position: relative;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  &-shadow {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-box-shadow: 0 0 65px 30px rgba(255,255,255,1);
+    -moz-box-shadow: 0 0 65px 30px rgba(255,255,255,1);
+    box-shadow: 0 0 65px 30px rgba(255,255,255,1);
+  }
+  @media (min-width: 1140px) {
+    &-shadow {
+      transform: skew(10deg, 0);
+    }
+  }
 
   & img {
     width: 100%;
@@ -246,17 +273,14 @@ body {
     background: #cf4a43;
     color: #fff;
     margin: 3rem auto;
-    &:hover{
-      color:#fff;
+
+    &:hover {
+      color: #fff;
     }
   }
 
   &_box {
     text-align: center;
-    background: #fff;
-    -webkit-box-shadow: 68px 48px 156px 127px rgba(255,255,255,0.95);
-    -moz-box-shadow: 68px 48px 156px 127px rgba(255,255,255,0.95);
-    box-shadow: 68px 48px 156px 127px rgba(255,255,255,0.95);
   }
 
   &_text {
@@ -290,18 +314,19 @@ body {
 
     & img {
       position: absolute;
-      right: -100px;
+      right: -75px;
     }
   }
 }
 //=== / home header ===//
-
 //=== section one ===//
+
 .section_one {
   padding: 1rem 0;
-  position:relative;
+  position: relative;
   z-index: 2;
   background: #fff;
+
   &-method {
     & img {
       width: 40%;
@@ -325,15 +350,18 @@ body {
   }
 }
 //=== / section one ===//
-
 //=== section two ===///
-.section_two{
-  background:url('https://hikornienko.github.io/demosfen/img/bgBlue.png') #f4fcff;
-  padding:2rem 0;
-  position:relative;
+
+.section_two {
+  background: url("https://hikornienko.github.io/demosfen/img/bgBlue.png") #f4fcff;
+  background-size: 63px 109px;
+  padding: 2rem 0;
+  position: relative;
   z-index: 1;
-  min-height:200px;
-  &-text{
+  min-height: 200px;
+  overflow: hidden;
+
+  &-text {
     color: #373737;
     background: #f4fcff;
     font-size: 1.5rem;
@@ -344,13 +372,16 @@ body {
     -moz-box-shadow: 34px -47px 156px 200px rgba(244,252,255,1);
     box-shadow: 34px -47px 156px 200px rgba(244,252,255,1);
   }
-  &-text2{
-    color:#426f79;
+
+  &-text2 {
+    color: #426f79;
     font-size: 1.1rem;
     line-height: 1.2rem;
     font-weight: 500;
   }
-  &-button-one,&-button-two{
+
+  &-button-one,
+  &-button-two {
     display: block;
     text-align: center;
     padding: 0.6rem 1.6rem;
@@ -362,155 +393,218 @@ body {
     margin: 1rem auto;
     text-transform: uppercase;
   }
-  &-button-one{
+
+  &-button-one {
     background: #cf4a43;
     color: #fff;
-    &:hover{
-      color:#fff;
+
+    &:hover {
+      color: #fff;
     }
   }
-  &-button-two{
-    border:1px solid #426f79;
+
+  &-button-two {
+    border: 1px solid #426f79;
     background: #f4fcff;
     color: #426f79;
-    &:hover{
-      color:#426f79;
+
+    &:hover {
+      color: #426f79;
     }
   }
 }
 //=== / section two ===///
-
 //===  section three ===///
-.section_three{
-  position:relative;
+
+.section_three {
+  position: relative;
   z-index: 2;
   background: #fff;
   padding-bottom: 2rem;
-  &-img{
+
+  &-img {
     width: 100%;
   }
-  &-line{
+
+  &-line {
     border-bottom: 1px solid #f4fcff;
     padding-bottom: 1.5rem;
-    margin: 1.5rem 0;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
   }
-  &-text{
-    & h3{
-      font-size:1.4rem;
+
+  &-text {
+    & h3 {
+      font-size: 1.4rem;
       line-height: 1.5rem;
-      margin-bottom: 1rem;
+      margin: 1rem 0;
       text-transform: uppercase;
       text-align: center;
     }
   }
   @media (min-width: 940px) {
-    &-text{
-      & h3{
+    &-text {
+      & h3 {
         text-align: left;
       }
     }
   }
   @media (min-width: 1140px) {
-    &-img{
-      position: absolute;
-      width:105%;
-      right: -5%;
-      &-left{
-        left: -5%;
+    &-img {
+      margin-top: 3rem;
+
+      &-one {
+        position: absolute;
+        width: 109%;
+        right: -5%;
+      }
+
+      &-two {
+        position: absolute;
+        width: 109%;
+        left: -8%;
+      }
+
+      &-three {
+        position: absolute;
+        width: 105%;
+        right: -5%;
       }
     }
-    &-buff{
+
+    &-buff {
       clear: both;
       height: 100px;
     }
   }
 }
 //=== / section three ===///
-
 //=== section four ===//
-.section_four{
-  & .course-one{
-    background: url('https://hikornienko.github.io/demosfen/img/bgRed.jpg');
-    .course-img-shaddow{
+
+.section_four {
+  overflow: hidden;
+
+  & .course-img-shaddow {
+    width: 100%;
+    height: 120%;
+    position: absolute;
+    top: -5rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  @media (min-width: 1140px) {
+    & .course-img-shaddow {
+      transform: skew(10deg, 0);
+    }
+  }
+
+  & .container {
+    position: relative;
+  }
+
+  & .course-one {
+    background: url("https://hikornienko.github.io/demosfen/img/bgRed.jpg");
+    background-size: 63px 109px;
+
+    .course-img-shaddow {
       background: #fff7f4;
-      -webkit-box-shadow: 58px 25px 246px 200px rgba(255,247,244,1);
-      -moz-box-shadow: 58px 25px 246px 200px rgba(255,247,244,1);
-      box-shadow: 58px 25px 246px 200px rgba(255,247,244,1);
+      -webkit-box-shadow: 0 0 94px 60px rgba(255,247,244,1);
+      -moz-box-shadow: 0 0 94px 60px rgba(255,247,244,1);
+      box-shadow: 0 0 94px 60px rgba(255,247,244,1);
     }
-    .course-list li{
-      border-bottom:1px solid #cf4a43;
+
+    .course-list li {
+      border-bottom: 1px solid #cf4a43;
     }
-    .course-button{
+
+    .course-button {
       background: #cf4a43;
       color: #fff;
     }
   }
-  & .course-two{
-    background: url('https://hikornienko.github.io/demosfen/img/bgGold.jpg');
-    .course-img-shaddow{
+
+  & .course-two {
+    background: url("https://hikornienko.github.io/demosfen/img/bgGold.jpg");
+    background-size: 63px 109px;
+
+    .course-img-shaddow {
       background: #fdfff4;
-      -webkit-box-shadow: 58px 25px 246px 200px rgba(253,255,244,1);
-      -moz-box-shadow: 58px 25px 246px 200px rgba(253,255,244,1);
-      box-shadow: 58px 25px 246px 200px rgba(253,255,244,1);
+      -webkit-box-shadow: 0 0 94px 60px rgba(253,255,244,1);
+      -moz-box-shadow: 0 0 94px 60px rgba(253,255,244,1);
+      box-shadow: 0 0 94px 60px rgba(253,255,244,1);
     }
-    .course-list li{
-      border-bottom:1px solid #e8a44a;
+
+    .course-list li {
+      border-bottom: 1px solid #e8a44a;
     }
-    .course-button{
+
+    .course-button {
       background: #e8a44a;
       color: #fff;
     }
   }
-  & .course-three{
-    background: url('https://hikornienko.github.io/demosfen/img/bgBlue2.jpg');
-    .course-img-shaddow{
+
+  & .course-three {
+    background: url("https://hikornienko.github.io/demosfen/img/bgBlue2.jpg");
+    background-size: 63px 109px;
+
+    .course-img-shaddow {
       background: #f4fffb;
-      -webkit-box-shadow: 58px 25px 246px 200px rgba(244,255,251,1);
-      -moz-box-shadow: 58px 25px 246px 200px rgba(244,255,251,1);
-      box-shadow: 58px 25px 246px 200px rgba(244,255,251,1);
+      -webkit-box-shadow: 0 0 94px 60px rgba(244,255,251,1);
+      -moz-box-shadow: 0 0 94px 60px rgba(244,255,251,1);
+      box-shadow: 0 0 94px 60px rgba(244,255,251,1);
     }
-    .course-list li{
-      border-bottom:1px solid #4e8c5c;
+
+    .course-list li {
+      border-bottom: 1px solid #4e8c5c;
     }
-    .course-button{
+
+    .course-button {
       background: #4e8c5c;
       color: #fff;
     }
   }
 
-  & .course{
-    padding:3rem 0 5rem;
+  & .course {
+    padding: 3rem 0 5rem;
     @media (min-width: 1024px) {
-      padding:3rem 0 1rem;
+      padding: 3rem 0 1rem;
     }
-    &-img{
-      width:100%;
+
+    &-img {
+      width: 100%;
       position: relative;
       z-index: 2;
+      margin-left: 9%;
     }
-    &-img-shaddow{
-      position:absolute;
-      z-index: 1;
-      min-width: 100%;
-      min-height: 100%;
+    @media (min-width: 940px) {
+      &-img {
+        margin-left: 0;
+      }
     }
-    &-list{
+
+    &-list {
       position: relative;
       z-index: 2;
-      & li{
+
+      & li {
         list-style-type: none;
-        padding:0.5rem 2rem;
+        padding: 0.5rem 2rem;
         font-size: 0.8rem;
-        &:last-of-type{
-          border-bottom:0;
+
+        &:last-of-type {
+          border-bottom: 0;
         }
       }
     }
-    &-title{
-      margin:1rem 0;
+
+    &-title {
+      margin: 1rem 0;
       position: relative;
       z-index: 2;
       text-align: center;
+
       & h2 {
         color: #373737;
         font-size: 1.7rem;
@@ -528,7 +622,8 @@ body {
         text-transform: uppercase;
       }
     }
-    &-button{
+
+    &-button {
       display: block;
       text-align: center;
       padding: 0.5rem 1.6rem;
@@ -541,63 +636,97 @@ body {
       text-transform: uppercase;
     }
     @media (min-width: 940px) {
-      &-title{
+      &-title {
         text-align: left;
       }
-      &-button{
-        display:inline-block;
-        float:right;
+
+      &-button {
+        display: inline-block;
+        float: right;
       }
     }
-
   }
-
 }
 
-.carousel-indicators li{
-  width:14px!important;
-  height:14px!important;
+.carousel-indicators li {
+  width: 14px!important;
+  height: 14px!important;
   border-radius: 50%;
 }
+
 .carousel-indicators li:nth-child(1) {
   background-color: #cf4a43!important;
 }
+
 .carousel-indicators li:nth-child(2) {
   background-color: #e8a44a!important;
 }
+
 .carousel-indicators li:nth-child(3) {
   background-color: #4e8c5c!important;
 }
 
-.carousel-indicators .active{
-  width:18px!important;
-  height:18px!important;
+.carousel-indicators .active {
+  width: 18px!important;
+  height: 18px!important;
 }
-.carousel-control-prev,.carousel-control-next{
+
+.carousel-control-next,
+.carousel-control-prev {
   align-items: baseline;
   justify-content: flex-start;
   margin-left: 1rem;
   margin-top: 0.5rem;
 }
-.carousel-control-next{
+
+.carousel-control-next {
   align-items: baseline;
   justify-content: flex-end;
   margin-right: 1rem;
   margin-top: 0.5rem;
 }
-.prev-icon,.next-icon{
+
+.next-icon,
+.prev-icon {
   position: relative;
   z-index: 3;
-  color:#426f79;
+  color: #426f79;
   font-size: 2rem;
 }
 //=== / section four ===//
 
 //=== section five ===//
-.section_five{
-  background:url('https://hikornienko.github.io/demosfen/img/bgBlue.png') #f4fcff;
-  padding: 1rem 0 3rem;
-  &-button-one,&-button-two{
+.section_five {
+  background: url("https://hikornienko.github.io/demosfen/img/bgBlue.png") #f4fcff;
+  background-size: 63px 109px;
+  overflow: hidden;
+
+  & .container {
+    position: relative;
+    padding: 1rem 0 3rem;
+  }
+
+  &-shadow {
+    background: #f4fcff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-box-shadow: 0 0 94px 60px rgba(244,252,255,1);
+    -moz-box-shadow: 0 0 94px 60px rgba(244,252,255,1);
+    box-shadow: 0 0 94px 60px rgba(244,252,255,1);
+  }
+  @media (min-width: 1140px) {
+    &-shadow {
+      transform: skew(10deg, 0);
+    }
+  }
+
+  &-button-one,
+  &-button-two {
     display: block;
     text-align: center;
     padding: 0.6rem 1.6rem;
@@ -609,54 +738,95 @@ body {
     margin: 1rem auto;
     text-transform: uppercase;
     color: #fff;
-    &:hover{
-      color:#fff;
+
+    &:hover {
+      color: #fff;
     }
   }
-  &-button-one{
+
+  &-button-one {
     background: #5071bd;
     -webkit-box-shadow: 58px 25px 246px 200px rgba(244,255,251,1);
     -moz-box-shadow: 58px 25px 246px 200px rgba(244,255,251,1);
     box-shadow: 58px 25px 246px 200px rgba(244,255,251,1);
   }
-  &-button-two{
+
+  &-button-two {
     background: #4e8c5c;
   }
   @media (min-width: 940px) {
-      &-button-one,&-button-two{
-        margin: 0 15% 1rem;
-      }
+    &-button-one,
+    &-button-two {
+      margin: 0 15% 1rem;
+    }
   }
-  &-i{
-    & i{
-       margin-right:0.5rem;
+
+  &-i {
+    & i {
+      margin-right: 0.5rem;
     }
   }
 }
 //=== / section five ===//
 
+//=== section six ===//
+.section_six{
+  &-button{
+    text-align: center;
+    margin-bottom: 2rem;
+    & a{
+      display: block;
+      text-align: center;
+      padding: 0.6rem 1.6rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      line-height: 1rem;
+      font-weight: 400;
+      text-decoration: none;
+      margin: 1rem auto;
+      text-transform: uppercase;
+      border:1px solid #373737;
+      color:#373737;
+      &:hover{
+        color:#373737;
+      }
+    }
+  }
+  @media (min-width: 940px) {
+    &-button{
+      & a{
+        display: inline-block;
+      }
+    }
+  }
+}
+//=== / section six ===//
+
 //=== footer ===//
-.footer{
-  color:#ccc;
+.footer {
+  color: #ccc;
   background: #426f79;
   position: relative;
   z-index: 2;
-  padding:4rem 0;
+  padding: 4rem 0;
   font-size: 0.8rem;
-  & h4{
+
+  & h4 {
     font-size: 1rem;
-    color:#fff;
-  }
-  & li{
-    list-style-type: none;
-  }
-  & i{
-    margin-right:0.5rem;
-  }
-  & a{
-    color:#ccc;
+    color: #fff;
   }
 
+  & li {
+    list-style-type: none;
+  }
+
+  & i {
+    margin-right: 0.5rem;
+  }
+
+  & a {
+    color: #ccc;
+  }
 }
 //=== / footer ===//
 
@@ -665,6 +835,7 @@ body {
   margin: 2rem 0 3rem;
   position: relative;
   z-index: 2;
+
   & h2 {
     color: #373737;
     font-size: 1.8rem;
@@ -684,30 +855,51 @@ body {
     text-transform: uppercase;
   }
 }
+.typed-cursor {
+        opacity: 1;
+        animation: blink .7s infinite;
+    }
+
+    @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 //=== / all style ===//
 
 //=== typography ===//
-a{
-  color:#cf4a43;
+
+a {
+  color: #cf4a43;
   text-decoration: underline;
 }
-a:hover{
-  color:#cf4a43;
+
+a:hover {
+  color: #cf4a43;
   text-decoration: none;
 }
 
-p{
+p {
   font-size: 0.9rem;
   font-weight: 500;
   margin-bottom: 1rem;
 }
-.color-red{
-  color:#cf4a43;
+
+.color-red {
+  color: #cf4a43;
 }
-.color-gold{
-  color:#e8a44a;
+
+.color-gold {
+  color: #e8a44a;
 }
-.color-green{
+
+.color-green {
   color: #4e8c5c;
 }
 //=== / typography ===//
