@@ -31,12 +31,12 @@ body {
   font-family: Raleway,sans-serif;
 }
 //=== header ===//
-
 .header {
-  background: #426f79;
+  background: $team_color;
   color: #fff;
-  position: relative;
-  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 
   .logo {
     font-size: 1.5rem;
@@ -46,6 +46,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: #fff;
+    transition: 0.1s;
 
     &:before {
       background: url('https://hikornienko.github.io/demosfen/img/logo_icon.png') no-repeat;
@@ -62,6 +63,7 @@ body {
     text-align: right;
     font-size: 2rem;
     line-height: $header_nav_height;
+    transition: 0.1s;
   }
 
   .nav-menu {
@@ -123,7 +125,6 @@ body {
         background: #fff;
         color: #000;
         border-radius: 4px;
-        text-transform: uppercase;
         text-align: center;
         padding: 0.4rem;
         margin-bottom: 1rem;
@@ -228,7 +229,28 @@ body {
     }
   }
 }
+.header-buff{
+  background: $team_color;
+  height: $header_nav_height;
+}
 //=== / header ===//
+
+//=== page title ===//
+.page-title{
+  background: $team_color;
+  color: #fff;
+  & h1{
+    padding:3rem 0 1rem;
+  }
+  & p{
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    weight:300;
+    padding-bottom:2rem;
+  }
+}
+//=== / page title ===//
+
 //=== home header ===//
 
 .home-header {
@@ -808,7 +830,7 @@ body {
 //=== footer ===//
 .footer {
   color: #ccc;
-  background: #426f79;
+  background: $team_color;
   position: relative;
   z-index: 2;
   padding: 4rem 0;

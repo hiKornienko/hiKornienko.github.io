@@ -8,3 +8,15 @@ document.querySelector('.js-nav-btn').onclick = function(){
   }
 }
 //=== menu ===//
+
+//=== scroll menu ===//
+window.addEventListener('scroll', function() {
+  if(pageYOffset > 140){
+    document.querySelector('.logo').style.lineHeight = '60px';
+    document.querySelector('.nav-btn').style.lineHeight = '60px';
+  }else{
+    document.querySelector('.logo').style.lineHeight = '80px';
+    document.querySelector('.nav-btn').style.lineHeight = '80px';
+  }
+});
+//=== / scroll menu ===//

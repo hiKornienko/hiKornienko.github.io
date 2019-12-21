@@ -12975,8 +12975,9 @@ body {
 .header {
   background: #426f79;
   color: #fff;
-  position: relative;
-  z-index: 9999; }
+  position: fixed;
+  width: 100%;
+  z-index: 100; }
   .header .logo {
     font-size: 1.5rem;
     line-height: 1.5rem;
@@ -12984,7 +12985,10 @@ body {
     line-height: 80px;
     text-transform: uppercase;
     text-decoration: none;
-    color: #fff; }
+    color: #fff;
+    -webkit-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s; }
     .header .logo:before {
       background: url("https://hikornienko.github.io/demosfen/img/logo_icon.png") no-repeat;
       background-size: contain;
@@ -12996,7 +13000,10 @@ body {
   .header .nav-btn {
     text-align: right;
     font-size: 2rem;
-    line-height: 80px; }
+    line-height: 80px;
+    -webkit-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s; }
   .header .nav-menu {
     display: none; }
   .header .menu {
@@ -13038,7 +13045,6 @@ body {
         background: #fff;
         color: #000;
         border-radius: 4px;
-        text-transform: uppercase;
         text-align: center;
         padding: 0.4rem;
         margin-bottom: 1rem; }
@@ -13129,6 +13135,21 @@ body {
           font-size: 0.8rem; }
           .header .menu li ul a:hover {
             background: #f5f5f5; } }
+
+.header-buff {
+  background: #426f79;
+  height: 80px; }
+
+.page-title {
+  background: #426f79;
+  color: #fff; }
+  .page-title h1 {
+    padding: 3rem 0 1rem; }
+  .page-title p {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    weight: 300;
+    padding-bottom: 2rem; }
 
 .home-header {
   background: url("https://hikornienko.github.io/demosfen/img/bgBlue.png");
