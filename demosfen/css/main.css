@@ -12986,7 +12986,7 @@ body {
     text-decoration: none;
     color: #fff; }
     .header .logo:before {
-      background: url("/img/logo_icon.png") no-repeat;
+      background: url("https://hikornienko.github.io/demosfen/img/logo_icon.png") no-repeat;
       background-size: contain;
       padding-right: 2rem;
       min-height: 1.5rem;
