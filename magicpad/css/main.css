@@ -13149,11 +13149,23 @@ body {
       font-weight: 300;
       margin-bottom: 0.6rem;
       line-height: 2.8rem; }
-    .footer__form input[type="submit"] {
+    .footer__form input[type="button"] {
       background: #702b86;
       color: #fff;
       font-weight: 700;
       text-transform: uppercase;
       line-height: 3.6rem; }
-      .footer__form input[type="submit"]:hover {
+      .footer__form input[type="button"]:hover {
         background: #562068; }
+    .footer__form-ok {
+      background: #3aa53a;
+      font-size: 1rem;
+      color: #fff;
+      text-transform: uppercase;
+      line-height: 3rem; }
+    .footer__form-eror {
+      background: #cc3a3a;
+      font-size: 1rem;
+      color: #fff;
+      text-transform: uppercase;
+      line-height: 3rem; }

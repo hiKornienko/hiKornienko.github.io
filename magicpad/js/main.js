@@ -16,32 +16,31 @@ for (let anchor of anchors) {
 /*** / плавный скроллинг ***/
 
 /*** отправка запроса ***/
-// document.addEventListener('DOMContentLoaded', () => {
-//
-//     const ajaxSend = (formData) => {
-//         fetch('mail.php', { // файл-обработчик
-//             method: 'POST',
-//             headers: {
-//                 'Content-Type': 'application/json', // отправляемые данные
-//             },
-//             body: JSON.stringify(formData)
-//         })
-//             .then(response => alert('Сообщение отправлено'))
-//             .catch(error => console.error(error))
-//     };
-//
-//     const forms = document.getElementsByTagName('form');
-//     for (let i = 0; i < forms.length; i++) {
-//         forms[i].addEventListener('submit', function (e) {
-//             e.preventDefault();
-//
-//             let formData = new FormData(this);
-//             formData = Object.fromEntries(formData);
-//
-//             ajaxSend(formData);
-//             this.reset();
-//         });
-//     };
-// });
+let name = document.querySelector('input[name="name"]');
+let phone = document.querySelector('input[name="phone"]');
+let send = document.querySelector('input[type="button"]');
+let ok = document.querySelector('.footer__form-ok');
+let eror = document.querySelector('.footer__form-eror');
+
+send.onclick = function() {
+  if (name.value.length > 1 && phone.value.length > 1) {
+    var xhr = new XMLHttpRequest();
+    var body = 'name=' + encodeURIComponent(name.value) + '&phone=' + encodeURIComponent(phone.value);
+    xhr.open("POST", '/mail.php', true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState == 4 && xhr.status == 200) {
+        eror.innerHTML = '';
+        ok.innerHTML = 'Заявка отправлена';
+        name.value = '';
+        phone.value = '';
+      }
+    }
+    xhr.send(body);
+  } else {
+    eror.innerHTML = 'Заполните все поля';
+  }
+}
 
 /*** / отправка запроса ***/

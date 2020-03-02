@@ -5,37 +5,11 @@ session_start();
 // формируем массив с товарами в заказе (если товар один - оставляйте только первый элемент массива)
 $products_list = array(
     0 => array(
-            'product_id' => $_REQUEST['product_id'],    //код товара (из каталога CRM)
-            'price'      => $_REQUEST['product_price'], //цена товара 1
+            'product_id' => 5,    //код товара (из каталога CRM)
+            'price'      => 399, //цена товара 1
             'count'      => '1',                     //количество товара 1
             // если есть смежные товары, тогда количество общего товара игнорируется
-            'subs'       => array(
-                                0  => array(
-                                        'sub_id' => $_REQUEST['product_id'],
-                                        'count'  => '1'
-                                        ),
-                                1  => array(
-                                        'sub_id' => $_REQUEST['product_id'],
-                                        'count'  => '1'
-                                        )
-            )
-    ),
-    1 => array(
-            'product_id' => $_REQUEST['product_id'],    //код товара 2 (из каталога CRM)
-            'price'      => $_REQUEST['product_price'], //цена товара 2
-            'count'      => '1',                     //количество товара 2
-            // если есть смежные товары, тогда количество общего товара игнорируется
-            'subs'       => array(
-                                0  => array(
-                                        'sub_id' => $_REQUEST['product_id'],
-                                        'count'  => '1'
-                                        ),
-                                1  => array(
-                                        'sub_id' => $_REQUEST['product_id'],
-                                        'count'  => '1'
-                                        )
-            )
-        )
+    )
 );
 $products = urlencode(serialize($products_list));
 $sender = urlencode(serialize($_SERVER));
@@ -46,8 +20,8 @@ $data = array(
     'country'         => 'UA',                         // Географическое направление заказа
     'office'          => '1',                          // Офис (id в CRM)
     'products'        => $products,                    // массив с товарами в заказе
-    'bayer_name'      => $_REQUEST['name'],            // покупатель (Ф.И.О)
-    'phone'           => $_REQUEST['phone'],           // телефон
+    'bayer_name'      => $_POST['name'],            // покупатель (Ф.И.О)
+    'phone'           => $_POST['phone'],           // телефон
     'email'           => $_REQUEST['email'],           // электронка
     'comment'         => $_REQUEST['product_name'],    // комментарий
     'delivery'        => $_REQUEST['delivery'],        // способ доставки (id в CRM)

@@ -79,12 +79,14 @@
     <div class="container">
       <div class="row">
          <div class="col-12">
-           <form class="footer__form" action="/crm.php" method="post">
+           <form class="footer__form">
              <h2 class="footer__form-title">ОСТАВЬТЕ ЗАЯВКУ</h2>
              <p class="footer__form-price">чтобы заказать планшет за <span class="footer__form-price-old">820 грн</span>  <span class="footer__form-price-new">399 грн</span></p>
-             <input type="text" placeholder="Имя*" required>
-             <input type="text" placeholder="Номер телефона*" required>
-             <input type="submit" value="Заказать планшет">
+             <input type="text" name="name" placeholder="Имя*" required>
+             <input type="text" name="phone" placeholder="Номер телефона*" required>
+             <input type="button" value="Заказать планшет">
+             <p class="footer__form-ok"></p>
+             <p class="footer__form-eror"></p>
            </form>
          </div>
       </div>
