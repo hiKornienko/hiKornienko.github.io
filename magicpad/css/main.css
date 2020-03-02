@@ -13149,11 +13149,11 @@ body {
       font-weight: 300;
       margin-bottom: 0.6rem;
       line-height: 2.8rem; }
-    .footer__form input[type="button"] {
+    .footer__form input[type="submit"] {
       background: #702b86;
       color: #fff;
       font-weight: 700;
       text-transform: uppercase;
       line-height: 3.6rem; }
-      .footer__form input[type="button"]:hover {
+      .footer__form input[type="submit"]:hover {
         background: #562068; }
