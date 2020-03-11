@@ -340,8 +340,8 @@ body {
   min-height: 3rem;
   text-align: center;
   font-family: 'Open Sans', aria,sans-serif;
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1); }
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1); }
   .header__info-logo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -384,8 +384,8 @@ body {
   background: url("//hikornienko.github.io/invest/img/header.jpg");
   background-size: cover;
   position: relative;
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1); }
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1); }
   .one:before {
     content: '';
     background: #fff;
@@ -448,7 +448,7 @@ body {
     line-height: 1.7rem;
     text-align: center;
     max-width: 800px;
-    margin: 2rem auto;
+    margin: 0 auto 2rem;
     position: relative;
     z-index: 2; }
     .one__desc span {
@@ -467,8 +467,8 @@ body {
 
 .two {
   text-align: center;
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
   padding-bottom: 2rem; }
   .two h2 {
     color: #000;
@@ -523,8 +523,8 @@ body {
         padding: 0 1rem; } }
 
 .tree {
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
   padding: 2rem; }
   .tree h1 {
     font-family: 'Roboto', aria, sans-serif;
