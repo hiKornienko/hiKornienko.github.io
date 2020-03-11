@@ -620,3 +620,6 @@ a {
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
+
+.b24-widget-button-wrapper {
+  display: none !important; }
