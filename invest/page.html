@@ -53,6 +53,56 @@
   </footer>
   <!-- / footer -->
 
+  
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+  <script>
+  	// $('.popup a').click(function(){
+  	// 	yaCounter56705734.reachGoal('sdelano');
+  	// })
+
+  	$('.vk').click(function(e){
+  		e.preventDefault();
+  		try {
+  			yaCounter56705734.reachGoal('sdelano');
+  		} catch (e){
+  			console.log('Ошибка ' + e.name + ":" + e.message + "\n" + e.stack);
+  		}
+  		$('.ui-icon-service-vk i').trigger('click');
+
+  	})
+
+  	$('.tg').click(function(e){
+  		e.preventDefault();
+      console.log(e.preventDefault());
+  		try {
+  			yaCounter56705734.reachGoal('sdelano');
+  		} catch (e){
+  			console.log('Ошибка ' + e.name + ":" + e.message + "\n" + e.stack);
+  		}
+  		$('.ui-icon-service-telegram i').trigger('click');
+
+  	})
+
+  	$('.viber').click(function(e){
+  		e.preventDefault();
+  		try {
+  			yaCounter56705734.reachGoal('sdelano');
+  		} catch (e){
+  			console.log('Ошибка ' + e.name + ":" + e.message + "\n" + e.stack);
+  		}
+  		$('.ui-icon-service-viber i').trigger('click');
+  	})
+
+  	$('.fb').click(function(e){
+  		e.preventDefault();
+  		try {
+  			yaCounter56705734.reachGoal('sdelano');
+  		} catch (e){
+  			console.log('Ошибка ' + e.name + ":" + e.message + "\n" + e.stack);
+  		}
+  		$('.ui-icon-service-fb i').trigger('click');
+  	})
+  </script>
 </body>
 
 </html>

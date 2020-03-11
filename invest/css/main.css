@@ -363,6 +363,8 @@ body {
     font-weight: 300;
     line-height: 1.2rem;
     padding: 0.5rem 1rem; }
+    .header__info-text span {
+      display: inline-block; }
 
 @media all and (min-width: 1024px) {
   .header__info-text {
@@ -407,12 +409,21 @@ body {
     padding: 3rem 2rem 1rem;
     text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.35);
     margin: 0; }
+    .one h1 span {
+      background: #ffe91e;
+      padding: 0 0.3rem; }
   .one__video {
     z-index: 2;
     position: relative;
     padding: 1rem;
     max-width: 600px;
     margin: 0 auto; }
+    .one__video-desc {
+      font-size: 1.2rem;
+      line-height: 2rem;
+      font-weight: 300;
+      text-align: center;
+      margin: 1rem; }
     .one__video-wrap {
       position: relative;
       padding-bottom: 56.25%;
@@ -436,6 +447,8 @@ body {
     margin: 2rem auto;
     position: relative;
     z-index: 2; }
+    .one__desc span {
+      text-decoration: underline; }
   .one__button {
     position: relative;
     z-index: 2;
