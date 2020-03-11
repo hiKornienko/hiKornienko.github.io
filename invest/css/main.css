@@ -400,7 +400,7 @@ body {
     font-family: 'Roboto', aria, sans-serif;
     color: #19063b;
     font-size: 2rem;
-    line-height: 2.2rem;
+    line-height: 2.4rem;
     text-transform: uppercase;
     padding: 1rem;
     text-align: center;
@@ -423,7 +423,11 @@ body {
       line-height: 2rem;
       font-weight: 300;
       text-align: center;
-      margin: 1rem; }
+      margin: 1.2rem 1rem; }
+      .one__video-desc svg {
+        width: 2rem;
+        height: 2rem;
+        margin-bottom: -1.4rem; }
     .one__video-wrap {
       position: relative;
       padding-bottom: 56.25%;
@@ -465,7 +469,7 @@ body {
   text-align: center;
   -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
-  padding: 2rem; }
+  padding-bottom: 2rem; }
   .two h2 {
     color: #000;
     font-size: 1.5rem;
@@ -484,8 +488,7 @@ body {
     -ms-flex-direction: column;
     flex-direction: column; }
     .two .row__block {
-      padding: 1rem;
-      margin-bottom: 2rem; }
+      padding: 1rem; }
       .two .row__block-img {
         opacity: 0.5; }
         .two .row__block-img svg {
