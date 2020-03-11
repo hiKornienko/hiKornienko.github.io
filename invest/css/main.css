@@ -352,7 +352,7 @@ body {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 1rem 1rem 0.5rem;
+    padding: 1rem 1rem 0;
     font-size: 1.5rem; }
     .header__info-logo img {
       height: 1.7rem;
@@ -457,7 +457,7 @@ body {
     position: relative;
     z-index: 2;
     text-align: center;
-    padding-bottom: 2rem; }
+    padding-bottom: 3rem; }
 
 @media all and (min-width: 1024px) {
   .one h1 {
@@ -475,7 +475,7 @@ body {
     font-size: 1.5rem;
     line-height: 1.8rem;
     font-weight: 700;
-    padding: 1rem;
+    padding: 0 1rem;
     margin: 3rem 0; }
   .two .row {
     max-width: 1024px;
@@ -550,14 +550,13 @@ body {
       background: #ffe91e;
       padding: 0 0.3rem; }
   .tree__desc {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 2rem;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
     margin: 1rem; }
     .tree__desc span {
-      color: #fff;
-      background: #f44336;
+      background: #ffe91e;
       padding: 0 0.3rem; }
 
 .popup {
