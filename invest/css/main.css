@@ -546,6 +546,9 @@ body {
     font-weight: 300;
     text-align: center;
     margin: 1rem; }
+    .tree h2 span {
+      background: #ffe91e;
+      padding: 0 0.3rem; }
   .tree__desc {
     font-size: 1.2rem;
     line-height: 2rem;
