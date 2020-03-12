@@ -8649,7 +8649,7 @@ body {
         border-bottom: 2px solid #fff;
         position: relative; }
       .tree__table tbody .x {
-        background: url("/img/x.svg") #FCF3F3 no-repeat center;
+        background: url("//hikornienko.github.io/winwin/img/x.svg") #FCF3F3 no-repeat center;
         background-size: 28px;
         position: absolute;
         left: 0;
@@ -8657,7 +8657,7 @@ body {
         top: 0;
         bottom: 0; }
       .tree__table tbody .v {
-        background: url("/img/v.svg") #F3FCF5 no-repeat center;
+        background: url("//hikornienko.github.io/winwin/img/v.svg") #F3FCF5 no-repeat center;
         background-size: 28px;
         position: absolute;
         left: 0;
@@ -8771,17 +8771,17 @@ body {
         margin-right: 20px;
         background: no-repeat center #F3F6FB; }
       .footer__contact-link .point {
-        background-image: url("/img/point.svg"); }
+        background-image: url("//hikornienko.github.io/winwin/img/point.svg"); }
       .footer__contact-link .inst {
-        background-image: url("/img/inst.svg"); }
+        background-image: url("//hikornienko.github.io/winwin/img/inst.svg"); }
       .footer__contact-link .planet {
-        background-image: url("/img/planet.svg"); }
+        background-image: url("//hikornienko.github.io/winwin/img/planet.svg"); }
       .footer__contact-link .face {
-        background-image: url("/img/face.svg"); }
+        background-image: url("//hikornienko.github.io/winwin/img/face.svg"); }
       .footer__contact-link .call {
-        background-image: url("/img/call.svg"); }
+        background-image: url("//hikornienko.github.io/winwin/img/call.svg"); }
       .footer__contact-link .teleg {
-        background-image: url("/img/teleg.svg"); }
+        background-image: url("//hikornienko.github.io/winwin/img/teleg.svg"); }
   .footer__slogan {
     margin-top: 65px;
     text-align: center; }

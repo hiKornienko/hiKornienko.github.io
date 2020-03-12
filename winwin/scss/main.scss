@@ -245,7 +245,7 @@ body {
       }
 
       & .x {
-        background: url("/img/x.svg") #FCF3F3 no-repeat center;
+        background: url("//hikornienko.github.io/winwin/img/x.svg") #FCF3F3 no-repeat center;
         background-size: 28px;
         position: absolute;
         left: 0;
@@ -255,7 +255,7 @@ body {
       }
 
       & .v {
-        background: url("/img/v.svg") #F3FCF5 no-repeat center;
+        background: url("//hikornienko.github.io/winwin/img/v.svg") #F3FCF5 no-repeat center;
         background-size: 28px;
         position: absolute;
         left: 0;
@@ -272,7 +272,7 @@ body {
 .four {
   margin: 50px auto;
   padding-left: 20px;
-  padding-right: 20px;  
+  padding-right: 20px;
   &__block {
     background: #FFFFFF;
     box-shadow: 15px 15px 50px rgba(162, 183, 202, 0.2);
@@ -370,22 +370,22 @@ body {
         background: no-repeat center #F3F6FB;
       }
       & .point{
-        background-image: url('/img/point.svg');
+        background-image: url('//hikornienko.github.io/winwin/img/point.svg');
       }
       & .inst{
-        background-image: url('/img/inst.svg');
+        background-image: url('//hikornienko.github.io/winwin/img/inst.svg');
       }
       & .planet{
-        background-image: url('/img/planet.svg');
+        background-image: url('//hikornienko.github.io/winwin/img/planet.svg');
       }
       & .face{
-        background-image: url('/img/face.svg');
+        background-image: url('//hikornienko.github.io/winwin/img/face.svg');
       }
       & .call{
-        background-image: url('/img/call.svg');
+        background-image: url('//hikornienko.github.io/winwin/img/call.svg');
       }
       & .teleg{
-        background-image: url('/img/teleg.svg');
+        background-image: url('//hikornienko.github.io/winwin/img/teleg.svg');
       }
     }
   }
