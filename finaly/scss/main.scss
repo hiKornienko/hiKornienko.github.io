@@ -197,11 +197,11 @@ body {
       background: #fff;
       border-radius: 2rem;
       padding:1rem;
-      font-size: 1rem;
-      line-height: 1.6rem;
+      font-size: 0.9rem;
+      line-height: 1.3rem;
       &-title{
         color:#7e8fa5;
-        font-size: 2rem;
+        font-size: 1.7rem;
         padding-bottom: 1rem;
       }
       &-block{
@@ -212,7 +212,6 @@ body {
           width:50%;
           padding:0.2rem;
           &:nth-child(even){
-            font-size: 1rem;
             font-weight: 600;
           }
         }
@@ -223,11 +222,11 @@ body {
       background: #fff;
       border-radius: 2rem;
       padding:1rem;
-      font-size: 1.2rem;
-      line-height: 1.6rem;
+      font-size: 0.9rem;
+      line-height: 1.3rem;
       &-title{
         color:#7e8fa5;
-        font-size: 2rem;
+        font-size: 1.7rem;
         padding-bottom: 1rem;
       }
       &-block{
@@ -238,7 +237,6 @@ body {
           width:50%;
           padding:0.2rem;
           text-align: center;
-          font-size: 1rem;
           & img{
             width: 50px;
           }
@@ -426,7 +424,7 @@ body {
     line-height: 1.3rem;
     &-title{
       color:#7e8fa5;
-      font-size: 2rem;
+      font-size: 1.7rem;
       padding: 1.2rem 0;
     }
     &-left{

@@ -195,11 +195,11 @@ body {
       background: #fff;
       border-radius: 2rem;
       padding: 1rem;
-      font-size: 1rem;
-      line-height: 1.6rem; }
+      font-size: 0.9rem;
+      line-height: 1.3rem; }
       .two__wrap2-left-title {
         color: #7e8fa5;
-        font-size: 2rem;
+        font-size: 1.7rem;
         padding-bottom: 1rem; }
       .two__wrap2-left-block {
         display: -webkit-box;
@@ -214,18 +214,17 @@ body {
           width: 50%;
           padding: 0.2rem; }
           .two__wrap2-left-block div:nth-child(even) {
-            font-size: 1rem;
             font-weight: 600; }
     .two__wrap2-right {
       margin-top: 30px;
       background: #fff;
       border-radius: 2rem;
       padding: 1rem;
-      font-size: 1.2rem;
-      line-height: 1.6rem; }
+      font-size: 0.9rem;
+      line-height: 1.3rem; }
       .two__wrap2-right-title {
         color: #7e8fa5;
-        font-size: 2rem;
+        font-size: 1.7rem;
         padding-bottom: 1rem; }
       .two__wrap2-right-block {
         display: -webkit-box;
@@ -239,8 +238,7 @@ body {
         .two__wrap2-right-block div {
           width: 50%;
           padding: 0.2rem;
-          text-align: center;
-          font-size: 1rem; }
+          text-align: center; }
           .two__wrap2-right-block div img {
             width: 50px; }
 
@@ -388,7 +386,7 @@ body {
     line-height: 1.3rem; }
     .four__block-title {
       color: #7e8fa5;
-      font-size: 2rem;
+      font-size: 1.7rem;
       padding: 1.2rem 0; }
     .four__block-left {
       display: -webkit-box;
