@@ -291,6 +291,25 @@ body {
     .tree__block span {
       font-size: 4rem;
       font-weight: 600; }
+    .tree__block-two {
+      text-align: center;
+      padding-top: 50px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .tree__block-two p {
+        background: #fff;
+        border-radius: 1rem;
+        color: #000;
+        margin: 1rem;
+        padding: 1rem;
+        min-height: 100px; }
+      .tree__block-two span {
+        font-size: 4rem;
+        font-weight: 600; }
   .tree form {
     margin-top: 5rem;
     padding: 1rem;
