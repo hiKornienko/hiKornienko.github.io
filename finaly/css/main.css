@@ -88,7 +88,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
     text-align: left;
-    background: url("//hikornienko.github.io/finaly/img/coffemakes.png") no-repeat #fff;
+    background: url("img/coffemakes.png") no-repeat #fff;
     background-position: right;
     background-size: 40%; }
     .one h1 {
@@ -271,7 +271,7 @@ body {
 
 /*** / two ***/
 .tree {
-  background: url("//hikornienko.github.io/finaly/img/rectangle_22.png") no-repeat center;
+  background: url("img/rectangle_22.png") no-repeat center;
   background-size: cover;
   padding: 50px 0;
   color: #fff;
@@ -482,3 +482,7 @@ body {
 
 .owl-next {
   float: right; }
+
+.alert-ok, .alert-bad {
+  display: none;
+  padding-top: 1rem; }
