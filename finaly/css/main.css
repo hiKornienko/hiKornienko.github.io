@@ -403,10 +403,8 @@ body {
         width: 50%;
         padding: 0.2rem; }
         .four__block-left div:nth-child(even) {
-          font-size: 1rem;
           font-weight: 600; }
     .four__block-right {
-      font-size: 1rem;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -419,7 +417,6 @@ body {
         width: 50%;
         padding: 0.2rem; }
         .four__block-right div:nth-child(even) {
-          font-size: 1rem;
           font-weight: 600; }
 
 @media all and (min-width: 1024px) {
