@@ -53,7 +53,8 @@ body {
     padding-bottom: 2rem; }
   .one__text {
     font-size: 1.3rem;
-    line-height: 1.7rem; }
+    line-height: 1.7rem;
+    font-weight: 600; }
     .one__text span {
       color: #5a5aff; }
   .one__company {
@@ -62,6 +63,11 @@ body {
     font-size: 1.1rem;
     line-height: 1.3rem;
     padding-top: 3rem; }
+  .one__imgsolo {
+    text-align: center; }
+    .one__imgsolo img {
+      width: 100%;
+      max-width: 300px; }
   .one__img img {
     display: inline-block;
     width: 4rem;
@@ -86,7 +92,9 @@ body {
     background-position: right;
     background-size: 40%; }
     .one h1 {
-      font-size: 3.2rem; } }
+      font-size: 3.2rem; }
+    .one__imgsolo {
+      display: none; } }
 
 /*** / one ***/
 /*** two ***/
@@ -305,8 +313,7 @@ body {
         border-radius: 1rem;
         color: #000;
         margin: 1rem;
-        padding: 1rem;
-        min-height: 100px; }
+        padding: 1rem; }
       .tree__block-two span {
         font-size: 4rem;
         font-weight: 600; }
@@ -331,7 +338,9 @@ body {
   .tree h2 {
     font-size: 3rem;
     line-height: 3.8rem;
-    text-align: center; } }
+    text-align: center; }
+  .tree__block-two p {
+    min-height: 100px; } }
 
 .four {
   padding: 70px 0 0; }
@@ -375,14 +384,13 @@ body {
     background: #fff;
     border-radius: 2rem;
     padding: 1rem 1.5rem;
-    font-size: 1.2rem;
-    line-height: 1.6rem; }
+    font-size: 1rem;
+    line-height: 1.3rem; }
     .four__block-title {
       color: #7e8fa5;
       font-size: 2rem;
       padding: 1.2rem 0; }
     .four__block-left {
-      font-size: 1rem;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
