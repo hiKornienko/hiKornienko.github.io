@@ -402,12 +402,14 @@ body {
     text-align: center; } }
 
 .footer {
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  background: #fff; }
   .footer h2 {
     font-weight: 600;
     font-size: 2rem;
     line-height: 2.3rem;
-    margin: 5rem 0 2rem;
+    margin-top: 5rem;
+    padding: 2rem 0;
     text-align: center; }
   .footer__block {
     margin-top: 30px;
