@@ -90,7 +90,7 @@ body {
 
 //=== one ===//
 .one{
-  background: url('//hikornienko.github.io/invest/img/header.jpg');
+  background: url('/img/header.jpg');
   background-size: cover;
   //min-height:100vh;
   position: relative;
@@ -294,7 +294,7 @@ body {
     line-height: 2rem;
     font-weight: 400;
     text-align: center;
-    margin:1rem;
+    margin:1rem 0 2rem;
     & span{
       background: #ffe91e;
       padding:0 0.3rem;
@@ -319,19 +319,19 @@ body {
 		cursor: pointer;
 	}
 	.popup .vk {
-		background: url('//hikornienko.github.io/invest/img/vk.svg');
+		background: url('/img/vk.svg');
 		background-size: cover;
 	}
 	.popup .tg {
-		background: url('//hikornienko.github.io/invest/img/tg.svg');
+		background: url('/img/tg.svg');
 		background-size: cover;
 	}
 	.popup .viber {
-		background: url('//hikornienko.github.io/invest/img/viber.svg');
+		background: url('/img/viber.svg');
 		background-size: cover;
 	}
 	.popup .fb {
-		background: url('//hikornienko.github.io/invest/img/fb.svg');
+		background: url('/img/fb.svg');
 		background-size: cover;
 	}
 //=== / social ===//
