@@ -105,7 +105,7 @@ body {
     align-items: center;
 
     text-align: left;
-    background: url('img/coffemakes.png') no-repeat #fff;
+    background: url('/img/coffemakes.png') no-repeat #fff;
     background-position: right;
     background-size: 40%;
     & h1{
@@ -146,15 +146,20 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     min-height: 370px;
     & img{
-      padding-top: 2rem;
+      //padding-top: 2rem;
+      width: 100%;
+      margin-top:-3rem;
     }
     & p{
       color:#000;
       font-size: 1.5rem;
       padding-top: 1rem;
+      position: absolute;
+      bottom: 2rem;
     }
   }
   &__wrap{
@@ -177,15 +182,19 @@ body {
       border-bottom: 0;
     }
     &-title{
-      padding:0.5rem;
+      //padding:0.5rem;
     }
     &-info{
       font-size: 1rem;
-      padding: 1rem;
+      //padding: 1rem;
       min-width: 100%;
 
       display: flex;
       justify-content: space-between;
+      & div{
+        width:20%;
+        padding:2%;
+      }
     }
   }
   &__wrap2{
@@ -256,9 +265,15 @@ body {
     }
     &__block{
       flex-direction: row;
+      &-title{
+        padding:1rem;
+      }
       &-info{
         padding: 1rem 1rem 1rem 5rem;
         min-width: 66%;
+        & div{
+          padding:0 2%;
+        }
       }
     }
     &__wrap2{
@@ -282,7 +297,7 @@ body {
 
 //*** tree ***//
 .tree{
-  background: url("img/rectangle_22.png") no-repeat center;
+  background: url("/img/rectangle_22.png") no-repeat center;
   background-size: cover;
   padding:50px 0;
   color:#fff;

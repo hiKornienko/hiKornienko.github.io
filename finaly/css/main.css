@@ -88,7 +88,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
     text-align: left;
-    background: url("img/coffemakes.png") no-repeat #fff;
+    background: url("/img/coffemakes.png") no-repeat #fff;
     background-position: right;
     background-size: 40%; }
     .one h1 {
@@ -133,16 +133,22 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     min-height: 370px; }
     .two__item img {
-      padding-top: 2rem; }
+      width: 100%;
+      margin-top: -3rem; }
     .two__item p {
       color: #000;
       font-size: 1.5rem;
-      padding-top: 1rem; }
+      padding-top: 1rem;
+      position: absolute;
+      bottom: 2rem; }
   .two__wrap {
     margin-top: 30px;
     background: #fff;
@@ -167,11 +173,8 @@ body {
       color: #5a5aff;
       font-weight: 600;
       border-bottom: 0; }
-    .two__block-title {
-      padding: 0.5rem; }
     .two__block-info {
       font-size: 1rem;
-      padding: 1rem;
       min-width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -179,6 +182,9 @@ body {
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between; }
+      .two__block-info div {
+        width: 20%;
+        padding: 2%; }
   .two__wrap2 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -254,9 +260,13 @@ body {
       -webkit-box-direction: normal;
       -ms-flex-direction: row;
       flex-direction: row; }
+      .two__block-title {
+        padding: 1rem; }
       .two__block-info {
         padding: 1rem 1rem 1rem 5rem;
         min-width: 66%; }
+        .two__block-info div {
+          padding: 0 2%; }
     .two__wrap2 {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -271,7 +281,7 @@ body {
 
 /*** / two ***/
 .tree {
-  background: url("img/rectangle_22.png") no-repeat center;
+  background: url("/img/rectangle_22.png") no-repeat center;
   background-size: cover;
   padding: 50px 0;
   color: #fff;

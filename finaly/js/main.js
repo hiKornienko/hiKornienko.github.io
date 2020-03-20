@@ -51,7 +51,7 @@ document.querySelector('.js-form2-3').onclick = function() {
 }
 
 function form(name,phone,ok,eror){
-  if (name.value.length > 1 && phone.value.length > 1) {
+  if (name.value.length > 1 && phone.value.length > 9) {
     var xhr = new XMLHttpRequest();
     var body = 'name=' + encodeURIComponent(name.value) + '&phone=' + encodeURIComponent(phone.value);
     xhr.open("POST", '/mail.php', true);
