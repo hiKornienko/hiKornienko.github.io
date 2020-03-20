@@ -55,8 +55,7 @@ font-family: tgn-soft-round-con, sans-serif;
 /*-----------------------------------
          Luminate Overrides
 ------------------------------------*/
-*,searchBlock
-html,
+*, searchBlock html,
 body,
 form,
 input,
@@ -969,10 +968,11 @@ h4 {
   font-weight: 300;
   font-family: "trade-gothic-next", sans-serif;
 }
+
 .searchBlock__left input::placeholder {
   font-weight: 300;
   font-family: "trade-gothic-next", sans-serif;
-  color:#929292;
+  color: #929292;
 }
 
 .searchBlock__right-item {
@@ -983,7 +983,7 @@ h4 {
   justify-content: center;
   align-items: center;
   border-bottom: 2px solid #7083a1;
-  position:relative;
+  position: relative;
 }
 
 .searchBlock__right-item div {
@@ -998,10 +998,10 @@ h4 {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  display:none;
+  display: none;
 }
 
 .searchBlock__right-item img {
@@ -1015,9 +1015,11 @@ h4 {
   font-weight: 600;
   text-align: center;
 }
+
 .searchBlock__right .active {
   background: #007fa2;
 }
+
 .searchBlock__right .active:before {
   content: '';
   position: absolute;
@@ -1025,42 +1027,57 @@ h4 {
   border: 15px solid transparent;
   border-bottom: 15px solid #007fa2;
 }
-.searchBlock__right .active div{
+
+.searchBlock__right .active div {
   border: 2px solid #007fa2;
 }
-.searchBlock__right .active span{
-    color:#fff;
+
+.searchBlock__right .active span {
+  color: #fff;
 }
-.sticky-top{
-  position:relative;
+
+.sticky-top {
+  position: relative;
 }
+
 @media only screen and (min-width: 1024px) {
-  .sticky-top{
-    position:sticky;
+  .sticky-top {
+    position: sticky;
+    max-height: 140px;
+    margin-bottom: 300px;
+  }
+
+  .searchPostWrap {
+    margin-top: -300px;
+  }
+
+  .searchBlock__height {
     max-height: 140px;
   }
-  .searchBlock__height{
-    max-height: 140px;
-  }
+
   .searchBlock__left input {
     width: 95%;
   }
-  .searchBlock__right .active div{
-    display:flex;
+
+  .searchBlock__right .active div {
+    display: flex;
   }
+
   .searchBlock__right .active:before {
-    border:0;
-    top:auto;
+    border: 0;
+    top: auto;
     content: '';
     position: absolute;
     left: -30px;
     border: 15px solid transparent;
     border-right: 15px solid #007fa2;
   }
-  .searchBlock__right .active span{
-      padding-top: 30px;
+
+  .searchBlock__right .active span {
+    padding-top: 30px;
   }
 }
+
 /*-----------------------------------
           SearchPost Styles
 ------------------------------------*/
@@ -1109,9 +1126,9 @@ h4 {
   background: #24355a;
   border: 2px solid #24355a;
 }
-@media only screen and (min-width: 1024px) {
 
-}
+@media only screen and (min-width: 1024px) {}
+
 /*-----------------------------------
           Footer Styles
 ------------------------------------*/
