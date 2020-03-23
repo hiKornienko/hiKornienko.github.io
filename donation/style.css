@@ -745,24 +745,24 @@ h4 {
 }
 
 /*-----------------------------------
-          Header1 Styles
+          facultyHeader Styles
 ------------------------------------*/
-.header1 {
+.facultyHeader {
   padding: 50px 0 70px;
 }
 
-.header1 h1 {
+.facultyHeader h1 {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
-.header1 p {
+.facultyHeader p {
   margin: 0 auto;
   max-width: 600px;
   font-weight: 300;
 }
 
-.header1__bg {
+.facultyHeader__bg {
   background: url("https://boundless.utoronto.ca/assets/transition/images/bg1.jpg") no-repeat center center;
   background-size: cover;
   min-height: 400px;
@@ -770,42 +770,42 @@ h4 {
 }
 
 /*-----------------------------------
-          postTop Styles
+          fundtop Styles
 ------------------------------------*/
-.posttop {
+.fundtop {
   padding: 50px 0 20px;
   background: #e8eff9;
 }
 
-.posttop__block {
+.fundtop__block {
   margin: 50px 0;
 }
 
-.posttop__block-con {
+.fundtop__block-con {
   margin-bottom: 50px;
 }
 
-.posttop__line {
+.fundtop__line {
   border-bottom: 1px solid #24365e;
 }
 
-.posttop__block-con h2 {
+.fundtop__block-con h2 {
   color: #24365e;
   display: inline-flex;
   align-items: center;
 }
 
-.posttop__block-con i {
+.fundtop__block-con i {
   font-size: 20px;
   margin-left: 16px;
   padding-top: 10px;
 }
 
-.posttop__block-con p {
+.fundtop__block-con p {
   font-weight: 300;
 }
 
-.posttop__block-con-link {
+.fundtop__block-con-link {
   color: #007fa3;
   text-decoration: underline !important;
   font-size: 20px;
@@ -814,7 +814,7 @@ h4 {
   padding-bottom: 10px;
 }
 
-.posttop__btn {
+.fundtop__btn {
   display: inline-block;
   background: #047ea3;
   border: 2px solid #c1c6cc;
@@ -826,48 +826,48 @@ h4 {
   transition: 0.3s;
 }
 
-.posttop__btn:hover {
+.fundtop__btn:hover {
   color: #fff;
   background: #24355a;
   border: 2px solid #24355a;
 }
 
 /*-----------------------------------
-          postStyles
+          fund Styles
 ------------------------------------*/
-.post {
+.fund {
   padding: 50px 0 20px;
 }
 
-.post__block {
+.fund__block {
   margin: 50px 0;
 }
 
-.post__line {
+.fund__line {
   border-bottom: 1px solid #bac3ca;
 }
 
-.post__block-con {
+.fund__block-con {
   margin-bottom: 50px;
 }
 
-.post__block-con h2 {
+.fund__block-con h2 {
   color: #444f6b;
   display: inline-flex;
   align-items: center;
 }
 
-.post__block-con i {
+.fund__block-con i {
   font-size: 20px;
   margin-left: 16px;
   padding-top: 10px;
 }
 
-.post__block-con p {
+.fund__block-con p {
   font-weight: 300;
 }
 
-.post__block-con-link {
+.fund__block-con-link {
   color: #007fa3;
   text-decoration: underline !important;
   font-size: 20px;
@@ -876,7 +876,7 @@ h4 {
   padding-bottom: 10px;
 }
 
-.post__btn {
+.fund__btn {
   display: inline-block;
   background: #fff;
   border: 2px solid #253451;
@@ -888,20 +888,20 @@ h4 {
   transition: 0.3s;
 }
 
-.post__btn:hover {
+.fund__btn:hover {
   color: #fff;
   background: #24355a;
   border: 2px solid #24355a;
 }
 
 /*-----------------------------------
-          postNext Styles
+          fundNext Styles
 ------------------------------------*/
-.postnext {
+.fundnext {
   text-align: center;
 }
 
-.postnext a {
+.fundnext a {
   font-size: 32px;
   line-height: 36px;
   font-weight: 600;
@@ -911,29 +911,29 @@ h4 {
   justify-content: center;
 }
 
-.postnext i {
+.fundnext i {
   font-size: 20px;
   margin-left: 16px;
   padding-top: 10px;
 }
 
 /*-----------------------------------
-          Header2 Styles
+          searchHeader Styles
 ------------------------------------*/
-.header2 {
+.searchHeader {
   background: #e8eff9;
   padding: 50px 0;
   border-bottom: 4px solid #007fa2;
 }
 
-.header2 h1 {
+.searchHeader h1 {
   text-transform: uppercase;
   font-size: 48px;
   font-weight: 700;
   margin-bottom: 30px;
 }
 
-.header2 p {
+.searchHeader p {
   margin: 0 auto;
   max-width: 800px;
   font-size: 24px;
@@ -941,7 +941,7 @@ h4 {
 }
 
 /*-----------------------------------
-          SearchInput Styles
+          SearchBlock Styles
 ------------------------------------*/
 .searchBlock {
   margin-top: 100px;
@@ -1047,7 +1047,7 @@ h4 {
     margin-bottom: 300px;
   }
 
-  .searchPostWrap {
+  .searchFundWrap {
     margin-top: -300px;
   }
 
@@ -1079,35 +1079,35 @@ h4 {
 }
 
 /*-----------------------------------
-          SearchPost Styles
+          searchFund Styles
 ------------------------------------*/
-.searchPost {
+.searchFund {
   padding: 50px 0 20px;
   border-bottom: 1px solid #bac3ca;
 }
 
-.searchPostLast {
+.searchFundLast {
   border-bottom: 0;
 }
 
-.searchPost h2 {
+.searchFund h2 {
   color: #444f6b;
   display: inline-flex;
   align-items: center;
   padding-bottom: 10px;
 }
 
-.searchPost i {
+.searchFund i {
   font-size: 20px;
   margin-left: 16px;
   padding-top: 10px;
 }
 
-.searchPost p {
+.searchFund p {
   font-weight: 300;
 }
 
-.searchPost__btn {
+.searchFund__btn {
   display: inline-block;
   background: #fff;
   border: 2px solid #253451;
@@ -1121,7 +1121,7 @@ h4 {
   text-align: center;
 }
 
-.searchPost__btn:hover {
+.searchFund__btn:hover {
   color: #fff;
   background: #24355a;
   border: 2px solid #24355a;
