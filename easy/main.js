@@ -21,13 +21,13 @@ for (const product of products) {
       document.getElementById(productsArr.shift()).classList.remove("selected");
     }
     //draw
-    productsAdd();
+    productsDraw();
     //add form
     productsAddForm();
   })
 }
 
-function productsAdd() {
+function productsDraw() {
   for (i = 0; i < productsArr.length; i++) {
     document.getElementById(productsArr[i]).classList.add("selected");
   }
