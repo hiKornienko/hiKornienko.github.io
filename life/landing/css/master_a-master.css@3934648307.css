@@ -1,0 +1,116 @@
+#u2357
+{
+	border-style: none;
+	border-color: transparent;
+	position: fixed;
+	background: #FFFFFF url("../images/5480510.jpg") no-repeat left top;
+	background-size: cover !important;
+}
+
+#u2189
+{
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+	background-color: #000000;
+	position: relative;
+}
+
+#u2200
+{
+	display: block;
+	vertical-align: top;
+	position: relative;
+}
+
+#u2199-4
+{
+	background-color: transparent;
+	opacity: 0.71;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=71)";
+	filter: alpha(opacity=71);
+	line-height: 1.12;
+	font-size: 16px;
+	color: #FFFFFF;
+	text-align: left;
+	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
+	font-weight: normal;
+	position: relative;
+}
+
+#u2198-4
+{
+	background-color: transparent;
+	opacity: 0.71;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=71)";
+	filter: alpha(opacity=71);
+	line-height: 1.3;
+	font-size: 7px;
+	color: #FFFFFF;
+	text-align: left;
+	font-weight: bold;
+	position: relative;
+}
+
+#u2190-13
+{
+	background-color: transparent;
+	opacity: 0.6;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+	text-align: center;
+	position: relative;
+}
+
+#u2190-3,#u2190-4,#u2190-8,#u2190-10
+{
+	color: #FFFFFF;
+}
+
+#u2191
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+}
+
+#u2194-7
+{
+	background-color: transparent;
+	opacity: 0.6;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+	line-height: 1.1;
+	text-align: right;
+	position: relative;
+}
+
+#u2194-5
+{
+	color: #FFFFFF;
+	line-height: 0px;/* 0 for mixed font sized paras; applied on spans instead */
+}
+
+#u2194-5  span /* line-height set on spans of mixed font sized paras */
+{
+	line-height: 1.1;
+}
+
+#u2194
+{
+	font-size: 8px;
+	letter-spacing: 2px;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+
+#u2194-4
+{
+	letter-spacing: 1px;
+}
+
+#u2189_align_to_page,#u2193,#u2371,#u2202
+{
+	position: relative;
+}
+
