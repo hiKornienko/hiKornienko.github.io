@@ -1,5 +1,6 @@
-const products = document.querySelectorAll(".js-product27")//add php id
-let productsArr = [];
+const phpId = 27;//add php id
+const products = document.querySelectorAll(".js-product"+ phpId)
+var productsArr = [];
 
 for (const product of products) {
   product.addEventListener('click', function(event) {
@@ -12,10 +13,6 @@ for (const product of products) {
     }
     //add
     productsArr.push(this.id);
-    //Alert
-    if (productsArr.length == 1) {
-      alert('уведомление')
-    }
     //del > 3
     if (productsArr.length > 3) {
       document.getElementById(productsArr.shift()).classList.remove("selected");
@@ -30,6 +27,7 @@ for (const product of products) {
 function productsDraw() {
   for (i = 0; i < productsArr.length; i++) {
     document.getElementById(productsArr[i]).classList.add("selected");
+    console.log(productsArr);
   }
 }
 function productsAddForm() {
