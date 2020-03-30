@@ -4,6 +4,7 @@
   color:#2785e3;
   font-family: monospace;
   font-size: 14px;
+  line-height: 18px;
 }
 .htop__line{
   display: flex;
