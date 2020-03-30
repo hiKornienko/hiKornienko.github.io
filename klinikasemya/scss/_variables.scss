@@ -2,7 +2,7 @@
 // variables.scss
 //
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500|Rubik:400,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500|Rubik:400,500,700,900&display=swap');
 
 // Color variables
 $white:                     #ffffff;
@@ -23,12 +23,12 @@ $gray-200:                  #e9ecef;
 $gray-300:                  #dee2e6;
 $gray-400:                  #ced4da;
 $gray-500:                  #adb5bd;
-$gray-600:                  #6c757d; 
+$gray-600:                  #6c757d;
 $gray-700:                  #495057;
 //Custom
 $custom:                    #32cfaa;
 //Overlay
-$overlay:                   rgba(35, 37, 47, 0.7);
+$overlay:                   rgba(35, 37, 47, 0.4);
 // Body Background
 $body-color:                #535353;
 $shadow:                    0 .5rem 1rem rgba(0,0,0,.15);

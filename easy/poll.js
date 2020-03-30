@@ -2,10 +2,13 @@ const products = document.querySelectorAll(".js-products")
 
 for (const product of products) {
   product.addEventListener('click', function(event) {
+    if(productParent(event.target) === undefined){
+      return
+    }
     //close selected
-    if(productParent(event.path).classList.contains('selected')){
+    if(productParent(event.target).classList.contains('selected')){
       arr = product.dataset.productValue.split(',');
-      arr.splice(arr.indexOf(productParent(event.path).dataset.productId), 1);
+      arr.splice(arr.indexOf(productParent(event.target).dataset.productId), 1);
       product.dataset.productValue = arr.join(',');
       productsDraw(this,arr);
       productsAddForm(this);
@@ -14,9 +17,9 @@ for (const product of products) {
 
     //create arr
     if (product.dataset.productValue === '') {
-      product.dataset.productValue = productParent(event.path).dataset.productId;
+      product.dataset.productValue = productParent(event.target).dataset.productId;
     } else {
-      product.dataset.productValue += ',' + productParent(event.path).dataset.productId;
+      product.dataset.productValue += ',' + productParent(event.target).dataset.productId;
     }
     arr = product.dataset.productValue.split(',');
     //del > 3
@@ -32,13 +35,16 @@ for (const product of products) {
 }
 
 function productParent(path) {
-  for (i = 0; i < path.length; i++) {
-    if (path[i].dataset.productId) {
-      return path[i];
-    }
-    if (path[i].classList.contains("js-products")) {
-      return
-    }
+  if(path.parentNode.dataset.productId){
+     return path.parentNode;
+  }else if(path.parentNode.parentNode.dataset.productId){
+     return path.parentNode.parentNode;
+  }else if(path.parentNode.parentNode.parentNode.dataset.productId){
+     return path.parentNode.parentNode.parentNode;
+  }else if(path.parentNode.parentNode.parentNode.parentNode.dataset.productId){
+     return path.parentNode.parentNode.parentNode.parentNode;
+  }else{
+     return undefined;
   }
 }
 function productsDraw(doc,arr) {

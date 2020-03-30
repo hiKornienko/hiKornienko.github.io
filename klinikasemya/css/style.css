@@ -26,7 +26,7 @@
  *        16.  Contact           *
  *        17.  Footer            *
  ================================*/
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500|Rubik:400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500|Rubik:400,500,700,900&display=swap");
 h1 {
   font-size: 42px; }
 
@@ -187,7 +187,7 @@ p {
   position: relative; }
 
 .bg-overlay {
-  background-color: rgba(35, 37, 47, 0.7);
+  background-color: rgba(35, 37, 47, 0.4);
   position: absolute;
   top: 0;
   right: 0;
@@ -210,8 +210,8 @@ p {
   margin-bottom: 40px; }
   .section-title .title {
     letter-spacing: 0.5px;
-    font-size: 24px;
-    font-weight: 500; }
+    font-size: 26px;
+    font-weight: 600; }
 
 .para-desc {
   max-width: 700px; }
