@@ -1,0 +1,21 @@
+.home {
+  max-width: $page-width;
+  padding: $page-padding;
+  margin: 0 auto;
+  position: relative;
+
+  &__item {
+    &--bg{
+      width:100%;
+      min-height:200px;
+      background-size: cover;
+      background-position: center;
+    }
+    &--hero{
+      width:100%;
+      min-height:200px;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
