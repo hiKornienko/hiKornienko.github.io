@@ -45,11 +45,11 @@
       text-decoration: none;
       text-transform: uppercase;
       &:hover{
-        border-bottom: 2px solid #f9dd1f;
+        border-bottom: 2px solid $color-theme;
       }
     }
     & .active{
-      border-bottom: 2px solid #f9dd1f;
+      border-bottom: 2px solid $color-theme;
     }
   }
 }
@@ -76,7 +76,7 @@
   flex-wrap: wrap;
   margin: 0 -5px;
   &__item{
-    border:1px solid #f9dd1f;
+    border:1px solid $color-theme;
     border-radius: 4px;
     position: relative;
 
@@ -98,7 +98,7 @@
       align-items: center;
       & span{
         margin:0 auto;
-        color:#fde01e;
+        color:$color-theme;
         background: #000;
         font-size: 1rem;
         line-height: 1.1rem;
