@@ -753,6 +753,22 @@ body {
     position: relative;
     -webkit-box-shadow: 0 0 100px -30px rgba(255, 255, 255, 0.5);
     box-shadow: 0 0 100px -30px rgba(255, 255, 255, 0.5); }
+    .video__player .time {
+      background: #fee11e;
+      position: absolute;
+      z-index: 2;
+      top: 70%;
+      left: calc(50% - (160px / 2));
+      width: 160px;
+      text-align: center;
+      color: #000;
+      font-weight: 400;
+      font-size: 0.8rem;
+      padding: 0.2rem 0.5rem;
+      cursor: pointer; }
+      .video__player .time span {
+        font-weight: 400;
+        font-size: 0.8rem; }
     .video__player video {
       display: block;
       width: 100%;
@@ -862,6 +878,13 @@ body {
   -o-filter: none !important;
   filter: none !important;
   filter: none !important; }
+
+@media (min-width: 568px) {
+  .plyr--playing .time {
+    display: none; } }
+
+.plyr--playing .time {
+  display: none; }
 
 [data-plyr='pip'] {
   display: none !important; }
