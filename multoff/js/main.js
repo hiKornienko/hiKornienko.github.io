@@ -16,3 +16,8 @@ $('.owl-carousel').owlCarousel({
     autoplaySpeed:1000,
     navSpeed:1000,
 })
+
+//*** video ***//
+import Plyr from 'plyr';
+
+const player = new Plyr('#player');
