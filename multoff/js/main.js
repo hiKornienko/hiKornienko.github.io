@@ -8,19 +8,4 @@ $('.owl-carousel').owlCarousel({
     autoplayTimeout:7000,
     autoplaySpeed:1000,
     navSpeed:1000,
-    responsive:{
-        0:{
-            items:1,
-            autoplay:false,
-            autoplayHoverPause:false,
-        },
-        600:{
-            items:2,
-            autoplay:false,
-            autoplayHoverPause:false,
-        },
-        1000:{
-            items:1
-        }
-    }
 })
