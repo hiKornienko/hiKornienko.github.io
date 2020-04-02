@@ -769,14 +769,14 @@ body {
       filter: gray; }
     .video__player:before {
       content: '';
-      background: url("/img/player-line.png");
+      background: url("../img/player-line.png");
       width: 100%;
       height: 12px;
       position: absolute;
       top: -12px; }
     .video__player:after {
       content: '';
-      background: url("/img/player-line.png");
+      background: url("../img/player-line.png");
       width: 100%;
       height: 12px;
       position: absolute;
