@@ -1,3 +1,10 @@
+if($(window).width() >= 1024){
+  $('.js-home').addClass(('owl-carousel'));
+}else{
+  $('.js-home').removeClass(('owl-carousel'));
+};
+
+
 $('.owl-carousel').owlCarousel({
     items:1,
     loop:true,
