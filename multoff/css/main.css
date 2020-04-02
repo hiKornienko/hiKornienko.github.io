@@ -625,7 +625,9 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto; }
   .category__sitebar {
     min-width: 240px;
     margin-right: 1.2rem;
