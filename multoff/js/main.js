@@ -18,6 +18,3 @@ $('.owl-carousel').owlCarousel({
 })
 
 //*** video ***//
-import Plyr from 'plyr';
-
-const player = new Plyr('#player');
