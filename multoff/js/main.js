@@ -10,10 +10,14 @@ $('.owl-carousel').owlCarousel({
     navSpeed:1000,
     responsive:{
         0:{
-            items:1
+            items:1,
+            autoplay:false,
+            autoplayHoverPause:false,
         },
         600:{
-            items:2
+            items:2,
+            autoplay:false,
+            autoplayHoverPause:false,
         },
         1000:{
             items:1
