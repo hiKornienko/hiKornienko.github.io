@@ -198,7 +198,7 @@ h2 {
     z-index: 3; }
   .one:before {
     content: '';
-    background: url("/img/cirlce.svg") no-repeat;
+    background: url("../img/cirlce.svg") no-repeat;
     background-size: contain;
     width: 30px;
     height: 30px;
@@ -208,7 +208,7 @@ h2 {
     bottom: 1rem; }
   .one:after {
     content: '';
-    background: url("/img/cirlce.svg") no-repeat;
+    background: url("../img/cirlce.svg") no-repeat;
     background-size: contain;
     width: 30px;
     height: 30px;
@@ -263,7 +263,7 @@ h2 {
     z-index: 3; }
   .three:before {
     content: '';
-    background: url("/img/cirlce.svg") no-repeat;
+    background: url("../img/cirlce.svg") no-repeat;
     background-size: contain;
     width: 30px;
     height: 30px;
@@ -273,7 +273,7 @@ h2 {
     left: 35%; }
   .three:after {
     content: '';
-    background: url("/img/cirlce.svg") no-repeat;
+    background: url("../img/cirlce.svg") no-repeat;
     background-size: contain;
     width: 30px;
     height: 30px;
@@ -317,7 +317,7 @@ h2 {
     z-index: 3; }
   .four:before {
     content: '';
-    background: url("/img/cirlce.svg") no-repeat;
+    background: url("../img/cirlce.svg") no-repeat;
     background-size: contain;
     width: 30px;
     height: 30px;
@@ -327,7 +327,7 @@ h2 {
     top: 20%; }
   .four:after {
     content: '';
-    background: url("/img/cirlce.svg") no-repeat;
+    background: url("../img/cirlce.svg") no-repeat;
     background-size: contain;
     width: 30px;
     height: 30px;
@@ -366,7 +366,7 @@ h2 {
     z-index: 3; }
   .five:before {
     content: '';
-    background: url("/img/cirlce.svg") no-repeat;
+    background: url("../img/cirlce.svg") no-repeat;
     background-size: contain;
     width: 30px;
     height: 30px;
@@ -376,7 +376,7 @@ h2 {
     left: 40%; }
   .five:after {
     content: '';
-    background: url("/img/cirlce.svg") no-repeat;
+    background: url("../img/cirlce.svg") no-repeat;
     background-size: contain;
     width: 30px;
     height: 30px;
@@ -426,7 +426,7 @@ h2 {
       padding-bottom: 1rem; }
   .six:before {
     content: '';
-    background: url("/img/cirlce.svg") no-repeat;
+    background: url("../img/cirlce.svg") no-repeat;
     background-size: contain;
     width: 30px;
     height: 30px;
