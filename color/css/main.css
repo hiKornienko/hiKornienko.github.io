@@ -496,7 +496,7 @@ h2 {
       padding-top: 0; }
       .footer__follow--title:before {
         content: '';
-        background: url("/img/arrow.png") no-repeat;
+        background: url("../img/arrow.png") no-repeat;
         height: 16px;
         width: 50px;
         background-position: right;
