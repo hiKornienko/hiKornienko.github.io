@@ -437,10 +437,7 @@ h2 {
 
 @media (min-width: 1024px) {
   .six {
-    padding: 20px 0;
-    background: url("/img/footer.png") no-repeat;
-    background-size: cover;
-    background-position: center; }
+    padding: 20px 0; }
     .six__img {
       display: block;
       padding-top: 200px;
