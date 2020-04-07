@@ -49,12 +49,12 @@ h2 {
     line-height: 58px; } }
 
 .header {
-  background: url("/img/bg.png") no-repeat;
+  background: url("../img/bg.png") no-repeat;
   background-size: cover;
   background-position: bottom;
   padding: 1rem 0 30px; }
   .header__logo {
-    background: url("/img/logo.png") no-repeat;
+    background: url("../img/logo.png") no-repeat;
     background-size: contain;
     background-position: center;
     width: 100%;
@@ -413,7 +413,7 @@ h2 {
 
 .six {
   padding: 20px 0;
-  background: url("/img/footer.png") no-repeat;
+  background: url("../img/footer.png") no-repeat;
   background-size: cover;
   background-position: center;
   position: relative; }
