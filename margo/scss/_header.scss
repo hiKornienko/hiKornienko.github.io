@@ -1,0 +1,23 @@
+.header{
+  padding-top:$menu-height-mob;
+  background: #e4e6e9;
+  position: relative;
+  &:before{
+
+  }
+  &__wrap{
+     & h1{
+       color:#1e2833;
+       font-weight: 400;
+       font-size: 1.5rem;
+       line-height: 2rem;
+       text-align: center;
+     }
+     &--img{
+       position: relative;
+       & img{
+         width:100%;
+       }
+     }
+  }
+}

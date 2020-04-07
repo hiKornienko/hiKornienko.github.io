@@ -1,0 +1,45 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 13px;
+}
+@media (min-width: 400px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (min-width: 900px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+body{
+  font-family:$body-font-family;
+  color:$color;
+  text-align: center;
+}
+h1,h2,h3{
+  font-family:$h1-font-family;
+  color:$color;
+  font-weight: normal;
+}
+h2{
+  padding:2rem 0;
+  font-size: 2rem;
+  position: relative;
+  z-index: 3;
+}
+@media (min-width: 1024px) {
+  body{
+    text-align: inherit;
+  }
+  h2{
+    font-size: 48px;
+    line-height: 58px;
+  }
+}

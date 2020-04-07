@@ -60,9 +60,11 @@
 .ads{
   display: none;
   margin-top:3rem;
+  /*margin-top:0.3rem;*/
   width: 100%;
+  max-width: 240px;
+  overflow: hidden;
   height: 240px;
-  background: #ccc;
 }
 @media (min-width:1024px) {
   .ads{
@@ -72,6 +74,11 @@
 /*** / ads ***/
 
 /*** season ***/
+#dle-content{
+  display:flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
 .season{
   display:flex;
   flex-wrap: wrap;
@@ -105,6 +112,7 @@
         line-height: 1.1rem;
         font-weight: 600;
         padding:0 0.5rem;
+        text-align: center;
       }
     }
   }

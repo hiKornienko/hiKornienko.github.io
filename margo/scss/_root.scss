@@ -1,0 +1,32 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 13px;
+}
+@media (min-width: 400px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (min-width: 900px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+body{
+  font-family: $font;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+.container{
+  width: 100%;
+  max-width: $page-width;
+  padding: $page-padding;
+  margin:0 auto;
+}

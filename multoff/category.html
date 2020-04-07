@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/preloader.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link rel="stylesheet" href="css/owl.theme.default.css">
@@ -12,6 +13,16 @@
 </head>
 
 <body>
+  <!-- preloader -->
+  <div class="preloader">
+    <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <path fill="currentColor"
+        d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+      </path>
+    </svg>
+  </div>
+  <!-- / preloader -->
+
   <!-- header -->
   <header class="header">
     <div class="header__back">
@@ -27,11 +38,11 @@
   <div class="category">
     <div class="category__sitebar">
       <nav>
-        <ul class="nav">
-          <li><a href="#">Сезоны</a></li>
+        <ul class="nav js-nav">
+          <!--<li><a href="#">Сезоны</a></li>
           <li><a href="#" class="active">Симпсоны в кино</a></li>
           <li><a href="#">Персонажи</a></li>
-          <li><a href="#">Комиксы</a></li>
+          <li><a href="#">Комиксы</a></li>-->
         </ul>
       </nav>
       <div class="ads">
@@ -39,7 +50,7 @@
       </div>
     </div>
     <div class="category__content">
-      <div class="season">
+      <div class="season js-season">
         <div class="season__item">
           <a href="#">
             <img src="img/sezon.png" alt="sezon">
@@ -213,6 +224,10 @@
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/main.js"></script>
+  	<script>var $category_id ="9";var $category_arr ={"1":{"id":"1","parentid":"0","posi":"1","name":"\u041e \u0441\u043a\u0440\u0438\u043f\u0442\u0435","alt_name":"o-skripte","icon":"","skin":"","descr":"","keywords":"","news_sort":"","news_msort":"","news_number":"0","short_tpl":"","full_tpl":"","metatitle":"","show_sub":"0","allow_rss":"1","fulldescr":"","disable_search":"0","disable_main":"0","disable_rating":"0","disable_comments":"0","enable_dzen":"1","enable_turbo":"1","active":"1","newscount":"3"},"2":{"id":"2","parentid":"0","posi":"2","name":"\u0412 \u043c\u0438\u0440\u0435","alt_name":"v-mire","icon":"","skin":"","descr":"","keywords":"","news_sort":"","news_msort":"","news_number":"0","short_tpl":"","full_tpl":"","metatitle":"","show_sub":"0","allow_rss":"1","fulldescr":"","disable_search":"0","disable_main":"0","disable_rating":"0","disable_comments":"0","enable_dzen":"1","enable_turbo":"1","active":"1","newscount":0},"3":{"id":"3","parentid":"0","posi":"3","name":"\u042d\u043a\u043e\u043d\u043e\u043c\u0438\u043a\u0430","alt_name":"ekonomika","icon":"","skin":"","descr":"","keywords":"","news_sort":"","news_msort":"","news_number":"0","short_tpl":"","full_tpl":"","metatitle":"","show_sub":"0","allow_rss":"1","fulldescr":"","disable_search":"0","disable_main":"0","disable_rating":"0","disable_comments":"0","enable_dzen":"1","enable_turbo":"1","active":"1","newscount":0},"4":{"id":"4","parentid":"0","posi":"4","name":"\u0420\u0435\u043b\u0438\u0433\u0438\u044f","alt_name":"religiya","icon":"","skin":"","descr":"","keywords":"","news_sort":"","news_msort":"","news_number":"0","short_tpl":"","full_tpl":"","metatitle":"","show_sub":"0","allow_rss":"1","fulldescr":"","disable_search":"0","disable_main":"0","disable_rating":"0","disable_comments":"0","enable_dzen":"1","enable_turbo":"1","active":"1","newscount":0},"5":{"id":"5","parentid":"0","posi":"5","name":"\u041a\u0440\u0438\u043c\u0438\u043d\u0430\u043b","alt_name":"kriminal","icon":"","skin":"","descr":"","keywords":"","news_sort":"","news_msort":"","news_number":"0","short_tpl":"","full_tpl":"","metatitle":"","show_sub":"0","allow_rss":"1","fulldescr":"","disable_search":"0","disable_main":"0","disable_rating":"0","disable_comments":"0","enable_dzen":"1","enable_turbo":"1","active":"1","newscount":0},"6":{"id":"6","parentid":"0","posi":"6","name":"\u0421\u043f\u043e\u0440\u0442","alt_name":"sport","icon":"","skin":"","descr":"","keywords":"","news_sort":"","news_msort":"","news_number":"0","short_tpl":"","full_tpl":"","metatitle":"","show_sub":"0","allow_rss":"1","fulldescr":"","disable_search":"0","disable_main":"0","disable_rating":"0","disable_comments":"0","enable_dzen":"1","enable_turbo":"1","active":"1","newscount":0},"7":{"id":"7","parentid":"0","posi":"7","name":"\u041a\u0443\u043b\u044c\u0442\u0443\u0440\u0430","alt_name":"kultura","icon":"","skin":"","descr":"","keywords":"","news_sort":"","news_msort":"","news_number":"0","short_tpl":"","full_tpl":"","metatitle":"","show_sub":"0","allow_rss":"1","fulldescr":"","disable_search":"0","disable_main":"0","disable_rating":"0","disable_comments":"0","enable_dzen":"1","enable_turbo":"1","active":"1","newscount":0},"8":{"id":"8","parentid":"0","posi":"8","name":"\u0418\u043d\u043e\u043f\u0440\u0435\u0441\u0441\u0430","alt_name":"inopressa","icon":"","skin":"","descr":"","keywords":"","news_sort":"","news_msort":"","news_number":"0","short_tpl":"","full_tpl":"","metatitle":"","show_sub":"0","allow_rss":"1","fulldescr":"","disable_search":"0","disable_main":"0","disable_rating":"0","disable_comments":"0","enable_dzen":"1","enable_turbo":"1","active":"1","newscount":0},"9":{"id":"9","parentid":"0","posi":"9","name":"\u0421\u0438\u043c\u043f\u0441\u043e\u043d\u044b","alt_name":"simpsons","icon":"http:\/\/dle\/uploads\/boxsmall.jpg","skin":"","descr":"descr simpsons","keywords":"key simpsons","news_sort":"","news_msort":"","news_number":"0","short_tpl":"","full_tpl":"","metatitle":"title simpsons","show_sub":"0","allow_rss":"1","fulldescr":"","disable_search":"0","disable_main":"0","disable_rating":"0","disable_comments":"0","enable_dzen":"0","enable_turbo":"0","active":"1","newscount":"2"},"12":{"id":"12","parentid":"9","posi":"10","name":"\u0421\u0435\u0437\u043e\u043d\u044b","alt_name":"sezony","icon":"","skin":"","descr":"","keywords":"","news_sort":"","news_msort":"","news_number":"0","short_tpl":"","full_tpl":"","metatitle":"","show_sub":"0","allow_rss":"1","fulldescr":"","disable_search":"0","disable_main":"0","disable_rating":"0","disable_comments":"0","enable_dzen":"1","enable_turbo":"1","active":"1","newscount":"2"},"10":{"id":"10","parentid":"12","posi":"11","name":"\u0441\u0435\u0437\u043e\u043d 1","alt_name":"sezon1","icon":"","skin":"","descr":"sezon1 descr simpsons","keywords":"sezon1 simpsons","news_sort":"","news_msort":"","news_number":"0","short_tpl":"","full_tpl":"","metatitle":"sezon1 simpsons","show_sub":"0","allow_rss":"1","fulldescr":"","disable_search":"0","disable_main":"0","disable_rating":"0","disable_comments":"0","enable_dzen":"0","enable_turbo":"0","active":"1","newscount":"2"},"11":{"id":"11","parentid":"12","posi":"12","name":"\u0441\u0435\u0437\u043e\u043d 2","alt_name":"sezon-1","icon":"http:\/\/dle\/uploads\/vidio.png","skin":"","descr":"","keywords":"","news_sort":"","news_msort":"","news_number":"0","short_tpl":"","full_tpl":"","metatitle":"","show_sub":"2","allow_rss":"1","fulldescr":"","disable_search":"0","disable_main":"0","disable_rating":"0","disable_comments":"0","enable_dzen":"1","enable_turbo":"1","active":"1","newscount":0},"13":{"id":"13","parentid":"9","posi":"13","name":"\u041f\u0435\u0440\u0441\u043e\u043d\u0430\u0436\u0438","alt_name":"personazhi","icon":"","skin":"","descr":"","keywords":"","news_sort":"","news_msort":"","news_number":"0","short_tpl":"","full_tpl":"","metatitle":"","show_sub":"0","allow_rss":"1","fulldescr":"","disable_search":"0","disable_main":"0","disable_rating":"0","disable_comments":"0","enable_dzen":"1","enable_turbo":"1","active":"1","newscount":0}};</script>
+
+  <script src="js/nav.js"></script>
+  <script src="js/preloader.js"></script>
 </body>
 
 </html>

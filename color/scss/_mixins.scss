@@ -1,0 +1,9 @@
+@mixin circle {
+  content: '';
+  background: url('/img/cirlce.svg') no-repeat;
+  background-size: contain;
+  width:30px;
+  height:30px;
+  position: absolute;
+  z-index: 1;
+}

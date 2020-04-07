@@ -1,0 +1,172 @@
+.header{
+    background: url('/img/bg.png') no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    padding:1rem 0 30px;
+  &__logo{
+    background: url('/img/logo.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    width:100%;
+    min-height:$header-height;
+  }
+  &__social{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    & a{
+      color:$color;
+      font-size: 1.4rem;
+      padding:0.5rem;
+    }
+  }
+  &__lang{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    & a{
+      color:$color;
+      font-size: 1.4rem;
+      padding:0.5rem;
+    }
+    & .active{
+      text-decoration: underline;
+    }
+  }
+  &__title{
+    & h1{
+      padding:1rem 0 0.5rem;
+      font-size: 2rem;
+      & span{
+        display:block;
+        font-size: 1.6rem;
+      }
+    }
+  }
+  &__desc{
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+  }
+  &__store{
+    text-align: center;
+    & a{
+      display: inline-block;
+      padding-bottom: 1rem;
+    }
+  }
+  &__img{
+    & img{
+      width:100%;
+    }
+  }
+  &__block{
+    background: rgba(251, 253, 255, 0.4);
+    box-shadow: -3px -3px 8px rgba(255, 255, 255, 0.25), 3px 3px 8px rgba(55, 84, 170, 0.1), inset 4px 4px 20px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 20px;
+    text-align: center;
+    padding:2rem;
+    margin-bottom: 2rem;
+    & span{
+      display: block;
+      font-family:$h1-font-family;
+      font-size: 2.5rem;
+    }
+    & p{
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .header{
+    padding:2rem 0 150px;
+    &__logo{
+      background-position: left;
+    }
+    &__social{
+      justify-content: center;
+      min-height:$header-height;
+      & a{
+        padding:0 2rem;
+      }
+    }
+    &__lang{
+      justify-content: flex-end;
+      min-height:$header-height;
+      & a{
+        padding:1rem;
+      }
+    }
+    &__title{
+      & h1{
+        padding:75px 0 0.5rem;
+        font-size: 64px;
+        line-height: 77px;
+        & span{
+          font-size: 48px;
+          line-height: 58px;
+        }
+      }
+    }
+    &__desc{
+      max-width: 480px;
+      font-size: 36px;
+      line-height: 150%;
+      padding-bottom: 5rem;
+      text-align: justify;
+    }
+    &__store{
+      text-align: left;
+      padding-bottom: 110px;
+      & a:first-child{
+        padding-right: 40px;
+      }
+    }
+    &__img{
+      padding:75px 0 0.5rem;
+      & img{
+        width:100%;
+      }
+    }
+    &__block{
+      height: 100%;
+      & span{
+        font-size: 48px;
+        line-height: 58px;
+      }
+      & p{
+        font-size: 36px;
+        line-height: 150%;
+      }
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .header{
+    &__img{
+      & img{
+        position: absolute;
+        right: -100px;
+        width: 120%;
+      }
+    }
+  }
+  .header__block--wrap{
+    margin-left: -110px;
+    margin-right: -110px;
+  }
+}
+@media (min-width: 1600px) {
+  .header{
+    &__img{
+      & img{
+        position: absolute;
+        top:-25px;
+        right: -200px;
+        width: 140%;
+      }
+    }
+  }
+}
