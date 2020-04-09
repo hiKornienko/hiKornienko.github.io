@@ -22,6 +22,7 @@ body{
   font-family: $font;
   font-size: 1rem;
   line-height: 1.2rem;
+  color:$color;
 }
 
 .container{
@@ -29,4 +30,8 @@ body{
   max-width: $page-width;
   padding: $page-padding;
   margin:0 auto;
+}
+
+h1,h2,h3{
+  color:$color;
 }

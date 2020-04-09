@@ -1,7 +1,8 @@
 .header{
     background: url('../img/bg.png') no-repeat;
-    background-size: cover;
-    background-position: bottom;
+    //background-size: cover;
+    //background-position: bottom;
+    background-position: top;
     padding:1rem 0 30px;
   &__logo{
     background: url('../img/logo.png') no-repeat;
@@ -132,6 +133,7 @@
     }
     &__block{
       height: 100%;
+      margin-bottom: 0;
       & span{
         font-size: 48px;
         line-height: 58px;

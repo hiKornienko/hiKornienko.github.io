@@ -1,23 +1,13 @@
 .header{
-  padding-top:$menu-height-mob;
-  background: #e4e6e9;
-  position: relative;
-  &:before{
-
-  }
-  &__wrap{
-     & h1{
-       color:#1e2833;
-       font-weight: 400;
-       font-size: 1.5rem;
-       line-height: 2rem;
-       text-align: center;
-     }
-     &--img{
-       position: relative;
-       & img{
-         width:100%;
-       }
-     }
+  background: #fff;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.10);
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:$menu-height;
   }
 }

@@ -1,0 +1,123 @@
+.two{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  &__title{
+    text-align: center;
+    padding:2rem 0;
+
+    & h2{
+      font-size: 1.4rem;
+      background: #fff;
+    }
+  }
+
+  &__desc{
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    padding-bottom: 2rem;
+  }
+
+  &__row{
+    display: flex;
+    flex-wrap: wrap;
+
+    &--item{
+      padding: 1rem 0 2rem;
+      display: flex;
+      align-items: center;
+
+      & img{
+        width:26%;
+        padding-right: 1rem;
+      }
+
+      & span{
+        width:74%;
+        color: #6f787e;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+
+}
+
+@media (min-width: 568px) {
+  .two{
+
+    &__wrap{
+      width:88%;
+      margin:0 auto;
+      padding:1rem 1.4rem;
+      border:1px solid $button-bg;
+    }
+
+    &__title{
+      text-align: left;
+      margin-top: -3.7rem;
+
+      & h2{
+        display: inline;
+        padding: 0 0.8rem;
+        margin-left: -0.8rem;
+      }
+    }
+
+    &__desc{
+      text-align: left;
+    }
+
+    &__row{
+      justify-content: center;
+
+      &--item{
+        padding: 1rem;
+        width:50%;
+        display: block;
+        text-align: center;
+        & img{
+          width:40%;
+          margin: 0 auto;
+          padding-right: 0;
+          padding-bottom: 1rem;
+          display: block;
+        }
+
+        & span{
+          width:100%;
+        }
+      }
+    }
+
+  }
+}
+
+@media (min-width: 768px) {
+  .two{
+
+    &__row{
+
+      &--item{
+        width:33.3%;
+      }
+
+    }
+
+  }
+}
+
+@media (min-width: 1024px) {
+  .two{
+
+    &__row{
+
+      &--item{
+        width:20%;
+      }
+
+    }
+
+  }
+}

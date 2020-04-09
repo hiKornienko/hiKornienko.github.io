@@ -1,0 +1,51 @@
+.button{
+  position: relative;
+  display:inline-block;
+  outline:0;
+  overflow: hidden;
+  text-align: center;
+  cursor:pointer;
+
+  text-transform: uppercase;
+  color:$button-color;
+
+  border:0;
+  background: $button-bg-hover;
+  padding:0.7rem 2rem;
+
+  & span{
+    position: relative;
+    z-index: 2;
+  }
+
+  &:before{
+    content:'';
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:50%;
+    background: $button-bg;
+    transition:1s;
+  }
+
+  &:after{
+    content:'';
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:50%;
+    right:0;
+    background: $button-bg;
+    transition:1s;
+  }
+
+  &:hover{
+    &:before{
+      right:100%;
+    }
+    &:after{
+      left:100%;
+    }
+  }
+}

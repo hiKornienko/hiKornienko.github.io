@@ -1,8 +1,20 @@
 $font:'Verdana',Arial,sans-serif;
 $font2: Georgia,sans-serif;
+
+/* root */
+$color:#1e2833;;
+
+/* container */
 $page-width:1200px;
 $page-padding: 0 1rem;
-$menu-height-mob:50px;
+
+/* menu */
 $menu-height:70px;
-$backgroun-btn:#d3b67c;
-$backgroun-btn-hover:#b89d64;
+
+/* button*/
+$button-color:#fff;
+$button-bg:#d3b67c;
+$button-bg-hover:#818f5c;
+
+/* h1- h3*/
+$h2-size:1.4rem;

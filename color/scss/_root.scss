@@ -6,6 +6,7 @@
 
 html {
   font-size: 13px;
+  overflow-x: hidden;
 }
 @media (min-width: 400px) {
   html {
@@ -22,6 +23,7 @@ body{
   font-family:$body-font-family;
   color:$color;
   text-align: center;
+  overflow-x: hidden;
 }
 h1,h2,h3{
   font-family:$h1-font-family;
