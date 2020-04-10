@@ -2272,9 +2272,9 @@ footer {
     padding: 50px 60px 0px 60px;
   }
   .two__title{
-    font-size: 26px;
-    line-height: 32px;
-    font-family: MuseoSansCyrl500, sans-serif;
+    font-size: 34px;
+    line-height: 38px;
+    margin-bottom: 30px;
   }
   .two__row--item img{
     width:125px;
