@@ -41,7 +41,8 @@
     &__img{
       position: absolute;
       top: 0;
-      left: 0;
+      left: -10%!important;
+      width:100%;
     }
   }
 }

@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 
     // Маска для телефона
-    $("#form-phone1, #form-phone2, #form-phone3, #form-phone5").mask("+38 (099) 999-99-99"); 
+    $("#form-phone1, #form-phone2, #form-phone3, #form-phone5").mask("+38 (099) 999-99-99");
 
      // открыть окно call me
     $('.call_me_win_open').click(function () {
@@ -19,7 +19,7 @@ $(document).ready(function () {
         $('#registr_win_mob, .bg_body').fadeIn();
         $('body').addClass('overflow-hidden');
     });
-    
+
     // открыть окно главное окно
     $('.open_win_questionnaire, .open_win, .tc_flex .send_butt, .butt_mob .send_butt, #open_win').click(function () {
         $('#main_win, .bg_body').fadeIn();
@@ -30,7 +30,7 @@ $(document).ready(function () {
         $('#main_win, .mmenu, #registr_win_mob, #call_me, .bg_body').fadeOut();
         $('body').removeClass('overflow-hidden');
     });
-   
+
     // скролл вверх
     $(function() {
         $(window).scroll(function() {
@@ -59,7 +59,7 @@ $(document).ready(function () {
 
     // скрыть кнопку обратной связи
     $(window).scroll(function(){
-        if ( ($(this).scrollTop()) <= $(".section_1").offset().top ) {
+        if ( ($(this).scrollTop()) <= $(".js-one").offset().top ) {
             $('.up_back, .call_me_win_open').removeClass('active__up') ;
         }
     });
@@ -77,7 +77,7 @@ $(document).ready(function () {
                 $('.mmenu, .bg_body').fadeOut();
                 $('body').removeClass('overflow-hidden');
             });
-        }   
+        }
     });
     // плавный скролл
     $('.mmenu a, .descr_h1 .send_butt a').on('click',
@@ -88,7 +88,7 @@ $(document).ready(function () {
           }
           return false;
       }
-    ); 
+    );
 
      // выносим главное меню с плашки
     $(function() {
@@ -111,7 +111,7 @@ $(document).ready(function () {
             }
         }).resize()
     });
-    
+
     // -------------------------------------- аккардеон
     $(".openHidd_info").on("click", function(event){
         event.preventDefault();
@@ -129,7 +129,7 @@ $(document).ready(function () {
         }
     });
 
-    
+
     $('.slider_keys').slick({
       centerMode: true,
       slidesToShow: 3,
@@ -162,7 +162,7 @@ $(document).ready(function () {
           }
         }
       ]
-        
+
     });
     $('.slider_foto').slick({
         dots: false,

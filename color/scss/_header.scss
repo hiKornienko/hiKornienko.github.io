@@ -5,7 +5,7 @@
     background-position: top;
     padding:1rem 0 30px;
   &__logo{
-    background: url('../img/logo.png') no-repeat;
+    background: url('../img/logo.svg') no-repeat;
     background-size: contain;
     background-position: center;
     width:100%;
@@ -172,3 +172,14 @@
     }
   }
 }
+
+
+/*** page ***/
+.page{
+  background: none;
+  &__block{
+    padding: 50px 0;
+    text-align: left;
+  }
+}
+/*** / page ***/

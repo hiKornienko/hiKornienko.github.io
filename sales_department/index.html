@@ -125,17 +125,17 @@
 	</header>
 
  <!-- section -->
- <div class="one">
+ <div class="one js-one">
  	<div class="container">
  		<div class="one__wrap">
  			<div class="one__title">
- 				<h1>УДАЛЕННЫЙ ОТДЕЛ ПРОДАЖ</h1>
-				<p>Возьмем на себя <span>найм и контроль удаленного отдела продаж</span><br> от 1 менеджера и создадим систему кратного роста продаж <br><span>с гарантией результат</span></p>
+ 				<h1><span>УДАЛЕННЫЙ ОТДЕЛ</span> <span>ПРОДАЖ</span></h1>
+				<p>Возьмем на себя <span>найм и контроль удаленного отдела продаж</span><span class="br"></span> от 1 менеджера и создадим<span class="no-br"></span> систему кратного роста продаж <br><span>с гарантией результата</span></p>
  			</div>
 			<div class="one__form">
         <div class="one__form--desc">
 					<img src="images/calendar.png" alt="calendar">
-        	<p>Получите календарный план построения удаленного <br>отдела продаж <span>на бесплатной</span> Skype-консультации</p>
+        	<p>Получите календарный план построения удаленного <span class="br"></span>отдела продаж <span>на бесплатной</span> Skype-консультации</p>
         </div>
 				<form action="email.php" method="POST">
 					<input type="hidden" name="project_name" value="Слон Инвест">
@@ -144,7 +144,7 @@
 
 					<input type="text" name="Имя" pattern="^[A-Za-zА-Яа-яЁё]+$" placeholder="*Ваше имя" required="">
 					<input type="text" name="Телефон" minlength="9" placeholder="*Ваш телефон" id="form-phone3" required="">
-					<button type="submit"><span>Записатся бесплатно</span></button>
+					<button type="submit"><span>Записаться бесплатно</span></button>
 	    	</form>
 			</div>
  		</div>
@@ -222,7 +222,28 @@
 				<div class="eventually_sect_2">
 					<div class="eventually_inner_cont">
 						<div class="eventually_h2">Результат:</div>
-						<p>Нанят отдел продаж в составе <b>1-4 менеджеров</b>. Разработана вся <b>необходимая документация</b> для найма, обучения и корректировки сотрудников. Контакты обработаны по этапам продаж <b>с соблюдением стандартов</b>, необходимых для закрытия сделки. Процесс продаж проходит <b>без участия собственника</b>. Сформирован прогнозируемый рост продаж.</p>
+						<ul class="result">
+							<li>
+								<div class="result__icon">1</div>
+								<div class="result__text">Нанят отдел продаж в составе <span>1-4 менеджеров</span>.</div>
+							</li>
+							<li>
+								<div class="result__icon">2</div>
+								<div class="result__text">Разработана вся <span>необходимая документация</span> для найма, обучения и корректировки сотрудников.</div>
+							</li>
+							<li>
+                <div class="result__icon">3</div>
+								<div class="result__text">Контакты обработаны по этапам продаж <span>с соблюдением стандартов</span>, необходимых для закрытия сделки.</div>
+							</li>
+							<li>
+								<div class="result__icon">4</div>
+								<div class="result__text">Процесс продаж проходит <span>без участия собственника</span>.</div>
+							</li>
+							<li>
+								<div class="result__icon">5</div>
+								<div class="result__text">Сформирован прогнозируемый рост продаж.</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -1434,5 +1455,6 @@
 		}
 	</script>
 
+  <script src="//code.jivosite.com/widget/660lfukjDv" async></script>
 </body>
 </html>

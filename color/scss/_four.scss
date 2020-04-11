@@ -24,21 +24,36 @@
       position: relative;
       width: 100%;
       & img{
-        width:70%;
+        margin-top: -200px;
+        width:65%;
         position: absolute;
-        top:-200px;
+        top:0;
         right:-20%;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
       }
     }
     // background: url('/img/bg4.png') no-repeat;
     // background-position: right;
     // background-size: 48%;
     padding: 200px 0;
-    margin-top: -100px;
     & p{
       font-size: 36px;
       line-height: 150%;
       text-align: justify;
     }
+    &__img{
+      position: absolute;
+      top: 0!important;
+      right: -10%!important;
+      width:50%!important;
+        -moz-transform:none!important;
+        -o-transform: none!important;
+        -webkit-transform: none!important;
+        transform: none!important;
+    }
+
   }
 }

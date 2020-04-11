@@ -55,7 +55,7 @@ h2 {
   background-position: top;
   padding: 1rem 0 30px; }
   .header__logo {
-    background: url("../img/logo.png") no-repeat;
+    background: url("../img/logo.svg") no-repeat;
     background-size: contain;
     background-position: center;
     width: 100%;
@@ -189,6 +189,14 @@ h2 {
     right: -200px;
     width: 140%; } }
 
+/*** page ***/
+.page {
+  background: none; }
+  .page__block {
+    padding: 50px 0;
+    text-align: left; }
+
+/*** / page ***/
 .one {
   padding: 50px 0;
   position: relative;
@@ -310,7 +318,8 @@ h2 {
     .three__img {
       position: absolute;
       top: 0;
-      left: 0; } }
+      left: -10% !important;
+      width: 100%; } }
 
 .four {
   padding: 20px 0;
@@ -343,20 +352,35 @@ h2 {
 
 @media (min-width: 1024px) {
   .four {
-    padding: 200px 0;
-    margin-top: -100px; }
+    padding: 200px 0; }
     .four__bg {
       position: relative;
       width: 100%; }
       .four__bg img {
-        width: 70%;
+        margin-top: -200px;
+        width: 65%;
         position: absolute;
-        top: -200px;
-        right: -20%; }
+        top: 0;
+        right: -20%;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+        transform: scaleX(-1); }
     .four p {
       font-size: 36px;
       line-height: 150%;
-      text-align: justify; } }
+      text-align: justify; }
+    .four__img {
+      position: absolute;
+      top: 0 !important;
+      right: -10% !important;
+      width: 50% !important;
+      -moz-transform: none !important;
+      -o-transform: none !important;
+      -webkit-transform: none !important;
+      -ms-transform: none !important;
+      transform: none !important; } }
 
 .five {
   padding: 20px 0;
