@@ -308,204 +308,156 @@ template {
 [hidden] {
   display: none; }
 
-html {
-  background: #f1f1f1; }
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 body {
-  max-width: 575px;
-  margin: 50px auto; }
+  background: #f1f1f1; }
 
-.app {
-  margin-bottom: 100px; }
+/*** page ***/
+.page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 1400px;
+  margin: 0 auto; }
 
-.app {
+@media (min-width: 1024px) {
+  .page {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .content {
+    width: 70%; }
+  .sitebar {
+    width: 30%; }
+    .sitebar__block {
+      position: -webkit-sticky;
+      position: sticky;
+      padding: 1rem;
+      background: #fff; } }
+
+/*** / page ***/
+/*** main ***/
+.app input,
+.app select,
+.app textarea {
+  -webkit-appearance: none; }
+
+.app input[type="text"] {
+  border: 2px solid #e4e6e8;
+  border-radius: 2px;
+  outline: 0;
+  padding: 7px 16px;
+  font-size: 16px;
+  width: 100%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 0;
+  box-shadow: 0;
+  background: #fff; }
+  .app input[type="text"]:focus {
+    border: 2px solid #3384ff; }
+  .app input[type="text"]::-webkit-input-placeholder {
+    color: #aaa; }
+  .app input[type="text"]:-ms-input-placeholder {
+    color: #aaa; }
+  .app input[type="text"]::-ms-input-placeholder {
+    color: #aaa; }
+  .app input[type="text"]::placeholder {
+    color: #aaa; }
+
+.app__block {
+  padding: 1rem;
   background: #fff;
-  color: #001728;
-  font-family: 'Roboto', sans-serif;
-  border: 1px solid #fff;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 0 10px 0 #eaebed;
-  -moz-box-shadow: 0 0 10px 0 #eaebed;
-  box-shadow: 0 0 10px 0 #eaebed;
-  position: relative; }
-  .app * {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box; }
+  margin: 0 0 2rem 0; }
+
+@media (min-width: 1024px) {
   .app input,
   .app select,
   .app textarea {
     -webkit-appearance: none; }
-  .app__preloader {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #fff;
-    z-index: 1001;
-    color: #001728; }
-    .app__preloader svg {
-      position: relative;
-      top: 50%;
-      left: 50%;
-      width: 70px;
-      height: 70px;
-      margin-top: -35px;
-      margin-left: -35px;
-      text-align: center;
-      -webkit-animation: preloader-rotate 4s infinite linear;
-      animation: preloader-rotate 4s infinite linear; }
+  .app__block {
+    margin: 0 2rem 2rem 0; } }
 
-@-webkit-keyframes preloader-rotate {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
+/*** / main ***/
+/*** delivery ***/
+.delivery__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .delivery__buttons--item {
+    padding: 1rem;
+    border: 2px solid #e4e6e8;
+    width: 100%;
+    cursor: pointer;
+    display: none; }
+    .delivery__buttons--item:hover {
+      border: 2px solid #3384ff; }
+  .delivery__buttons .show {
+    display: block; }
+  .delivery__buttons .active {
+    border: 2px solid #3384ff; }
 
-@keyframes preloader-rotate {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
-  .app__add {
-    padding: 10px 20px; }
-    .app__add h2 {
-      color: #001728;
-      font-size: 20px;
-      line-height: 20px;
-      font-weight: 400;
-      text-align: center;
-      padding-bottom: 20px; }
-    .app__add input[type="text"] {
-      border: 2px solid #e4e6e8;
-      border-radius: 2px;
-      outline: 0;
-      padding: 7px 16px;
-      font-size: 16px;
-      width: 100%;
-      -webkit-transition: 0.3s;
-      -o-transition: 0.3s;
-      transition: 0.3s;
-      margin-bottom: 15px;
-      -webkit-box-shadow: 0;
-      box-shadow: 0;
-      background: #fff; }
-      .app__add input[type="text"]:focus {
-        border: 2px solid #3384ff; }
-      .app__add input[type="text"]::-webkit-input-placeholder {
-        color: #aaa; }
-      .app__add input[type="text"]:-ms-input-placeholder {
-        color: #aaa; }
-      .app__add input[type="text"]::-ms-input-placeholder {
-        color: #aaa; }
-      .app__add input[type="text"]::placeholder {
-        color: #aaa; }
-    .app__add input[type="radio"]:checked, .app__add input[type="radio"]:not(:checked) {
-      position: absolute;
-      left: -9999px; }
-    .app__add input[type="radio"]:checked + label,
-    .app__add input[type="radio"]:not(:checked) + label {
-      display: inline-block;
-      position: relative;
-      padding-left: 40px;
-      line-height: 24px;
-      font-size: 16px;
-      cursor: pointer; }
-    .app__add input[type="radio"]:checked + label:before,
-    .app__add input[type="radio"]:not(:checked) + label:before {
-      content: "";
-      position: absolute;
-      left: 5px;
-      top: 0;
-      width: 20px;
-      height: 20px;
-      border: 2px solid #e4e6e8;
-      background-color: #fff;
-      border-radius: 100%; }
-    .app__add input[type="radio"]:checked + label:after,
-    .app__add input[type="radio"]:not(:checked) + label:after {
-      content: "";
-      position: absolute;
-      -webkit-transition: all 0.2s ease;
-      -moz-transition: all 0.2s ease;
-      -o-transition: all 0.2s ease;
-      transition: all 0.2s ease;
-      left: 9px;
-      top: 4px;
-      width: 16px;
-      height: 16px;
-      border-radius: 100%;
-      background-color: #3384ff; }
-    .app__add input[type="radio"]:not(:checked) + label:after {
-      opacity: 0; }
-    .app__add input[type="radio"]:checked + label:after {
-      opacity: 1; }
-  .app__radio {
-    padding: 10px 0; }
-  .app__button {
+.delivery__open--item {
+  width: 100%;
+  padding: 1rem 0;
+  display: none; }
+
+.delivery__open .show {
+  display: block; }
+
+@media (min-width: 1024px) {
+  .delivery__buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; } }
+
+/*** / delivery ***/
+/*** pay ***/
+.pay__item {
+  padding: 1rem;
+  border: 2px solid #e4e6e8;
+  width: 100%;
+  cursor: pointer;
+  margin: 0.5rem 0;
+  display: none; }
+  .pay__item:hover {
+    border: 2px solid #3384ff; }
+
+.pay .show {
+  display: block; }
+
+.pay .active {
+  border: 2px solid #3384ff; }
+
+@media (min-width: 1024px) {
+  .pay {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 20px 0; }
-    .app__button--back {
-      background: #e4e6e8;
-      padding: 7px 16px;
-      font-size: 14px;
-      text-transform: uppercase;
-      font-weight: 700;
-      color: #001728;
-      cursor: pointer;
-      border-radius: 2px;
-      -webkit-transition: 0.5s;
-      -o-transition: 0.5s;
-      transition: 0.5s; }
-    .app__button--next {
-      background: #3384ff;
-      padding: 7px 16px;
-      font-size: 14px;
-      text-transform: uppercase;
-      font-weight: 700;
-      color: #fff;
-      cursor: pointer;
-      border-radius: 2px; }
-    .app__button--finish {
-      background: #68c968;
-      padding: 7px 16px;
-      font-size: 14px;
-      text-transform: uppercase;
-      font-weight: 700;
-      color: #fff;
-      cursor: pointer;
-      border-radius: 2px; }
-    .app__button--step {
-      font-size: 14px;
-      color: #aaa; }
-  .app__map {
-    background: #ccc;
-    width: 100%;
-    height: 200px; }
-    .app__map--info span {
-      display: block;
-      font-weight: 700;
-      font-size: 14px; }
-  .app__points {
-    margin: 20px 0;
-    max-height: 220px;
-    overflow-y: scroll; }
-  .app__price {
-    border-top: 1px solid #e4e6e8; }
-    .app__price span {
-      font-weight: 700;
-      font-size: 16px; }
-    .app__price--info span {
-      display: block;
-      font-weight: 700;
-      font-size: 14px; }
+    justify-content: space-between; }
+    .pay__item {
+      width: calc(50% - 0.5rem); } }
 
-@media (min-width: 568px) {
-  .app__add {
-    padding: 30px 50px 20px; } }
+/*** / pay ***/

@@ -9,279 +9,87 @@
 </head>
 <body>
 
-  <div class="app">
-    <div class="app__preloader">
-      <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-        <path fill="currentColor"
-          d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
-        </path>
-      </svg>
-    </div>
-    <div class="app__add">
-      <h2>Контактные данные</h2>
-      <input type="text" placeholder="Имя">
-      <input type="text" placeholder="* Телефон">
-      <input type="text" placeholder="Email">
-      <input type="text" placeholder="Промокод">
+ <div class="page">
+   <div class="content">
+      <div class="app">
+        <!-- city -->
+        <div class="app__block">
+          <h2>Ваш город <span>Москва</span>?</h2>
+          <input type="text" placeholder="Город" value="Москва">
+        </div>
+        <!-- / city -->
 
-      <div class="app__button">
-        <div></div>
-          <!-- <div class="app__button--step">1 из 6</div> -->
-          <div class="app__button--next">Дальше</div>
+        <!-- contact -->
+        <div class="app__block">
+          <h2>Контактные данные</h2>
+          <input type="text" placeholder="Имя">
+          <input type="text" placeholder="* Телефон">
+          <input type="text" placeholder="Email">
+          <input type="text" placeholder="Промокод">
+        </div>
+        <!-- / contact -->
+
+        <!-- delivety -->
+        <div class="app__block">
+          <h2>Выберите удобный способ получения заказа в <span>Москва</span></h2>
+          <div class="delivery">
+            <div class="delivery__buttons">
+                <div class="delivery__buttons--item show" data-show="true" data-open="0" data-pay="0,1,2,3">Курерская доставка</div>
+                <div class="delivery__buttons--item show active" data-show="true" data-open="1" data-pay="1,2">Самовывоз из пункта выдачи</div>
+                <div class="delivery__buttons--item show" data-show="true" data-open="2" data-pay="0,3">Самовывоз из розничного магазина</div>
+            </div>
+            <div class="delivery__open">
+              <div class="delivery__open--item js-open">
+                 1
+              </div>
+
+              <div class="delivery__open--item js-open show">
+                 2
+              </div>
+
+              <div class="delivery__open--item js-open">
+                3
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- / delivety -->
+
+        <!-- pay -->
+        <div class="app__block">
+          <h2>Способ оплаты</h2>
+          <div class="pay">
+            <div class="pay__item js-pay show active">Оплата наличными при получении</div>
+            <div class="pay__item js-pay">Оплата банковской картой при получении</div>
+            <div class="pay__item js-pay show">Яндекс.Касса</div>
+            <div class="pay__item js-pay show">Переводом на карту Сбербанка</div>
+          </div>
+        </div>
+        <!-- / pay -->
+
+
       </div>
-    </div>
-  </div>
-
-<div class="app">
-  <div class="app__add">
-    <h2>Контактные данные</h2>
-    <input type="text" placeholder="Имя">
-    <input type="text" placeholder="* Телефон">
-    <input type="text" placeholder="Email">
-    <input type="text" placeholder="Промокод">
-
-    <div class="app__button">
-      <div></div>
-        <!-- <div class="app__button--step">1 из 6</div> -->
-        <div class="app__button--next">Дальше</div>
-    </div>
-  </div>
-</div>
-
-
-<div class="app">
-  <div class="app__add">
-    <h2>Ваш город <span>Москва</span>?</h2>
-    <input type="text" placeholder="Город" value="Москва">
-
-    <div class="app__button">
-        <div class="app__button--back">Назад</div>
-        <!-- <div class="app__button--step">2 из 6</div> -->
-        <div class="app__button--next">Дальше</div>
-    </div>
-  </div>
-</div>
-
-
-<div class="app">
-  <div class="app__add">
-    <h2>Способ доставки</h2>
-    <div class="app__radio">
-      <input type="radio" id="delivery1" name="delivery" value="1">
-      <label for="delivery1">Курерская доставка</label>
-    </div>
-
-    <div class="app__radio">
-      <input type="radio" id="delivery2" name="delivery" value="2">
-      <label for="delivery2">Самовывоз из пункта выдачи</label>
-    </div>
-
-    <div class="app__radio">
-      <input type="radio" id="delivery3" name="delivery" value="3" checked>
-      <label for="delivery3">Самовывоз из розничного магазина</label>
    </div>
+   <div class="sitebar">
+       <div class="sitebar__block">
+         <h2>Информация о заказе</h2>
+         <p>Город - Москва</p>
+         <p>Имя - Владислав</p>
+         <p>Телефон - +700000000</p>
+         <p>Email - mail@mail.com</p>
+         <p>Способ доставки - Курерская доставка</p>
+         <p>Адрес - Улица дом</p>
+         <p>Способ оплаты - Оплата наличными при получении</p>
+         <p></p><br>
+         <p>Сумма заказа - 5000 руб</p>
+         <p>Стоимость доставки - 400 руб</p>
+         <p>Ваша скидка - 1000 руб</p>
+         <p>Сумма к оплате - 4400 руб</p>
 
-    <div class="app__button">
-        <div class="app__button--back">Назад</div>
-        <!-- <div class="app__button--step">3 из 6</div> -->
-        <div class="app__button--next">Дальше</div>
-    </div>
-  </div>
-</div>
-
-
-<div class="app">
-  <div class="app__add">
-    <h2>Адрес доставки в г.<span>Москва</span></h2>
-    <input type="text" placeholder="Улица">
-    <input type="text" placeholder="Дом/Кв">
-
-    <div class="app__button">
-        <div class="app__button--back">Назад</div>
-        <!-- <div class="app__button--step">4 из 6</div> -->
-        <div class="app__button--next">Дальше</div>
-    </div>
-  </div>
-</div>
-
-
-<div class="app">
-  <div class="app__add">
-    <h2>Самовывоз из пункта выдачи г.<span>Москва</span></h2>
-     <div class="app__map"></div>
-     <div class="app__map--info">
-       <p>
-         <span>Адрес</span>
-         Полный адресс
-       </p>
-       <p>
-         <span>Метро</span>
-         Станция метро
-       </p>
-       <p>
-         <span>Телефон</span>
-         8-800-700-5420
-       </p>
-     </div>
-     <div class="app__points">
-       <div class="app__radio">
-         <input type="radio" id="point1" name="points" value="2" checked>
-         <label for="point1">Пункт выдачи 1</label>
        </div>
+   </div>
+ </div>
 
-       <div class="app__radio">
-         <input type="radio" id="point2" name="points" value="2">
-         <label for="point2">Пункт выдачи 2</label>
-       </div>
-
-       <div class="app__radio">
-         <input type="radio" id="point3" name="points" value="2">
-         <label for="point3">Пункт выдачи 3</label>
-       </div>
-
-       <div class="app__radio">
-         <input type="radio" id="point4" name="points" value="2">
-         <label for="point4">Пункт выдачи 4</label>
-       </div>
-
-       <div class="app__radio">
-         <input type="radio" id="point5" name="points" value="2">
-         <label for="point5">Пункт выдачи 5</label>
-       </div>
-
-       <div class="app__radio">
-         <input type="radio" id="point6" name="points" value="2">
-         <label for="point6">Пункт выдачи 6</label>
-       </div>
-     </div>
-
-    <div class="app__button">
-        <div class="app__button--back">Назад</div>
-        <!-- <div class="app__button--step">4 из 6</div> -->
-        <div class="app__button--next">Дальше</div>
-    </div>
-  </div>
-</div>
-
-
-<div class="app">
-  <div class="app__add">
-    <h2>Самовывоз из розничного магазина</h2>
-     <div class="app__map"></div>
-     <div class="app__map--info">
-       <p>
-         <span>Адрес</span>
-         Москва, Багратионовский проезд, д. 7, к. 3, ТК «Горбушкин двор», Сектор "Н", 2-й Этаж, пав. Н2-015
-       </p>
-       <p>
-         <span>Метро</span>
-         Багратионовская
-       </p>
-       <p>
-         <span>Телефон</span>
-         8-800-700-5420
-       </p>
-     </div>
-
-    <div class="app__button">
-        <div class="app__button--back">Назад</div>
-        <!-- <div class="app__button--step">4 из 6</div> -->
-        <div class="app__button--next">Дальше</div>
-    </div>
-  </div>
-</div>
-
-
-<div class="app">
-  <div class="app__add">
-    <h2>Способ оплаты</h2>
-    <div class="app__radio">
-      <input type="radio" id="pay1" name="pay" value="1" checked>
-      <label for="pay1">Оплата наличными при получении</label>
-    </div>
-
-    <div class="app__radio">
-      <input type="radio" id="pay2" name="pay" value="2">
-      <label for="pay2">Оплата банковской картой при получении</label>
-    </div>
-
-    <div class="app__radio">
-      <input type="radio" id="pay3" name="pay" value="3">
-      <label for="pay3">Яндекс.Касса</label>
-    </div>
-
-    <div class="app__radio">
-      <input type="radio" id="pay4" name="pay" value="3">
-      <label for="pay4">Переводом на карту Сбербанка</label>
-    </div>
-
-
-    <div class="app__button">
-        <div class="app__button--back">Назад</div>
-        <!-- <div class="app__button--step">5 из 6</div> -->
-        <div class="app__button--next">Дальше</div>
-    </div>
-  </div>
-</div>
-
-
-<div class="app">
-  <div class="app__add">
-    <h2>Данные заказа</h2>
-    <div class="app__price--info">
-      <p>
-        <span>Имя</span>
-          Владислав
-      </p>
-      <p>
-        <span>Телефон</span>
-        +380959999999
-      </p>
-      <p>
-        <span>Email</span>
-        mail@gmail.com
-      </p>
-      <p>
-        <span>Город</span>
-        Москва
-      </p>
-      <p>
-        <span>Способ доставки</span>
-        Курерская доставка
-      </p>
-      <p>
-        <span>Адрес доставки</span>
-        Улица кв
-      </p>
-      <p>
-        <span>Способ оплаты</span>
-        Оплата наличными при получении
-      </p>
-    </div>
-
-    <div class="app__price">
-      <p>
-        <span>Сумма заказа : </span>2200 руб
-      </p>
-      <p>
-        <span>Стоимость доставки : </span>500 руб
-      </p>
-      <p>
-        <span>Ваша скидка : </span>0 руб
-      </p>
-      <p>
-        <span>Сумма к оплате : </span>2700 руб
-      </p>
-    </div>
-
-
-    <div class="app__button">
-        <div class="app__button--back">Назад</div>
-        <!-- <div class="app__button--step">6 из 6</div> -->
-        <div class="app__button--finish">Оформить заказ</div>
-    </div>
-  </div>
-</div>
-
+<script src="js/app.js"></script>
 </body>
 </html>

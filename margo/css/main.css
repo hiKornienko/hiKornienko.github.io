@@ -350,6 +350,7 @@ h1, h2, h3 {
 
 .button {
   position: relative;
+  z-index: 10;
   display: inline-block;
   outline: 0;
   overflow: hidden;
@@ -443,7 +444,8 @@ h1, h2, h3 {
     position: absolute;
     bottom: 0;
     left: 0;
-    right: 0; }
+    right: 0;
+    z-index: 2; }
 
 @media (min-width: 1024px) {
   .one {
