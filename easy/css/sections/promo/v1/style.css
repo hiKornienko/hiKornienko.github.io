@@ -1,0 +1,312 @@
+.s-promo-v1 {
+  position: relative;
+  background-color: #e7ecf1;
+}
+
+.s-promo-v1 > .particles {
+  position: absolute !important;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.s-promo-v1 > .inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 32px;
+  padding-bottom: 48px;
+}
+
+.s-promo-v1 > .inner > .shapes {
+  /**/
+}
+
+.s-promo-v1 > .inner > .shapes > img {
+  display: block;
+  position: absolute;
+  z-index: 0;
+}
+
+.s-promo-v1 > .inner > .shapes > img:nth-child(1) {
+  left: 448px;
+  top: 96px;
+}
+
+.s-promo-v1 > .inner > .shapes > img:nth-child(2) {
+  left: 128px;
+  top: 224px;
+}
+
+.s-promo-v1 > .inner > .shapes > img:nth-child(3) {
+  left: 320px;
+  top: 640px;
+}
+
+.s-promo-v1 > .inner > .header {
+  /**/
+}
+
+.s-promo-v1 > .inner > .header > .brand {
+  /**/
+}
+
+.s-promo-v1 > .inner > .header > .brand > img {
+  display: block;
+}
+
+.s-promo-v1 > .inner > .body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.s-promo-v1 > .inner > .body > .cover {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 50%;
+  padding-right: 32px;
+  min-height: 736px; /* image height */
+  background-image: url('images/art/bg.png?v=0');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.s-promo-v1 > .inner > .body > .cover > .speakers {
+  width: 464px;
+  height: 64px;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  background-image: url('images/speakers.png?v=0');
+  background-repeat: repeat-x;
+  animation-name: s-promo-v0-speakers;
+  animation-timing-function: linear;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+}
+
+.s-promo-v1 > .inner > .body > .cover > .speakers:hover {
+  animation-play-state: paused;
+}
+
+.s-promo-v1 > .inner > .body > .cover > .program {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.s-promo-v1 > .inner > .body > .cover > .program > .name {
+  font-size: 105px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.s-promo-v1 > .inner > .body > .cover > .program > .description {
+  max-width: 256px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.s-promo-v1 > .inner > .body > .content {
+  box-sizing: border-box;
+  padding-left: 96px;
+  width: 50%;
+}
+
+.s-promo-v1 > .inner > .body > .content > .text-group {
+  margin-bottom: 40px;
+  max-width: 468px;
+}
+
+.s-promo-v1 > .inner > .body > .content > .text-group > .title {
+  margin-bottom: 16px;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.s-promo-v1 > .inner > .body > .content > .text-group > .subtitle {
+  margin-bottom: 40px;
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: 500;
+  color: #293139;
+}
+
+.s-promo-v1 > .inner > .body > .content > .text-group > .description {
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+.s-promo-v1 > .inner > .body > .content > .button {
+  display: inline-block;
+  width: auto;
+}
+
+.s-promo-v1 > .inner > .body > .content > .button > a {
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+}
+
+.s-promo-v1 > .inner > .body > .content > .button > button {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}
+
+.s-promo-v1 > .inner > .body > .content > .button > a,
+.s-promo-v1 > .inner > .body > .content > .button > button {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  border: none;
+  background-color: #ccc;
+  transition: all .3s;
+  height: 56px;
+  line-height: 56px;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-size: 13px;
+  border-radius: 8px;
+  letter-spacing: 1.536px;
+  text-transform: uppercase;
+  font-weight: 600;
+  box-shadow: 0px 24px 48px 0px rgba(0, 113, 227, .48);
+  color: white;
+  background-color: #0057ff;
+}
+
+.s-promo-v1 > .inner > .body > .content > .button > a:hover,
+.s-promo-v1 > .inner > .body > .content > .button > button:hover {
+  box-shadow: 0px 0 0 0px rgba(0, 113, 227, .48);
+}
+
+@keyframes s-promo-v0-speakers {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 880px 0; /* 880px - image width */
+  }
+}
+
+@media (max-width: 1344px) {
+
+  .s-promo-v1 > .particles {
+    display: none;
+  }
+  .s-promo-v1 > .inner > .body > .cover > .program > .name {
+    font-size: 80px;
+  }
+  .s-promo-v1 > .inner > .body > .content {
+    padding-left: 32px;
+  }
+
+}
+
+@media (max-width: 1024px) {
+
+  .s-promo-v1 > .inner > .shapes {
+    display: none;
+  }
+  .s-promo-v1 > .inner > .header {
+    margin-bottom: 32px;
+  }
+  .s-promo-v1 > .inner > .body {
+    display: block;
+    background-image: url('images/art/bg.png?v=0');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+  }
+  .s-promo-v1 > .inner > .body > .cover {
+    display: block;
+    width: 100%;
+    margin-bottom: 32px;
+    padding-right: 0;
+    min-height: inherit;
+    background-image: none;
+  }
+  .s-promo-v1 > .inner > .body > .cover > .speakers {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .s-promo-v1 > .inner > .body > .cover > .program {
+    display: block;
+    text-align: left;
+  }
+  .s-promo-v1 > .inner > .body > .cover > .program > .description {
+    max-width: none;
+  }
+  .s-promo-v1 > .inner > .body > .content {
+    width: 100%;
+    padding-left: 0;
+  }
+  .s-promo-v1 > .inner > .body > .content > .text-group {
+    max-width: 80%;
+  }
+  .s-promo-v1 > .inner > .body > .content > .text-group > .description br {
+    display: none;
+  }
+
+}
+
+@media (max-width: 560px) {
+
+  .s-promo-v1 > .inner > .body {
+    background-image: none;
+  }
+  .s-promo-v1 > .inner > .body > .cover {
+    margin-bottom: 16px;
+  }
+  .s-promo-v1 > .inner > .body > .content > .text-group {
+    max-width: none;
+  }
+  .s-promo-v1 > .inner > .body > .content > .text-group > .title {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+  .s-promo-v1 > .inner > .body > .content > .text-group > .subtitle {
+    margin-bottom: 16px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .s-promo-v1 > .inner > .body > .cover > .program > .name {
+    font-size: 48px;
+  }
+  .s-promo-v1 > .inner > .body > .content > .text-group {
+    margin-bottom: 24px;
+  }
+  .s-promo-v1 > .inner > .body > .content > .text-group > .title {
+    font-size: 24px;
+  }
+  .s-promo-v1 > .inner > .body > .content > .text-group > .subtitle {
+    font-size: 18px;
+  }
+  .s-promo-v1 > .inner > .body > .content > .text-group > .description {
+    font-size: 14px;
+  }
+
+}

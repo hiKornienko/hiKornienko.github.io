@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -327,6 +326,10 @@ body {
   max-width: 1400px;
   margin: 0 auto; }
 
+.sitebar__block {
+  padding: 1rem;
+  background: #fff; }
+
 @media (min-width: 1024px) {
   .page {
     -webkit-box-orient: horizontal;
@@ -339,9 +342,9 @@ body {
     width: 30%; }
     .sitebar__block {
       position: -webkit-sticky;
+      /* Safari */
       position: sticky;
-      padding: 1rem;
-      background: #fff; } }
+      top: 0; } }
 
 /*** / page ***/
 /*** main ***/
@@ -350,7 +353,8 @@ body {
 .app textarea {
   -webkit-appearance: none; }
 
-.app input[type="text"] {
+.app input[type="text"],
+.app input[type="tel"] {
   border: 2px solid #e4e6e8;
   border-radius: 2px;
   outline: 0;
@@ -364,21 +368,26 @@ body {
   -webkit-box-shadow: 0;
   box-shadow: 0;
   background: #fff; }
-  .app input[type="text"]:focus {
+  .app input[type="text"]:focus,
+  .app input[type="tel"]:focus {
     border: 2px solid #3384ff; }
-  .app input[type="text"]::-webkit-input-placeholder {
+  .app input[type="text"]::-webkit-input-placeholder,
+  .app input[type="tel"]::-webkit-input-placeholder {
     color: #aaa; }
-  .app input[type="text"]:-ms-input-placeholder {
+  .app input[type="text"]:-ms-input-placeholder,
+  .app input[type="tel"]:-ms-input-placeholder {
     color: #aaa; }
-  .app input[type="text"]::-ms-input-placeholder {
+  .app input[type="text"]::-ms-input-placeholder,
+  .app input[type="tel"]::-ms-input-placeholder {
     color: #aaa; }
-  .app input[type="text"]::placeholder {
+  .app input[type="text"]::placeholder,
+  .app input[type="tel"]::placeholder {
     color: #aaa; }
 
 .app__block {
   padding: 1rem;
   background: #fff;
-  margin: 0 0 2rem 0; }
+  margin: 0 0 2rem; }
 
 @media (min-width: 1024px) {
   .app input,
@@ -405,22 +414,15 @@ body {
     padding: 1rem;
     border: 2px solid #e4e6e8;
     width: 100%;
-    cursor: pointer;
-    display: none; }
+    cursor: pointer; }
     .delivery__buttons--item:hover {
       border: 2px solid #3384ff; }
-  .delivery__buttons .show {
-    display: block; }
   .delivery__buttons .active {
     border: 2px solid #3384ff; }
 
 .delivery__open--item {
   width: 100%;
-  padding: 1rem 0;
-  display: none; }
-
-.delivery__open .show {
-  display: block; }
+  padding: 1rem 0; }
 
 @media (min-width: 1024px) {
   .delivery__buttons {
@@ -436,13 +438,12 @@ body {
   border: 2px solid #e4e6e8;
   width: 100%;
   cursor: pointer;
-  margin: 0.5rem 0;
-  display: none; }
+  margin: 0.5rem 0; }
   .pay__item:hover {
     border: 2px solid #3384ff; }
-
-.pay .show {
-  display: block; }
+  .pay__item span {
+    display: block;
+    color: #8b8b8b; }
 
 .pay .active {
   border: 2px solid #3384ff; }
@@ -461,3 +462,64 @@ body {
       width: calc(50% - 0.5rem); } }
 
 /*** / pay ***/
+/* point */
+.point {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .point__map {
+    width: 100%;
+    min-height: 200px; }
+  .point__info {
+    width: 100%; }
+
+.points {
+  width: 100%;
+  padding: 0;
+  overflow-y: scroll;
+  max-height: 300px; }
+  .points li {
+    list-style-type: none;
+    padding: 10px;
+    border: 2px solid #e4e6e8;
+    margin-bottom: 8px;
+    cursor: pointer; }
+    .points li:hover {
+      border: 2px solid #3384ff; }
+  .points .active {
+    border: 2px solid #3384ff; }
+
+@media (min-width: 736px) {
+  .point__map {
+    width: calc(50% - 10px); }
+  .point__info {
+    width: calc(50% - 10px); }
+  .points {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .points li {
+      width: calc(50% - 4px); } }
+
+/* / point */
+.cityList {
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: scroll; }
+  .cityList li {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 2px 0; }
+    .cityList li:hover {
+      color: #3384ff; }
