@@ -1,106 +1,11 @@
-/* sections */
-@import 'sections/promo/v0/style.css';
-@import 'sections/promo/v2/style.css';
-@import 'sections/promo/v4/style.css';
-
-@import 'ib-library/sections/about/v0/style.css';
-@import 'ib-library/sections/about/v1/style.css';
-
-@import 'ib-library/sections/bonus/v0/style.css';
-@import 'ib-library/sections/bonus/v1/style.css';
-
-@import 'ib-library/sections/author/v0/style.css';
-@import 'ib-library/sections/author/v1/style.css';
-
-@import 'ib-library/sections/footer/v0/style.css';
-
-@import 'ib-library/sections/quiz/v0/style.css';
-@import 'ib-library/sections/quiz/v1/style.css';
-
-@import 'ib-library/sections/header/v0/style.css';
-@import 'ib-library/sections/header/v1/style.css';
-
-@import 'ib-library/sections/video-list/v0/style.css';
-@import 'ib-library/sections/video-list/v1/style.css';
-@import 'ib-library/sections/video-list/v2/style.css';
-
-@import 'ib-library/sections/program/v0/style.css';
-
-@import 'ib-library/sections/speakers/v0/style.css';
-
-@import 'ib-library/sections/cost/v0/style.css';
-
-/* root */
-html {
-  margin: 0;
-  padding: 0;
-  background-color: #eee;
+body{
+  text-align: center;
+  max-width: 800px;
+  margin:0 auto;
+  padding: 20px;
 }
-
-html.page-quiz {
-  height: 100%;
-  background-color: #f6f8fa;
-}
-
-html > body {
-  min-width: 320px;
-  margin: inherit;
-  padding: inherit;
-  font-size: 16px;
-  line-height: 1;
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  color: black;
-  background-color: #5c7895;
-}
-
-html.page-quiz {
-  height: 100%;
-}
-
-html.page-quiz > body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  height: inherit;
-  padding: 48px;
-  background-color: #e7ecf1;
-}
-
-/* common */
-body *::selection {
-  color: black;
-  background-color: #ff067a;
-}
-
-@media (max-width: 1300px) {
-
-  html.page-quiz > body {
-    padding: 0;
-  }
-
-}
-
-@media (max-width: 960px) {
-
-  html.page-quiz > body {
-    display: block;
-    height: auto;
-  }
-
-}
-
-@media (max-height: 640px) {
-
-  html.page-quiz > body {
-    display: block;
-    padding: 0;
-    height: auto;
-  }
-
-}
-
-button::-moz-focus-inner {
-  border: 0;
+input{
+  width:100%;
+  margin-bottom: 10px;
+  padding: 5px;
 }

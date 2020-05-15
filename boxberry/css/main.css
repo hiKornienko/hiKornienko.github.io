@@ -312,7 +312,11 @@ template {
   box-sizing: border-box; }
 
 body {
-  background: #f1f1f1; }
+  background: #505050;
+  color: #cecece; }
+
+h2 {
+  color: #e2ba24; }
 
 /*** page ***/
 .page {
@@ -328,7 +332,13 @@ body {
 
 .sitebar__block {
   padding: 1rem;
-  background: #fff; }
+  background: #323232; }
+  .sitebar__block p b {
+    color: #e2ba24; }
+  .sitebar__block--line {
+    height: 1px;
+    background: #5a5a5a;
+    margin: 10px 0; }
 
 @media (min-width: 1024px) {
   .page {
@@ -355,7 +365,7 @@ body {
 
 .app input[type="text"],
 .app input[type="tel"] {
-  border: 2px solid #e4e6e8;
+  border: 1px solid #cecece;
   border-radius: 2px;
   outline: 0;
   padding: 7px 16px;
@@ -367,26 +377,28 @@ body {
   margin-bottom: 15px;
   -webkit-box-shadow: 0;
   box-shadow: 0;
-  background: #fff; }
+  background: #484848;
+  color: #e2ba24;
+  height: auto; }
   .app input[type="text"]:focus,
   .app input[type="tel"]:focus {
-    border: 2px solid #3384ff; }
+    border: 1px solid #e2ba24; }
   .app input[type="text"]::-webkit-input-placeholder,
   .app input[type="tel"]::-webkit-input-placeholder {
-    color: #aaa; }
+    color: #e2ba24; }
   .app input[type="text"]:-ms-input-placeholder,
   .app input[type="tel"]:-ms-input-placeholder {
-    color: #aaa; }
+    color: #e2ba24; }
   .app input[type="text"]::-ms-input-placeholder,
   .app input[type="tel"]::-ms-input-placeholder {
-    color: #aaa; }
+    color: #e2ba24; }
   .app input[type="text"]::placeholder,
   .app input[type="tel"]::placeholder {
-    color: #aaa; }
+    color: #e2ba24; }
 
 .app__block {
   padding: 1rem;
-  background: #fff;
+  background: #323232;
   margin: 0 0 2rem; }
 
 @media (min-width: 1024px) {
@@ -412,17 +424,33 @@ body {
   justify-content: space-between; }
   .delivery__buttons--item {
     padding: 1rem;
-    border: 2px solid #e4e6e8;
+    border: 1px solid #cecece;
     width: 100%;
     cursor: pointer; }
     .delivery__buttons--item:hover {
-      border: 2px solid #3384ff; }
+      background: #484848;
+      border: 1px solid #e2ba24; }
   .delivery__buttons .active {
-    border: 2px solid #3384ff; }
+    background: #e2ba24;
+    border: 1px solid #e2ba24;
+    color: #000; }
 
 .delivery__open--item {
   width: 100%;
   padding: 1rem 0; }
+  .delivery__open--item button {
+    padding: 5px 7px;
+    color: #000;
+    background: #e2ba24;
+    cursor: pointer;
+    border: 1px solid #e2ba24;
+    outline: 0;
+    border-radius: 4px;
+    margin-bottom: 10px; }
+    .delivery__open--item button:hover {
+      background: #484848;
+      border: 1px solid #e2ba24;
+      color: #cecece; }
 
 @media (min-width: 1024px) {
   .delivery__buttons {
@@ -435,18 +463,23 @@ body {
 /*** pay ***/
 .pay__item {
   padding: 1rem;
-  border: 2px solid #e4e6e8;
+  border: 1px solid #cecece;
   width: 100%;
   cursor: pointer;
   margin: 0.5rem 0; }
   .pay__item:hover {
-    border: 2px solid #3384ff; }
+    background: #484848;
+    border: 1px solid #e2ba24; }
   .pay__item span {
     display: block;
     color: #8b8b8b; }
 
 .pay .active {
-  border: 2px solid #3384ff; }
+  background: #e2ba24;
+  border: 1px solid #e2ba24;
+  color: #000; }
+  .pay .active span {
+    color: red; }
 
 @media (min-width: 1024px) {
   .pay {
@@ -474,25 +507,30 @@ body {
   justify-content: space-between; }
   .point__map {
     width: 100%;
-    min-height: 200px; }
+    min-height: 200px;
+    margin-bottom: 20px; }
   .point__info {
     width: 100%; }
 
 .points {
   width: 100%;
   padding: 0;
+  margin: 0;
   overflow-y: scroll;
   max-height: 300px; }
   .points li {
     list-style-type: none;
     padding: 10px;
-    border: 2px solid #e4e6e8;
+    border: 1px solid #cecece;
     margin-bottom: 8px;
     cursor: pointer; }
     .points li:hover {
-      border: 2px solid #3384ff; }
+      background: #484848;
+      border: 1px solid #e2ba24; }
   .points .active {
-    border: 2px solid #3384ff; }
+    background: #e2ba24 !important;
+    border: 1px solid #e2ba24;
+    color: #000; }
 
 @media (min-width: 736px) {
   .point__map {
@@ -522,4 +560,4 @@ body {
     cursor: pointer;
     padding: 2px 0; }
     .cityList li:hover {
-      color: #3384ff; }
+      color: #e2ba24; }
