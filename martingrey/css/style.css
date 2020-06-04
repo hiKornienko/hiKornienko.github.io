@@ -373,7 +373,7 @@ body {
   bottom: 50px;
   width: 37px;
   height: 37px;
-  background: url("/img/top.svg") no-repeat #FFFFFF;
+  background: url("../img/top.svg") no-repeat #FFFFFF;
   background-position: center;
   -webkit-box-shadow: 0px 4px 20px #71AFD8, inset -2px -2px 6px rgba(54, 209, 220, 0.25), inset 2px 2px 6px rgba(54, 209, 220, 0.25);
           box-shadow: 0px 4px 20px #71AFD8, inset -2px -2px 6px rgba(54, 209, 220, 0.25), inset 2px 2px 6px rgba(54, 209, 220, 0.25);
@@ -439,12 +439,12 @@ body {
   display: block;
   width: 76px;
   height: 40px;
-  background: url("/img/logo.png") no-repeat;
+  background: url("../img/logo.png") no-repeat;
   background-size: contain;
   background-position: center center;
 }
 .header__top--logo .logo .active {
-  background: url("/img/logo2.png") no-repeat;
+  background: url("../img/logo2.png") no-repeat;
   background-size: contain;
   background-position: center center;
 }
@@ -456,7 +456,7 @@ body {
   left: 0;
   width: 190px;
   height: 280px;
-  background: url("/img/logo_bg.svg") no-repeat;
+  background: url("../img/logo_bg.svg") no-repeat;
   background-size: contain;
   pointer-events: none;
 }
@@ -494,7 +494,7 @@ body {
   margin-right: -50px;
   width: 240px;
   height: 240px;
-  background: url("/img/logo_3d.png") no-repeat;
+  background: url("../img/logo_3d.png") no-repeat;
   background-size: contain;
   background-position: center;
 }
@@ -505,7 +505,7 @@ body {
   margin: -30px auto 0;
   width: 180px;
   height: 80px;
-  background: url("/img/title.svg") no-repeat;
+  background: url("../img/title.svg") no-repeat;
   background-size: contain;
   background-position: center;
 }
@@ -590,7 +590,7 @@ body {
   top: 0;
 }
 .header__slide .owl-next {
-  background: url("/img/right.png") no-repeat !important;
+  background: url("../img/right.png") no-repeat !important;
   background-size: 14px !important;
   width: 14px;
   height: 14px;
@@ -603,7 +603,7 @@ body {
   display: none;
 }
 .header__slide .owl-prev {
-  background: url("/img/left.png") no-repeat !important;
+  background: url("../img/left.png") no-repeat !important;
   background-size: 14px !important;
   width: 14px;
   height: 14px;
@@ -640,7 +640,7 @@ body {
 .nav__burger {
   width: 28px;
   height: 28px;
-  background: url("/img/burger.svg") no-repeat;
+  background: url("../img/burger.svg") no-repeat;
   background-size: contain;
   background-position: center;
   position: relative;
@@ -655,7 +655,7 @@ body {
   margin-right: 6px;
   width: 22px;
   height: 22px;
-  background: url("/img/burger2.svg") no-repeat;
+  background: url("../img/burger2.svg") no-repeat;
   background-size: contain;
   background-position: center;
 }
@@ -807,7 +807,7 @@ body {
     margin: 120px auto 0;
     width: 450px;
     height: 45px;
-    background: url("/img/title2.svg") no-repeat;
+    background: url("../img/title2.svg") no-repeat;
     background-size: contain;
   }
   .header__title--social {
@@ -1008,7 +1008,7 @@ body {
   }
 }
 .team {
-  background: url("/img/team.svg") no-repeat;
+  background: url("../img/team.svg") no-repeat;
   background-size: cover;
   background-position: bottom center;
   margin: -300px auto -500px;
@@ -1193,7 +1193,7 @@ body {
   line-height: 0;
 }
 .form form select {
-  background-image: url("/img/select.svg");
+  background-image: url("../img/select.svg");
   background-repeat: no-repeat;
   background-position: calc(100% - 10px) 10px;
   background-size: 22px;
@@ -1274,7 +1274,7 @@ body {
 @media (min-width: 1024px) {
   .form {
     padding: 250px 15px;
-    background: url("/img/form_logo.svg") no-repeat;
+    background: url("../img/form_logo.svg") no-repeat;
     background-position: center center;
     background-size: contain;
   }

@@ -64,7 +64,7 @@
     }
 
     & select{
-      background-image: url('/img/select.svg');
+      background-image: url('../img/select.svg');
       background-repeat: no-repeat;
       background-position: calc(100% - 10px) 10px;
       background-size: 22px;
@@ -162,7 +162,7 @@
 @media (min-width: 1024px) {
   .form {
     padding: 250px 15px;
-    background: url('/img/form_logo.svg') no-repeat;
+    background: url('../img/form_logo.svg') no-repeat;
     background-position: center center;
     background-size: contain;
 
