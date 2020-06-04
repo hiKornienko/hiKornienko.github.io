@@ -1,0 +1,253 @@
+.form {
+  padding: 50px 15px;
+
+  &__inner {
+      margin: 0 auto;
+      width:100%;
+      max-width: 570px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #FBFDFF;
+    margin-bottom: 20px;
+
+    & span{
+      display: block;
+      margin-top: 10px;
+      padding: 0 20px;
+      font-size: 10px;
+      line-height: 150%;
+    }
+  }
+
+  & form {
+    border-radius: 20px;
+    padding: 20px;
+    background: linear-gradient(280.07deg, #00D2FF -1.3%, #3A7BD5 100%);
+    box-shadow: -3px -3px 8px rgba(255, 255, 255, 0.25), 3px 3px 8px rgba(55, 84, 170, 0.1), 5px 10px 10px rgba(0, 0, 0, 0.25), inset 4px 4px 20px rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    /* Note: backdrop-filter has minimal browser support */
+    & input,
+    & select,
+    & textarea {
+      width: 100%;
+      //background: rgba(255, 255, 255, 0.4);
+      background: #fff;
+      border: 1px solid #828282;
+      box-sizing: border-box;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      //backdrop-filter: blur(4px);
+      /* Note: backdrop-filter has minimal browser support */
+      border-radius: 10px;
+      font-size: 14px;
+      line-height: 16px;
+      padding: 8px 22px;
+      color: rgba(0, 0, 0, 0.5);
+      margin-bottom: 12px;
+      outline: 0;
+      resize: none;
+      font-family: $font-family;
+
+      &::placeholder{
+        font-family: $font-family;
+        color: rgba(0, 0, 0, 0.5);
+      }
+
+      & a{
+        color:#333;
+        line-height: 0;
+      }
+    }
+
+    & select{
+      background-image: url('/img/select.svg');
+      background-repeat: no-repeat;
+      background-position: calc(100% - 10px) 10px;
+      background-size: 22px;
+      appearance: none;
+    }
+
+    & textarea{
+      height:100px;
+    }
+
+    & label{
+      & a{
+        color:#333;
+        line-height: 18px;
+        display: block;
+      }
+    }
+
+    & input[type="checkbox"]:checked,
+    & input[type="checkbox"]:not(:checked){
+      position: absolute;
+      left: -9999px;
+    }
+
+    & input[type="checkbox"]:checked + label,
+    & input[type="checkbox"]:not(:checked) + label{
+      display: inline-block;
+      position: relative;
+      padding-left:(20px + 16);
+      line-height: (15px  + 2);
+      cursor: pointer;
+      font-size: 10px;
+      line-height: 12px;
+    }
+
+    & input[type="checkbox"]:checked + label:before,
+    & input[type="checkbox"]:not(:checked) + label:before{
+      content: "";
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      width: 20px;
+      height: 20px;
+      background: #fff;
+      border: 1px solid #828282;
+      box-sizing: border-box;
+      //backdrop-filter: blur(4px);
+    }
+
+    & input[type="checkbox"]:checked + label:after,
+    & input[type="checkbox"]:not(:checked) + label:after{
+      content: "";
+      position: absolute;
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
+
+    & input[type="checkbox"]:checked + label:after,
+    & input[type="checkbox"]:not(:checked) + label:after {
+      left:(2px);
+      top: (2px);
+      width: (16px);
+      height: (16px);
+      background: #60bc59;
+      opacity: 0;
+    }
+
+    & input[type="checkbox"]:checked + label:after {
+      opacity: 1;
+    }
+
+    & button[type="submit"]{
+      min-width: 240px;
+      text-align: center;
+      display: block;
+      background: rgba(251, 253, 255, 0.4);
+      box-shadow: -3px -3px 8px rgba(255, 255, 255, 0.25), 3px 3px 8px rgba(55, 84, 170, 0.1), inset 4px 4px 20px rgba(255, 255, 255, 0.5);
+      border-radius: 20px;
+      border: 0;
+      outline: 0;
+      margin: 24px auto 0;
+      font-size: 14px;
+      line-height: 150%;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 14px 24px;
+      cursor: pointer;
+    }
+
+  }
+}
+
+@media (min-width: 1024px) {
+  .form {
+    padding: 250px 15px;
+    background: url('/img/form_logo.svg') no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+    &__title {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      color: #FBFDFF;
+      margin-bottom: 20px;
+
+      & span{
+        display: block;
+        margin-top: 10px;
+        padding: 0 20px;
+        font-size: 12px;
+        line-height: 150%;
+      }
+    }
+
+    & form {
+      border-radius: 20px;
+      padding: 38px 30px;
+      text-align: center;
+
+      & input,
+      & select,
+      & textarea {
+        width: 100%;
+        max-width: 400px;
+        display: block;
+        margin: 0 auto;
+
+        font-size: 18px;
+        line-height: 22px;
+        padding: 8px 22px;
+
+        margin-bottom: 20px;
+
+      }
+
+      & select{
+        background-position: calc(100% - 10px) 12px;
+        background-size: 30px;
+      }
+      & textarea{
+        height:70px;
+      }
+
+      & label{
+        width: 100%;
+        max-width: 400px;
+        text-align: left;
+      }
+
+      & input[type="checkbox"]:checked + label,
+      & input[type="checkbox"]:not(:checked) + label{
+        padding-left:(28px + 16);
+        line-height: (28px  + 2);
+        font-size: 14px;
+        line-height: 17px;
+      }
+
+      & input[type="checkbox"]:checked + label:before,
+      & input[type="checkbox"]:not(:checked) + label:before{
+        width: 28px;
+        height: 28px;
+      }
+
+
+
+      & input[type="checkbox"]:checked + label:after,
+      & input[type="checkbox"]:not(:checked) + label:after {
+        width: (24px);
+        height: (24px);
+      }
+
+      & button[type="submit"]{
+        width: 100%;
+        max-width: 400px;
+        font-size: 24px;
+        line-height: 150%;
+        padding: 22px 40px;
+      }
+    }
+
+  }
+}
