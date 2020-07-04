@@ -1,0 +1,36 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html{
+  overflow-x: hidden;
+}
+body{
+  font-family: $font-family;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: normal;
+  color:#000;
+  overflow: hidden;
+}
+
+.container{
+  width:100%;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.button{
+  background: #6DD5F6;
+  border-radius: 100px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 75px;
+  color:#fff;
+  box-shadow: 0px 0px 10px 2px #1980F9;
+  text-decoration: none;
+  padding: 25px 88px;
+}
