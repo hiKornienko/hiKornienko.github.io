@@ -100,7 +100,7 @@ body {
   }
   .header:before {
     content: "";
-    background: url("/img/1.svg") no-repeat;
+    background: url("../img/1.svg") no-repeat;
     z-index: -1;
     position: absolute;
     background-position: center bottom;
@@ -305,7 +305,7 @@ body {
   }
   .three .container::before {
     content: "";
-    background: url("/img/2.svg") no-repeat;
+    background: url("../img/2.svg") no-repeat;
     background-size: contain;
     position: absolute;
     width: 1000px;
@@ -315,7 +315,7 @@ body {
   }
   .three .container::after {
     content: "";
-    background: url("/img/2.svg") no-repeat;
+    background: url("../img/2.svg") no-repeat;
     background-size: contain;
     position: absolute;
     width: 1000px;
@@ -411,7 +411,7 @@ body {
   }
   .four .container::before {
     content: "";
-    background: url("/img/5.svg") no-repeat;
+    background: url("../img/5.svg") no-repeat;
     background-size: contain;
     position: absolute;
     width: 500px;
@@ -421,7 +421,7 @@ body {
   }
   .four .container::after {
     content: "";
-    background: url("/img/5.svg") no-repeat;
+    background: url("../img/5.svg") no-repeat;
     background-size: contain;
     position: absolute;
     width: 500px;
@@ -548,7 +548,7 @@ body {
   }
   .six .container:before {
     content: "";
-    background: url("/img/6.svg") no-repeat;
+    background: url("../img/6.svg") no-repeat;
     background-size: contain;
     position: absolute;
     width: 460px;
@@ -558,7 +558,7 @@ body {
   }
   .six .container:after {
     content: "";
-    background: url("/img/6.svg") no-repeat;
+    background: url("../img/6.svg") no-repeat;
     background-size: contain;
     position: absolute;
     width: 460px;
@@ -640,7 +640,7 @@ body {
   }
   .seven__right:before {
     content: "";
-    background: url("/img/8.svg") no-repeat;
+    background: url("../img/8.svg") no-repeat;
     background-size: contain;
     position: absolute;
     z-index: -1;
@@ -671,11 +671,11 @@ body {
   display: none;
 }
 .eight .owl-prev {
-  background: url("/img/left.svg") no-repeat !important;
+  background: url("../img/left.svg") no-repeat !important;
   background-position: center !important;
 }
 .eight .owl-next {
-  background: url("/img/right.svg") no-repeat !important;
+  background: url("../img/right.svg") no-repeat !important;
   background-position: center !important;
 }
 .eight .owl-nav {
@@ -694,7 +694,7 @@ body {
   }
   .eight .container:before {
     content: "";
-    background: url("/img/9.svg") no-repeat;
+    background: url("../img/9.svg") no-repeat;
     background-size: contain;
     position: absolute;
     z-index: -1;
@@ -705,7 +705,7 @@ body {
   }
   .eight .container:after {
     content: "";
-    background: url("/img/10.svg") no-repeat;
+    background: url("../img/10.svg") no-repeat;
     background-size: contain;
     position: absolute;
     z-index: -1;
@@ -751,7 +751,7 @@ body {
   }
   .footer .container:before {
     content: "";
-    background: url("/img/12.svg") no-repeat;
+    background: url("../img/12.svg") no-repeat;
     background-size: contain;
     position: absolute;
     z-index: -1;
@@ -763,7 +763,7 @@ body {
   }
   .footer .container:after {
     content: "";
-    background: url("/img/12.svg") no-repeat;
+    background: url("../img/12.svg") no-repeat;
     background-size: contain;
     position: absolute;
     z-index: -1;

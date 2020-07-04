@@ -21,7 +21,7 @@
 
       &:before{
         content:'';
-        background: url('/img/12.svg') no-repeat;
+        background: url('../img/12.svg') no-repeat;
         background-size: contain;
         position: absolute;
         z-index: -1;
@@ -34,7 +34,7 @@
 
       &:after{
         content:'';
-        background: url('/img/12.svg') no-repeat;
+        background: url('../img/12.svg') no-repeat;
         background-size: contain;
         position: absolute;
         z-index: -1;

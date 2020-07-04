@@ -43,7 +43,7 @@
 
       &::before{
         content:'';
-        background: url('/img/5.svg') no-repeat;
+        background: url('../img/5.svg') no-repeat;
         background-size: contain;
         position: absolute;
         width:500px;
@@ -54,7 +54,7 @@
 
       &::after{
         content:'';
-        background: url('/img/5.svg') no-repeat;
+        background: url('../img/5.svg') no-repeat;
         background-size: contain;
         position: absolute;
         width:500px;

@@ -29,12 +29,12 @@
   }
 
   & .owl-prev{
-    background: url('/img/left.svg') no-repeat!important;
+    background: url('../img/left.svg') no-repeat!important;
     background-position: center!important;
   }
 
   & .owl-next {
-    background: url('/img/right.svg') no-repeat!important;
+    background: url('../img/right.svg') no-repeat!important;
     background-position: center!important;
   }
 
@@ -58,7 +58,7 @@
 
       &:before{
         content:'';
-        background: url('/img/9.svg') no-repeat;
+        background: url('../img/9.svg') no-repeat;
         background-size: contain;
         position: absolute;
         z-index: -1;
@@ -70,7 +70,7 @@
 
       &:after{
         content:'';
-        background: url('/img/10.svg') no-repeat;
+        background: url('../img/10.svg') no-repeat;
         background-size: contain;
         position: absolute;
         z-index: -1;
