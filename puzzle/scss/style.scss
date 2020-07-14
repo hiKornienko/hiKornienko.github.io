@@ -1,0 +1,13 @@
+$font-family: 'Heebo', Aria, sans-serif;
+$font-family2: 'Libre Franklin', Aria, sans-serif;
+$font-family3: 'Montserrat', Aria, sans-serif;
+$font-family4: 'Caveat', Aria, cursive;;
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Heebo&family=Libre+Franklin:wght@600&family=Montserrat&display=swap');
+
+@import 'root.scss';
+@import 'header.scss';
+@import 'info.scss';
+@import 'app.scss';
+@import 'store.scss';
+@import 'footer.scss';

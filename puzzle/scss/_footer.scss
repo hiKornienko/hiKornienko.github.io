@@ -1,0 +1,125 @@
+.footer{
+  background: linear-gradient(90.58deg, #000046 -7.21%, #1CB5E0 107.68%);
+  box-shadow: 0px -4px 10px rgba(3, 17, 84, 0.25);
+  padding: 20px 0;
+
+  &__social{
+   width: 230px;
+   margin:0 auto 20px;
+   display: flex;
+   justify-content: space-between;
+
+   & a{
+     width: 42px;
+     display: block;
+   }
+
+   & img{
+     width:100%;
+   }
+  }
+
+  &__email{
+    background: #FFFFFF;
+    border-radius: 20px;
+    font-size: 12px;
+    line-height: 150%;
+    /* or 18px */
+    color: #333333;
+    width: 230px;
+    margin:0 auto 20px;
+    padding: 5px 13px;
+
+    & span{
+      border-left: 1px solid #333333;
+      padding-left: 5px;
+      margin-left: 5px;
+    }
+
+    & img{
+      margin-bottom: -4px;
+    }
+  }
+
+  &__link{
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+    margin:0 auto 20px;
+
+    & a{
+      font-size: 10px;
+      line-height: 12px;
+      text-align: center;
+      color:#fff;
+      text-decoration: none;
+    }
+  }
+
+  &__copy, &__text{
+    font-size: 8px;
+    line-height: 150%;
+    text-align: justify;
+  }
+
+}
+
+@media(min-width:1024px){
+  .footer{
+    & .container{
+      display: grid;
+      grid-template-areas: "link social email"
+                           "copy text text";
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &__social{
+     grid-area: social;
+     align-self: center;
+     justify-self: center;
+     margin: 0;
+
+     & a{
+       width: 50px;
+     }
+    }
+
+    &__email{
+      grid-area: email;
+      align-self: center;
+      justify-self: end;
+      margin: 0;
+
+      font-size: 14px;
+    }
+
+    &__link{
+      grid-area: link;
+
+      flex-direction: column;
+      width: 100%;
+      margin:0;
+
+      & a{
+        display: inline-block;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: left;
+        margin: 10px 0;
+        font-family: $font-family3;
+      }
+    }
+
+    &__copy{
+      grid-area: copy;
+      font-size: 9px;
+    }
+
+    &__text{
+      grid-area: text;
+      font-size: 9px;
+      padding-left: 80px;
+    }
+
+  }
+}

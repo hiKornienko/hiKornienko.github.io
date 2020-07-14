@@ -1,0 +1,212 @@
+.app{
+  &__block{
+    list-style-type: none;
+    text-align: center;
+    margin-bottom: 100px;
+
+    &--puzzle{
+       width:100px;
+       height:100px;
+       background-size: contain;
+       background-repeat: no-repeat;
+       background-position: center;
+       display: block;
+       margin: 0 auto 39px;
+    }
+
+    & h2{
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 41px;
+      color: #FBFDFF;
+      font-family: $font-family2;
+      text-shadow: -2px 0px 2px rgba(4,21,88,0.50);
+      margin-bottom: 40px;
+    }
+
+    & p{
+      font-size: 19px;
+      line-height: 150%;
+      text-align: justify;
+      color: #FBFDFF;
+      margin-bottom: 40px;
+    }
+
+    &--img--width{
+      width:100%;
+    }
+
+    &--img--height{
+      width:60%;
+    }
+
+  }
+
+}
+
+@media (min-width:1024px){
+  .app{
+    &__block{
+      position: relative;
+      display: grid;
+      grid-template-areas: "h2 img"
+                           "p  img";
+
+      text-align: center;
+      margin-bottom: 200px;
+
+      &--puzzle{
+         position: absolute;
+         z-index: -1;
+         margin: 0;
+      }
+
+      & h2{
+        grid-area: h2;
+
+        font-size: 64px;
+        line-height: 73px;
+        margin-bottom: 80px;
+        margin-top: 80px;
+      }
+
+      & p{
+        grid-area: p;
+
+        font-size: 32px;
+        margin-bottom: 40px;
+      }
+
+      &--img{
+        grid-area: img;
+        width:100%;
+        align-self: center;
+        justify-self: end;
+      }
+
+    }
+
+  }
+}
+
+@media (min-width:1024px){
+  .app__block--one{
+    & .app__block--puzzle{
+      width:900px;
+      height:900px;
+      top:-200px;
+      right:-200px;
+    }
+
+    & h2{
+      width:540px;
+    }
+
+    & p{
+      width:540px;
+    }
+
+    & .app__block--img{
+      width:80%;
+    }
+  }
+
+  .app__block--two{
+    grid-template-areas: "img h2" "img p";
+
+    & .app__block--puzzle{
+      width:650px;
+      height:650px;
+      top:-50px;
+      left:-80px;
+    }
+
+    & h2{
+      width:500px;
+    }
+
+    & p{
+      width:500px;
+    }
+
+    & .app__block--img{
+      width:95%;
+      justify-self: start;
+    }
+  }
+
+
+  .app__block--three{
+    & .app__block--puzzle{
+      width:800px;
+      height:800px;
+      top:-100px;
+      right:-300px;
+    }
+
+    & h2{
+      width:670px;
+    }
+
+    & p{
+      width:670px;
+    }
+
+    & .app__block--img{
+      width:90%;
+      align-self: end;
+    }
+  }
+
+
+  .app__block--four{
+    grid-template-areas: "img h2" "img p";
+
+    & .app__block--puzzle{
+      width:900px;
+      height:900px;
+      top:-200px;
+      left:-200px;
+    }
+
+    & h2{
+      justify-self: end;
+      width:570px;
+    }
+
+    & p{
+      justify-self: end;
+      width:570px;
+    }
+
+    & .app__block--img{
+      width:50%;
+      justify-self: center;
+    }
+  }
+
+  .app__block--five{
+    & .app__block--puzzle{
+      width:750px;
+      height:750px;
+      top:-100px;
+      right:-320px;
+    }
+
+    & h2{
+      width:740px;
+    }
+
+    & p{
+      width:740px;
+      padding-bottom: 100px;
+    }
+
+    & .app__block--img{
+      width:75%;
+      align-self: center;
+    }
+  }
+
+}

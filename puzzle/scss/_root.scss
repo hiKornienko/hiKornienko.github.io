@@ -1,0 +1,25 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+body{
+  font-size: 14px;
+  line-height: 150%;
+  font-family: $font-family;
+  background: linear-gradient(328.32deg, #000046 -25.31%, #1CB5E0 115.15%);
+  color:#fff;
+  overflow: hidden;
+}
+
+.container{
+  width:100%;
+  max-width: 1142px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
