@@ -1,0 +1,63 @@
+.four{
+  background: url('../img/4.svg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 29px 0 150px;
+
+  & h2{
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  & p{
+    font-size: 19px;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 66px;
+  }
+
+  & img{
+    width: 100%;
+    margin-left: -5%;
+    padding-bottom: 80px;
+  }
+}
+
+@media(min-width:1024px){
+  .four{
+    margin: 90px 0 0 0;
+    padding: 0 0 150px;
+
+    & .container{
+      display: grid;
+      grid-template-areas: "img h2" "img p";
+    }
+
+    & h2{
+      grid-area: h2;
+      align-self: end;
+      width:540px;
+      font-size: 42px;
+      line-height: 51px;
+      margin-bottom: 70px;
+    }
+
+    & p{
+      grid-area: p;
+      width:540px;
+      font-size: 36px;
+      text-align: justify;
+      margin-bottom: 66px;
+    }
+
+    & img{
+      grid-area: img;
+      width: 130%;
+      margin-left: -35%;
+      margin-top: -80px;
+      padding-bottom: 0;
+    }
+  }
+}

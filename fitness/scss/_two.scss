@@ -1,0 +1,59 @@
+.two{
+  background: url('../img/2.svg') no-repeat;
+  background-position: top;
+  background-size: cover;
+  padding: 28px 0 37px 0;
+
+  & img{
+    width:100%;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  & h2{
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    margin-bottom: 37px;
+  }
+
+  & p{
+    font-size: 19px;
+    line-height: 150%;
+    text-align: justify;
+  }
+}
+
+@media(min-width:1024px){
+  .two{
+    padding: 0;
+
+    & .container{
+      display: grid;
+      grid-template-areas: "img h2" "img p";
+    }
+
+    & img{
+      grid-area: img;
+      width:120%;
+      margin-left: -10%;
+      margin-bottom: -50px;
+    }
+
+    & h2{
+      grid-area: h2;
+      align-self: end;
+      width:570px;
+      font-size: 42px;
+      line-height: 51px;
+      margin-top: 170px;
+      margin-bottom: 70px;
+    }
+
+    & p{
+      grid-area: p;
+      width:570px;
+      font-size: 36px;
+    }
+  }
+}

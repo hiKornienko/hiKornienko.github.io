@@ -1,0 +1,32 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+body{
+  font-size: 14px;
+  line-height: 150%;
+  font-family: $font-family;
+  color:#333;
+  overflow: hidden;
+}
+
+p{
+  margin-bottom: 16px;
+}
+
+h2{
+  margin-bottom: 16px;
+}
+
+.container{
+  width:100%;
+  max-width: 1142px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
