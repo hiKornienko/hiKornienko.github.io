@@ -462,7 +462,7 @@ h2 {
 }
 .four {
   background: url("../img/4.svg") no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   padding: 29px 0 150px;
 }
