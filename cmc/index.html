@@ -104,7 +104,9 @@
         <div class="header__profile">
           <div class="header__profile--inner">
             <a href="#" class="header__profile--favorites"></a>
-            <div class="header__profile--user"></div>
+            <!-- <a href="#" class="header__profile--login"></a> -->
+            <a href="#" class="header__profile--user"></a>
+            <a href="#" class="header__profile--logout"></a>
           </div>
         </div>
         <div class="header__basket">
@@ -172,8 +174,8 @@
           <span><span>Маштаб:</span> 1:18</span>
         </div>
         <div class="home__day--price">2300</div>
-        <div class="home__day--add">В корзину</div>
-        <div class="home__day--favorites"></div>
+        <object><a href="javascript:void(0)" class="home__day--add">В корзину</a></object>
+        <object><a href="javascript:void(0)" class="home__day--favorites"></a></object>
       </a>
     </div>
     <div class="home__hit">
@@ -245,15 +247,15 @@
         <li><a href="#"><span style="background-image: url('https://alfamodeli.ru/photo_preview/3019AVD.jpg')"></span>Сборные модели</a></li>
         <li><a href="#"><span style="background-image: url('https://alfamodeli.ru/photo_preview/8506026.jpg')"></span>Легковые автомобили</a></li>
         <li><a href="#"><span style="background-image: url('https://alfamodeli.ru/photo_preview/4672114.jpg')"></span>Гоночные автомобили</a></li>
-        <li><a href="#"><span style="background-image: url('https://alfamodeli.ru/photo_preview/TR058.jpg')"></span>Грузовые автомобили</a></li>
-        <li><a href="#"><span style="background-image: url('https://alfamodeli.ru/photo_preview/182163022.jpg')"></span>Мотоциклы</a></li>
-        <li><a href="#"><span style="background-image: url('https://alfamodeli.ru/photo_preview/NA012.jpg')"></span>Автобусы</a></li>
-        <li><a href="#"><span style="background-image: url('https://alfamodeli.ru/photo_preview/AC097.jpg')"></span>Самолеты</a></li>
+        <li><a href="#"><span style="background-image: url('img/cat/021-pickup-truck.svg')"></span>Грузовые автомобили</a></li>
+        <li><a href="#"><span style="background-image: url('img/cat/023-motorcycle.svg')"></span>Мотоциклы</a></li>
+        <li><a href="#"><span style="background-image: url('img/cat/024-bus.svg')"></span>Автобусы</a></li>
+        <li><a href="#"><span style="background-image: url('img/cat/015-aeroplane.svg')"></span>Самолеты</a></li>
         <li><a href="#"><span style="background-image: url('https://alfamodeli.ru/photo_preview/NT042.jpg')"></span>Военная техника</a></li>
-        <li><a href="#"><span style="background-image: url('https://alfamodeli.ru/photo_preview/116665.jpg')"></span>Спецтранспорт</a></li>
+        <li><a href="#"><span style="background-image: url('img/cat/004-ambulance.svg')"></span>Спецтранспорт</a></li>
         <li><a href="#"><span style="background-image: url('https://alfamodeli.ru/photo_preview/450036300.jpg')"></span>Комиссионные модели</a></li>
-        <li><a href="#"><span style="background-image: url('https://alfamodeli.ru/photo_preview/7572005.jpg')"></span>Корабли</a></li>
-        <li><a href="#"><span style="background-image: url('https://alfamodeli.ru/photo_preview/0111MP.jpg')"></span>Поезда</a></li>
+        <li><a href="#"><span style="background-image: url('img/cat/012-ship.svg')"></span>Корабли</a></li>
+        <li><a href="#"><span style="background-image: url('img/cat/001-train.svg')"></span>Поезда</a></li>
       </ul>
       <a class="home__category--link" href="#">Перейти ко всем категориям</a>
     </div>
@@ -300,17 +302,14 @@
     </div>
   </div>
   <div class="footer__copy">
-    &copy Интернем-магазин cmc-russia.ru
+    &copy; Интернем-магазин cmc-russia.ru
   </div>
 </footer>
 <!-- / footer -->
 
-<script src="js/template.js"></script>
-
 <script src="https://www.cmc-russia.ru/.s/src/jquery-3.3.1.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
-<script src="js/home.js"></script>
-
+<script src="js/template.js"></script>
 
 </body>
 </html>
