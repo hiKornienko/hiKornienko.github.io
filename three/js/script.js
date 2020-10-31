@@ -170,7 +170,8 @@ referralMove();
 function referralMove(){
   let referrals = document.querySelectorAll('[data-board-move]');
   let localName = 'ReferralMove';
-
+  localStorage.removeItem(localName);
+  
   for(let referral of referrals){
     referral.addEventListener('click', (event) => {
       let referralId = referral.parentElement.parentElement.dataset.boardUserId;
