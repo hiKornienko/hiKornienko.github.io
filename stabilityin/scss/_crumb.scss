@@ -1,0 +1,44 @@
+.crumb{
+  margin-bottom: 25px;
+  display: flex;
+  justify-content:flex-start;
+
+  & > li{
+    position: relative;
+    padding-right: 14px;
+    font-size: 13px;
+    font-weight: 400;
+    color:var(--dark);
+
+    & > a{
+      color:var(--dark);
+      transition: 0.3s;
+
+      &:hover{
+        color:var(--dark);
+        text-decoration: underline;
+      }
+    }
+
+    &.active{
+      & > a{
+        color:var(--dark);
+        pointer-events: none;
+      }
+    }
+
+    &:after{
+      content: '/';
+      position: absolute;
+      right:5px;
+    }
+
+    &:last-child{
+      padding: 0;
+      &:after{
+        content: none;
+      }
+    }
+
+  }
+}

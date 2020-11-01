@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/chartist.min.css">
+
+  <link rel="stylesheet" href="css/page.css">
+  <title>Document</title>
+</head>
+
+<body class="container">
+  <div class="page">
+    <!-- section -->
+    <h1>Тринар</h1>
+    <!-- section -->
+
+    <!-- section -->
+    <nav aria-label="crumb">
+      <ol class="crumb">
+        <li class="crumb__item"><a href="#">Рабочий стол</a></li>
+        <li class="crumb__item active" aria-current="page">Тринар</li>
+      </ol>
+    </nav>
+    <!-- section -->
+
+    <!-- section -->
+    <section class="widget">
+      <div class="widget__block">
+        <div class="widget__block--title">Тринарный бонус</div>
+        <div class="widget__block--price">
+          250 R
+        </div>
+        <div class="widget__block--other">
+          Доход от закрытых матриц
+        </div>
+      </div>
+    </section>
+    <!-- section -->
+
+    <!-- section -->
+    <div class="page__set">
+      <div class="page__set__info">
+        <span class="icon--info"></span>
+        <p>Для приближения нажмите на любую часть ветви</p>
+      </div>
+
+      <ul class="page__set__radio">
+        <li class="page__set__radio--desc">Новые рефералы</li>
+        <li><label><input type="radio" name="setting"> Левая нога</label></li>
+        <li><label><input type="radio" name="setting"> Правая нога</label></li>
+        <li><label><input type="radio" name="setting" checked> Авто</label></li>
+      </ul>
+    </div>
+    <!-- section -->
+
+    <!-- section -->
+    <div class="page__ref">
+      <span>Реферальная ссылка</span>
+      <input type="text" value="https://stabilityin.com\slalad5575asdasd">
+    </div>
+    <!-- section -->
+
+    <!-- section -->
+    <div class="board">
+        <div class="board__main" data-board >
+            <div class="board__item board__item--my" data-board-user-id="1" data-board-scale="1">
+              <div class="board__user">
+                <div class="board__user--inner">
+                  <div class="board__user--img">
+                     <img src="img/user.png" alt="user">
+                  </div>
+                  <div class="board__user--name">Вы</div>
+                </div>
+              </div>
+              <div class="board__item--children" data-board-children></div>
+            </div>
+        </div>
+        <div class="board__zoom">
+          <button class="board__zoom--button" data-board-zoom-plus>+</button>
+          <button class="board__zoom--button" data-board-zoom-minus>-</button>
+        </div>
+    </div>
+    <!-- section -->
+
+    <!-- section -->
+    <div class="page__table">
+      <div class="page__table__header">
+        <div class="page__table__header--title">Статистика начисления бонусов</div>
+        <ul class="page__table__nav">
+          <li>За сутки</li>
+          <li class="active">Неделя</li>
+          <li>Месяц</li>
+          <li>
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.8 0H1.2C0.54 0 0 0.5404 0 1.2V10.8C0 11.4592 0.54 12 1.2 12H10.8C11.46 12 12 11.4592 12 10.8V1.2C12 0.5404 11.46 0 10.8 0ZM2.5908 1.082C2.5908 0.9268 2.7176 0.8 2.8728 0.8H9.128C9.2828 0.8 9.41 0.9268 9.41 1.082V1.5368C9.41 1.692 9.2832 1.8188 9.128 1.8188H2.8724C2.7176 1.8188 2.5904 1.692 2.5904 1.5368L2.5908 1.082ZM3.238 10.5608H1.4V8.9264H3.238V10.5608ZM3.238 8.378H1.4V6.7436H3.238V8.378ZM5.692 10.5608H3.8536V8.9264H5.692V10.5608ZM5.692 8.378H3.8536V6.7436H5.692V8.378ZM5.692 6.196H3.8536V4.5608H5.692V6.196ZM8.146 10.5608H6.308V8.9264H8.1464V10.5608H8.146ZM8.146 8.378H6.308V6.7436H8.1464V8.378H8.146ZM8.146 6.196H6.308V4.5608H8.1464V6.196H8.146ZM10.6 10.5608H8.7616V8.9264H10.6V10.5608ZM10.6 8.378H8.7616V6.7436H10.6V8.378ZM10.6 6.196H8.7616V4.5608H10.6V6.196Z"
+                fill="#C6CCD6" />
+            </svg>
+            <span>Период</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page__table__table">
+        <ul class="page__table__table--item page__table__table--header">
+          <li>Название бонуса</li>
+          <li>Дата/Время</li>
+          <li>REND</li>
+          <li>Комментарий</li>
+        </ul>
+        <ul class="page__table__table--item">
+          <li>Название бонуса бонуса бонуса</li>
+          <li>16.06.2020 / 09:59</li>
+          <li></li>
+          <li>Комментарий</li>
+        </ul>
+        <ul class="page__table__table--item">
+          <li>Название бонуса</li>
+          <li>16.06.2020 / 09:59</li>
+          <li></li>
+          <li>Комментарий</li>
+        </ul>
+        <ul class="page__table__table--item">
+          <li>Название бонуса</li>
+          <li>16.06.2020 / 09:59</li>
+          <li></li>
+          <li>Комментарий</li>
+        </ul>
+        <ul class="page__table__table--item">
+          <li>Название бонуса</li>
+          <li>16.06.2020 / 09:59</li>
+          <li></li>
+          <li>Комментарий</li>
+        </ul>
+        <ul class="page__table__table--item">
+          <li>Название бонуса</li>
+          <li>16.06.2020 / 09:59</li>
+          <li></li>
+          <li>Комментарий</li>
+        </ul>
+        <ul class="page__table__table--item">
+          <li>Название бонуса</li>
+          <li>16.06.2020 / 09:59</li>
+          <li></li>
+          <li>Комментарий</li>
+        </ul>
+        <ul class="page__table__table--item">
+          <li>Название бонуса</li>
+          <li>16.06.2020 / 09:59</li>
+          <li></li>
+          <li>Комментарий</li>
+        </ul>
+      </div>
+
+      <div class="page__table__load">
+        <div class="page__table__load--btn">
+          <span>Показать больше</span>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="9" cy="9" r="9" fill="#3359E6" />
+            <g>
+              <path
+                d="M11.5909 9.54545H9.54544V11.5909C9.54544 11.8167 9.36217 12 9.13635 12H8.86364C8.63782 12 8.45455 11.8167 8.45455 11.5909V9.54545H6.40909C6.18327 9.54545 6 9.36218 6 9.13636V8.86365C6 8.63783 6.18327 8.45456 6.40909 8.45456H8.45455V6.40911C8.45455 6.18329 8.63782 6.00002 8.86364 6.00002H9.13635C9.36217 6.00002 9.54544 6.18329 9.54544 6.40911V8.45456H11.5909C11.8167 8.45456 12 8.63783 12 8.86365V9.13636C12 9.36218 11.8167 9.54545 11.5909 9.54545Z"
+                fill="white" />
+            </g>
+          </svg>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- section --><!-- / page__table-->
+
+  </div>
+</body>
+
+</html>

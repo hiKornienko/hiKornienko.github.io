@@ -1,0 +1,32 @@
+.page__ref{
+  margin: 20px 0;
+  @media(min-width: 1024px){
+    max-width: 170px;
+    position: absolute;
+    z-index: 200;
+    margin-left: 22px;
+    display: none;
+  }
+
+  & > span{
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+
+  & > input{
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background: white;
+    color: #8B9DB6;
+    font-family: var(--font-family);
+    font-size: 12px;
+    line-height: 16px;
+    padding: 9px 10px;
+    width:100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

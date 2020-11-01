@@ -1,0 +1,133 @@
+.page__table{
+  margin: 30px 0;
+  &__header{
+    @media(min-width: 768px){
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &--title{
+      width:100%;
+      color:var(--dark);
+      font-family: var(--font-family);
+      font-size: 20px;
+      line-height: 150%;
+      font-weight: 600;
+      margin-bottom: 12px;
+      text-align: center;
+      @media(min-width: 768px){
+        text-align: left;
+      }
+    }
+  }
+
+  &__nav{
+    width:100%;
+    @media(min-width: 768px){
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    & > li {
+      background: #ECEFF3;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 5px 15px;
+      margin: 5px 0;
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+      cursor: pointer;
+      color:var(--dark);
+      text-align: center;
+
+      &:hover{
+        color:white;
+        background: var(--gold);
+      }
+
+      &.active{
+        color:white;
+        background: var(--gold);
+        pointer-events: none;
+      }
+
+      & > svg{
+        margin-right: 10px;
+      }
+
+      @media(min-width: 768px){
+        margin-right: 10px;
+        &:last-of-type{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &__table{
+    margin: 20px 0;
+
+    &--item{
+      border-bottom: 1px solid #979EA1;
+      padding: 12px 0;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      @media(min-width: 768px){
+        flex-direction: row;
+      }
+
+      & > li{
+        color:var(--dark);
+        width: 100%;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        padding: 0 10px;
+      }
+    }
+
+    &--header{
+      background: #3359E6;
+      border-radius: 5px;
+      border-bottom: 0;
+
+      & > li {
+        font-size: 14px;
+        font-weight: 600;
+        color:white;
+      }
+    }
+  }
+
+  &__load{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    &--btn{
+      display: inline-flex;
+      align-items: center;
+      font-size: 14px;
+      border: 1px solid #3359E6;
+      padding: 5px 30px;
+      height: 46px;
+      cursor: pointer;
+      overflow-anchor: none;
+      transition: 0.3s;
+
+      & > svg{
+        margin-left: 20px;
+      }
+
+      &:hover{
+        background: #3359E6;
+        color:white;
+      }
+    }
+  }//__load
+}//.page__table
