@@ -1,0 +1,24 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  //background: #fbfbfb;
+  background: grey;
+}
+
+.calendar{
+  width: 100%;
+  font-family: var(--calendar-family);
+  color:var(--calendar-dark);
+  font-weight: 500;
+  background: white;
+  padding: 20px;
+}
+
+@keyframes load {
+  0%   {transform: rotate(0deg)}
+  100% {transform: rotate(360deg)}
+}

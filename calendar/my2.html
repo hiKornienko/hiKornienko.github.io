@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/calendar.css">
+</head>
+
+<body style="max-width:1000px; margin:50px auto;">
+
+  <div class="calendar">
+    <!-- calendar header -->
+    <div class="calendar__header">
+      <div class="calendar__title">Календарь</div>
+      <ul class="calendar__menu">
+        <li>Неделя</li>
+        <li>Месяц</li>
+        <li class="calendar__menu--add">Добавить событие</li>
+      </ul>
+    </div>
+    <!-- calendar header -->
+
+    <!-- calendar info -->
+    <div class="calendar__info">
+      <div class="calendar__period">
+        <svg class="calendar__period--back" viewBox="0 0 5 9">
+          <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+        </svg>
+        <div class="calendar__period--date">
+          <span>10 сентября</span>-<span>17 сентября</span>
+        </div>
+        <svg class="calendar__period--next" viewBox="0 0 5 9">
+          <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+        </svg>
+      </div>
+      <ul class="calendar__status">
+        <li class="calendar__status--reminder">Напоминания</li>
+        <li class="calendar__status--task">Задачи</li>
+        <li class="calendar__status--quickly">Срочное</li>
+      </ul>
+    </div>
+    <!-- calendar info -->
+
+    <!-- calendar week -->
+    <div class="week load">
+
+      <!-- calendar week header -->
+      <div class="week__header">
+        <svg class="week__header--back" viewBox="0 0 5 9">
+          <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+        </svg>
+        <div class="week__header--day active">Понедельник<span>10</span></div>
+        <div class="week__header--day today">Вторник<span>11</span></div>
+        <div class="week__header--day">Среда<span>12</span></div>
+        <div class="week__header--day">Четверг<span>13</span></div>
+        <div class="week__header--day">Пятница<span>14</span></div>
+        <div class="week__header--day">Суббота<span>15</span></div>
+        <div class="week__header--day">Воскресение<span>16</span></div>
+        <svg class="week__header--next" viewBox="0 0 5 9">
+          <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+        </svg>
+      </div>
+      <!-- calendar week header -->
+
+      <!-- calendar week time -->
+      <div class="week__time" data-week-time>
+        <div class="week__time--time">08:00</div>
+        <div class="week__day active" data-week-day>
+          <div class="week__item" data-week-status="quickly" data-week-my>
+            <div class="week__item--title">название название название название</div>
+            <div class="week__item--time">
+              <span>08:00</span>-<span>10:30</span>
+            </div>
+            <div class="week__item--location">
+              <span class="week__item--location--icon"></span>
+              <span>Киев, Оболонь</span>
+            </div>
+            <div class="week__item--users">
+              <div class="week__item--users--count">+10</div>
+              <img src="img/user.png" alt="user">
+              <img src="img/user.png" alt="user">
+            </div>
+          </div>
+        </div>
+        <div class="week__day" data-week-day>
+          <div class="week__item" data-week-status="quickly">
+            <div class="week__item--title">название название название название</div>
+            <div class="week__item--time">
+              <span>08:00</span>-<span>10:30</span>
+            </div>
+            <div class="week__item--location">
+              <span class="week__item--location--icon"></span>
+              <span>Киев, Оболонь</span>
+            </div>
+            <div class="week__item--users">
+              <div class="week__item--users--count">+10</div>
+              <img src="img/user.png" alt="user">
+              <img src="img/user.png" alt="user">
+            </div>
+          </div>
+          <div class="week__item" data-week-status="task">
+            <div class="week__item--title">название название название название</div>
+            <div class="week__item--time">
+              <span>08:00</span>-<span>10:30</span>
+            </div>
+            <div class="week__item--location">
+              <span class="week__item--location--icon"></span>
+              <span>Киев, Оболонь</span>
+            </div>
+            <div class="week__item--users">
+              <div class="week__item--users--count">+10</div>
+              <img src="img/user.png" alt="user">
+              <img src="img/user.png" alt="user">
+            </div>
+          </div>
+        </div>
+        <div class="week__day" data-week-day>
+
+        </div>
+        <div class="week__day" data-week-day>
+          <div class="week__item" data-week-status="task">
+            <div class="week__item--title">название название название название</div>
+            <div class="week__item--time">
+              <span>08:00</span>-<span>10:30</span>
+            </div>
+            <div class="week__item--location">
+              <span class="week__item--location--icon"></span>
+              <span>Киев, Оболонь</span>
+            </div>
+            <div class="week__item--users">
+              <div class="week__item--users--count">+10</div>
+              <img src="img/user.png" alt="user">
+              <img src="img/user.png" alt="user">
+            </div>
+          </div>
+        </div>
+        <div class="week__day" data-week-day>
+
+        </div>
+        <div class="week__day" data-week-day>
+
+        </div>
+        <div class="week__day" data-week-day>
+
+        </div>
+      </div>
+
+      <div class="week__time" data-week-time>
+        <div class="week__time--time">12:00</div>
+        <div class="week__day active" data-week-day>
+          <div class="week__item" data-week-status="reminder">
+            <div class="week__item--title">название название </div>
+            <div class="week__item--time">
+              <span>08:00</span>-<span>10:30</span>
+            </div>
+            <div class="week__item--location">
+              <span class="week__item--location--icon"></span>
+              <span>Киев, Оболонь</span>
+            </div>
+            <div class="week__item--users">
+              <div class="week__item--users--count">+10</div>
+              <img src="img/user.png" alt="user">
+              <img src="img/user.png" alt="user">
+            </div>
+          </div>
+        </div>
+        <div class="week__day" data-week-day>
+          <div class="week__item" data-week-status="task">
+            <div class="week__item--title">название название название название</div>
+            <div class="week__item--time">
+              <span>08:00</span>-<span>10:30</span>
+            </div>
+            <div class="week__item--location">
+              <span class="week__item--location--icon"></span>
+              <span>Киев, Оболонь</span>
+            </div>
+            <div class="week__item--users">
+              <div class="week__item--users--count">+10</div>
+              <img src="img/user.png" alt="user">
+              <img src="img/user.png" alt="user">
+            </div>
+          </div>
+        </div>
+        <div class="week__day" data-week-day>
+
+        </div>
+        <div class="week__day" data-week-day>
+
+        </div>
+        <div class="week__day" data-week-day>
+          <div class="week__item" data-week-status="quickly">
+            <div class="week__item--title">название название название название</div>
+            <div class="week__item--time">
+              <span>08:00</span>-<span>10:30</span>
+            </div>
+            <div class="week__item--location">
+              <span class="week__item--location--icon"></span>
+              <span>Киев, Оболонь</span>
+            </div>
+            <div class="week__item--users">
+              <div class="week__item--users--count">+10</div>
+              <img src="img/user.png" alt="user">
+              <img src="img/user.png" alt="user">
+            </div>
+          </div>
+        </div>
+        <div class="week__day" data-week-day>
+
+        </div>
+        <div class="week__day" data-week-day>
+          <div class="week__item" data-week-status="task">
+            <div class="week__item--title">название название название название</div>
+            <div class="week__item--time">
+              <span>08:00</span>-<span>10:30</span>
+            </div>
+            <div class="week__item--location">
+              <span class="week__item--location--icon"></span>
+              <span>Киев, Оболонь</span>
+            </div>
+            <div class="week__item--users">
+              <div class="week__item--users--count">+10</div>
+              <img src="img/user.png" alt="user">
+              <img src="img/user.png" alt="user">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- calendar week time -->
+    </div>
+    <!-- calendar week -->
+
+    <!-- calendar week event -->
+    <div class="calendar__event active load">
+      <div class="calendar__event__inner">
+        <ul class="calendar__event__result">
+          <li>Название события</li>
+          <li>Статус: <span>Срочное</span></li>
+          <li>Дата и время: <span>22.11.2020 10:00 - 12:00</span></li>
+          <li>Локация: <span>Встреча в zoom</span></li>
+          <li>Детали: <span>Описание события, любой текст текст текс текст</span></li>
+          <li>Пользователи: <span>user1, user2, user3, user4, user5, user10</span></li>
+        </ul>
+      </div>
+    </div>
+    <!-- calendar week event -->
+
+  </div>
+
+  <script src="js/calendar.js"></script>
+</body>
+
+</html>
