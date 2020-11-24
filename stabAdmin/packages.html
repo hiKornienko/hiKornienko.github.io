@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/template.css">
+  <title>Admin Panel</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="javacropt:void(0)">Admin Panel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="user.html">Пользователи</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ranks.html">Ранг</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="binar.html">Бинар</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">История</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="packages.html">Пакеты</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                Страниц нет
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="javascript:void(0)">keys</a></li>
+                <li><a class="dropdown-item" href="javascript:void(0)">Another action</a></li>
+                <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- header -->
+
+  <!-- breadcrumb-->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Главная</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Пакеты</li>
+    </ol>
+  </nav>
+  <!-- breadcrumb-->
+
+  <!-- section -->
+  <section class="container-fluid">
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead class="table-light">
+          <tr>
+            <td>№</td>
+            <td>Название</td>
+            <td>order_id</td>
+            <td>Цена</td>
+            <td>Скидка</td>
+            <td>Номинал</td>
+            <td>Бинарный бонус</td>
+            <td>Бинарный доход</td>
+            <td>Доход от мастера ноды</td>
+            <td>Уровень дохода мастера ноды</td>
+            <td>Пакет stab</td>
+            <td>Пакет rend</td>
+            <td>Пакет бонусов</td>
+            <td colspan="2">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#create">
+                Создать пакет
+              </button>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><input class="form-control" id="name_1" type="text" placeholder="Business Plus"></td>
+            <td><input class="form-control" id="order_id_395da5c2-4902-460a-a69d-45ba5e7aecb0" type="text" placeholder="395da5c2-4902-460a-a69d-45ba5e7aecb0"></td>
+            <td><input class="form-control" id="price_1" type="text" placeholder="1550"></td>
+            <td><input class="form-control" id="discount_1" type="text" placeholder=""></td>
+            <td><input class="form-control" id="nominal_1" type="text" placeholder="1500"></td>
+            <td><input class="form-control" id="binar_bonus_1" type="text" placeholder="5"></td>
+            <td><input class="form-control" id="binar_income_1" type="text" placeholder="1500"></td>
+            <td><input class="form-control" id="income_master_node_1" type="text" placeholder="0.16"></td>
+            <td><input class="form-control" id="level_master_node_1" type="text" placeholder="4"></td>
+            <td><input class="form-control" id="stab_1" type="text" placeholder="50"></td>
+            <td><input class="form-control" id="rend_1" type="text" placeholder="50"></td>
+            <td><input class="form-control" id="bonus_1" type="text" placeholder=""></td>
+            <td>
+              <button onclick="ReplacePackagesInfo(1)" class="btn btn-primary">Изменить</button>
+            </td>
+            <td>
+              <button class="btn btn-danger" onclick="DeletePackages(1)">Удалить</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <!-- section -->
+
+  <!-- modal -->
+  <div class="modal fade" id="create" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Создать</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="mb-3"><input class="form-control" id="name" type="text" placeholder="Название пакета"></div>
+            <div class="mb-3"><input class="form-control" id="order_id" type="text" placeholder="order_id"></div>
+            <div class="mb-3"><input class="form-control" id="price" type="text" placeholder="Цена"></div>
+            <div class="mb-3"><input class="form-control" id="discount" type="text" placeholder="Скидка"></div>
+            <div class="mb-3"><input class="form-control" id="nominal" type="text" placeholder="Номинал"></div>
+            <div class="mb-3"><input class="form-control" id="binar_bonus" type="text" placeholder="Бинарный бонус"></div>
+            <div class="mb-3"><input class="form-control" id="binar_income" type="text" placeholder="Бинарный доход"></div>
+            <div class="mb-3"><input class="form-control" id="income_master_nods" type="text" placeholder="Доход по мастеру нод"></div>
+            <div class="mb-3"><input class="form-control" id="level_income_master_nods" type="text" placeholder="Уровень дохода по мастеру нод"></div>
+            <div class="mb-3"><input class="form-control" id="stab" type="text" placeholder="Стаб"></div>
+            <div class="mb-3"><input class="form-control" id="rend" type="text" placeholder="Ренд"></div>
+            <div class="mb-3"><input class="form-control" id="bonus" type="text" placeholder="Бонус"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+          <button type="button" class="btn btn-success" onclick="CreatePackagesInfo()">Создать</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal -->
+</body>
+
+</html>

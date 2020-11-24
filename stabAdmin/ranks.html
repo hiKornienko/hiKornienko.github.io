@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/template.css">
+  <title>Admin Panel</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="javacropt:void(0)">Admin Panel</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="user.html">Пользователи</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="ranks.html">Ранг</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="binar.html">Бинар</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="history.html">История</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="packages.html">Пакеты</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-expanded="false">
+                Страниц нет
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="javascript:void(0)">keys</a></li>
+                <li><a class="dropdown-item" href="javascript:void(0)">Another action</a></li>
+                <li><a class="dropdown-item" href="javascript:void(0)">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- header -->
+
+  <!-- breadcrumb-->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Главная</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Ранг</li>
+    </ol>
+  </nav>
+  <!-- breadcrumb-->
+
+  <!-- section -->
+  <section class="container-fluid">
+    <div class="table-responsive">
+      <table class="table table-bordered align-middle">
+        <thead class="table-light">
+          <tr>
+            <td>№</td>
+            <td>Уровень</td>
+            <td>Ранг</td>
+            <td>Пакеты</td>
+            <td>Ключи</td>
+            <td>Оборот</td>
+            <td>Условные квалификации</td>
+            <td>% от оборота</td>
+            <td>Подарок</td>
+            <td colspan="2">
+              <button type="button" class="btn btn-success" data-toggle="modal" data-target="#createRank">
+                Создать ранг
+              </button>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2</td>
+            <td><input class="form-control" id="level_2" name="level" type="text" placeholder="1"></td>
+            <td><input class="form-control" id="name_2" name="rank" type="text" placeholder="Consultant"></td>
+            <td><input class="form-control" id="need_package_2" name="packages" type="text" placeholder="500"></td>
+            <td><input class="form-control" id="activate_keys_2" name="keys" type="text" placeholder=""></td>
+            <td><input class="form-control" id="turnover_2" name="turnover" type="text" placeholder="10000"></td>
+            <td><input class="form-control" id="conditions_2" name="qualifications" type="text" placeholder=""></td>
+            <td><input class="form-control" id="turnover_percent_2" name="percent" type="text" placeholder="2"></td>
+            <td><input class="form-control" id="bonus_2" name="present" type="text" placeholder="Смарт наушники"></td>
+            <td><button onclick="ReplaceUserInfo('2')" class="btn btn-primary">Edit</button></td>
+            <td><button onclick="DeleteRanks('2')" class="btn btn-danger">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <!-- section -->
+
+  <!-- modal -->
+  <div class="modal fade" id="createRank" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Создать ранг</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+				    <div class="mb-3"><input class="form-control" id="level" name="level" type="text" placeholder="Уровень"></div>
+				    <div class="mb-3"><input class="form-control" id="name" name="rank" type="text" placeholder="Название ранга"></div>
+				    <div class="mb-3"><input class="form-control" id="need_package" name="packages" type="text" placeholder="Требующий пакет"></div>
+				    <div class="mb-3"><input class="form-control" id="activate_keys" name="keys" type="text" placeholder="Ключи"></div>
+				    <div class="mb-3"><input class="form-control" id="turnover" name="turnover" type="text" placeholder="Оборот"></div>
+				    <div class="mb-3"><input class="form-control" id="conditions" name="qualifications" type="text" placeholder="Условие квалификации"></div>
+				    <div class="mb-3"><input class="form-control" id="turnover_percent" name="percent" type="text" placeholder="Процент от оборота"></div>
+				    <div class="mb-3"><input class="form-control" id="bonus" name="present" type="text" placeholder="Бонус"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+          <button type="button" class="btn btn-success" onclick="CreateRanks()">Создать</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal -->
+</body>
+
+</html>
