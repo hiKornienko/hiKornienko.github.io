@@ -1,0 +1,38 @@
+.btn{
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1D1D23;
+  text-decoration: none;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 95px;
+  padding: 15px 4px;
+  display: inline-block;
+  opacity: 1;
+  text-align: center;
+  position: relative;
+  z-index: 100;
+  transition: 0.3s;
+  @media(min-width: 1024px){
+    font-size: 24px;
+    line-height: 29px;
+    min-width: 120px;
+    padding: 15px 20px;
+  }
+
+  &:hover{
+    text-decoration: none;
+    background: white;
+  }
+
+  &--yellow{
+    background: #FFEA30;
+  }
+
+  &--grey{
+    background: #7A7A7D;
+  }
+
+}

@@ -1,0 +1,61 @@
+header{
+  position: relative;
+  z-index: 10;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.09);
+
+  & > .container > svg{
+    position: absolute;
+
+    &:first-of-type{
+      bottom: -17px;
+      left: -17px;
+      transform: scale(0.5);
+      @media(min-width: 1024px){
+        transform: scale(1);
+      }
+    }
+
+    &:last-of-type{
+      bottom: -17px;
+      right: -17px;
+      transform: scale(0.5);
+      @media(min-width: 1024px){
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+.header{
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media(min-width: 1024px){
+    height: 100px;
+  }
+}
+
+.logo{
+  margin-right: 8px;
+
+  & > svg{
+    width: 40px;
+    height: 24px;
+    @media(min-width: 1024px){
+      width: 82px;
+      height: 52px;
+    }
+  }
+}
+
+.slogan{
+  max-width: 80%;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  @media(min-width: 1024px){
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

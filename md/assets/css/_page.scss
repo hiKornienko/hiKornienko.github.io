@@ -1,0 +1,133 @@
+.page{
+  width: 100%;
+  
+  @media(min-width: 1024px){
+    max-width: 620px;
+
+    &.page--w700{
+      max-width: 700px;
+    }
+
+    &.page--w750{
+      max-width: 750px;
+    }
+  }
+
+  & > h1{
+    margin-top: 20px;
+    @media(min-width: 1024px){
+      margin-top: 0;
+      margin-bottom: 56px;
+    }
+  }
+
+  &__h1{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    opacity: 0.5;
+    margin-bottom: 16px!important;
+    margin-top: 40px!important;
+  }
+
+  & > p{
+    position: relative;
+    z-index: 5;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    @media(min-width: 1024px){
+      font-size: 34px;
+      line-height: 41px;
+    }
+
+    & > span{
+      font-weight: 900;
+    }
+  }
+
+  &__text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 48px;
+    @media(min-width: 1024px){
+      margin-bottom: 88px;
+    }
+
+    & > span{
+      font-weight: 700;
+    }
+  }
+
+  &__btn{
+    display: inline-block;
+    font-weight: 900;
+    font-size: 14.6055px;
+    line-height: 18px;
+    color: #FFEA30;
+    opacity: 1;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    @media(min-width: 1024px){
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    & > span{
+      color:black;
+      position: relative;
+      transition: 0.3s;
+      z-index: 3;
+
+      &:before{
+        content:'';
+        width: 73px;
+        height: 73px;
+        border-radius: 50%;
+        background: #FFEA30;
+        position: absolute;
+        z-index: -1;
+        top:calc(((73px - 18px) / 2) * -1);
+        transition: 0.3s;
+        @media(min-width: 1024px){
+          width: 120px;
+          height: 120px;
+          top:calc(((120px - 29px) / 2) * -1);
+        }
+      }
+    }
+
+    &:hover{
+      text-decoration: none;
+      color: white;
+
+      & > span{
+        &:before{
+          background: white;
+        }
+      }
+    }
+  }
+
+  &__buttons{
+    display: flex;
+    justify-content: space-between;
+    @media(min-width: 1024px){
+      display: block;
+    }
+
+    & > a{
+      width: 48%;
+      @media(min-width: 1024px){
+        width: auto;
+        margin-right: 16px;
+
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
