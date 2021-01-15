@@ -1,0 +1,19 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--font-family);
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333333;
+  font-weight: 400;
+  background: #f7f8fb;
+  overflow-x: hidden;
+
+  &.nav--open{
+    overflow: hidden;
+  }
+}
