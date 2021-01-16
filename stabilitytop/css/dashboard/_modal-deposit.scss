@@ -1,0 +1,133 @@
+.modal__deposit{
+  &--title{
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 34px;
+    text-align: center;
+    margin-bottom: 16px;
+    color: rgb(0, 0, 0);
+    position: relative;
+  }
+
+  &--input{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > input{
+      text-align: right;
+      color: rgb(157, 163, 184);
+      width: 50px;
+      font-size: 60px;
+      outline: 0;
+      border: 0;
+
+      &::placeholder {
+        color: rgb(157, 163, 184);
+      }
+    }
+
+    & > span{
+      display: flex;
+      align-self: center;
+      font-size: 28px;
+      line-height: 36px;
+      margin-left: 5px;
+      margin-top: 15px;
+      min-width: 60px;
+      color: rgb(157, 163, 184);
+      text-transform: uppercase;
+    }
+
+    &.active{
+      & > input{
+        color: var(--blue);
+
+        &::placeholder {
+          color: var(--blue);
+        }
+      }
+
+      & > span{
+        color: var(--blue);
+      }
+    }
+  }
+
+  &--nav{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & > li {
+      list-style-type: none;
+      background: rgb(255, 255, 255);
+      box-shadow: rgba(0, 10, 62, 0.09) -2px 6px 16px;
+      border-radius: 60px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 24px;
+      display: block;
+      text-align: center;
+      color: rgb(40, 40, 40);
+      width: 92px;
+      cursor: pointer;
+      padding: 2px;
+      margin: 20px 5px;
+      text-transform: uppercase;
+
+      &:hover{
+        background: rgb(245, 245, 245);
+        transition: all 0.2s linear 0s;
+      }
+    }
+  }
+
+  &--btn{
+    width: 100%;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    transition: all 0.2s ease 0s;
+    white-space: nowrap;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 18px;
+    min-height: 56px;
+    min-width: 232px;
+    padding: 18px;
+    background: rgb(245, 245, 245);
+    color: rgb(103, 103, 147);
+    cursor: not-allowed;
+    border: none;
+    outline: rgb(245, 245, 245);
+    pointer-events: none;
+
+    &.active{
+      background: rgb(46, 113, 240);
+      color: rgb(255, 255, 255);
+      border: 1px solid rgb(46, 113, 240);
+      outline: rgb(46, 113, 240);
+      pointer-events: auto;
+      cursor: pointer;
+
+      &:hover{
+        background: rgb(62, 128, 255);
+        outline: rgb(62, 128, 255);
+        color: rgb(255, 255, 255);
+        border: 1px solid rgb(62, 128, 255);
+      }
+    }
+  }
+
+  &--alert{
+    font-size: 12px;
+    color: rgb(253, 42, 71);
+    display: inherit;
+    text-align: center;
+  }
+}

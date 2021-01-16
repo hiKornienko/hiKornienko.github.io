@@ -1,5 +1,6 @@
 @import "main/root";
 @import "main/normalize";
+@import "main/bootstrap-grid";
 @import "main/main";
 @import "main/header";
 @import "main/footer";
@@ -8,3 +9,8 @@
 @import "main/button";
 @import "main/lang";
 @import "main/nav";
+@import "main/main";
+@import "main/table";
+@import "dashboard/dashboard";
+@import "dashboard/modal-deposit";
+@import "modal/modal";
