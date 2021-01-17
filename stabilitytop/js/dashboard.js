@@ -158,6 +158,7 @@ function modalExchange() {
       this.pushReceive();
       this.pushInfo();
       this.check();
+      this.event.closeList();
     },
     pushGive: function() {
       giveList.innerHTML = '';
