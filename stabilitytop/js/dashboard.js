@@ -49,7 +49,7 @@ function modalDeposit() {
     block.classList.remove('active');
     btn.classList.remove('active');
 
-    if (input.value >= minDeposit) {
+    if (Number(input.value) >= Number(minDeposit)) {
       block.classList.add('active');
       btn.classList.add('active');
       alert.innerHTML = '';
