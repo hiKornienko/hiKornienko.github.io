@@ -132,6 +132,7 @@ function modalExchange() {
   const inputKey = document.querySelector('[data-exchange-input] span');
   const btn = document.querySelector('[data-exchange-btn]');
   const alert = document.querySelector('[data-exchange-alert]');
+  const btnKey = document.querySelectorAll('[data-exchange-key]');
 
   let app = {
     bd: '',
@@ -150,6 +151,7 @@ function modalExchange() {
       this.event.reload();
       this.event.reverse();
       this.event.sum();
+      this.event.btnKey();
     },
     reload: function(){
       this.pushGive();
@@ -311,8 +313,17 @@ function modalExchange() {
         input.addEventListener('input', event => {
           app.transformInput();
         })
+      },
+      btnKey: function(){
+        for(let btn of btnKey){
+          btn.addEventListener('click', event =>{
+            app.give = btn.dataset.exchangeKey;
+            app.receive = app.search(app.give).connection[0];
+            app.reload();
+          })
+        }
       }
-    },
+    }
   };
 
   app.run(coin);
