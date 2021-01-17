@@ -620,12 +620,51 @@
   <!-- modal -->
     <div class="modal" data-modal-id='exchange'>
       <div class="modal__body">
+        <div class="modal__exchange">
+          <div class="modal__exchange--title">Exchange</div>
+          <div class="modal__exchange--input" data-exchange-input>
+            <input type="number" placeholder="0" autocomplete="off">
+            <span>uah</span>
+          </div>
+          <div class="modal__exchange--alert" data-exchange-alert>asdasd</div>
+          <div class="modal__exchange--buy" data-exchange-result>~0.158 BTC</div>
 
+          <div class="modal__exchange--select">
+            <span>Give</span>
+            <div class="modal__exchange--select--body" data-exchange-select-btn="give" data-exchange-give></div>
+          </div>
+
+          <img class="modal__exchange--reverse" src="img/arrow/reverse.svg" alt="image" data-exchange-reverse>
+
+          <div class="modal__exchange--select">
+            <span>Receive</span>
+            <div class="modal__exchange--select--body" data-exchange-select-btn="receive" data-exchange-receive></div>
+          </div>
+          <button class="modal__exchange--btn" data-exchange-btn>Confirm</button>
+
+          <div class="modal__exchange--list" data-exchange-select-list="give">
+            <div class="modal__exchange--list--header">
+              <img src="img/arrow/arrowback.svg" alt="image" data-exchange-select-close>
+              <span>We are giving</span>
+            </div>
+            <ul data-exchange-give-list></ul>
+          </div>
+
+          <div class="modal__exchange--list" data-exchange-select-list="receive">
+            <div class="modal__exchange--list--header">
+              <img src="img/arrow/arrowback.svg" alt="image" data-exchange-select-close>
+              <span>We are giving</span>
+            </div>
+            <ul data-exchange-receive-list></ul>
+          </div>
+
+        </div>
       </div>
     </div>
   <!-- modal -->
 
   <script src="js/main.js"></script>
+  <script src="js/dashboard.js"></script>
 </body>
 
 </html>
