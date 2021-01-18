@@ -2,9 +2,6 @@
   background: white;
   color: var(--dark);
   padding-top: 10px;
-  @media(min-width: 768px){
-    // padding-top: 20px;
-  }
 
   &__inner{
     width: 100%;
