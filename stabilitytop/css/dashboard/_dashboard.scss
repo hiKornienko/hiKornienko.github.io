@@ -356,10 +356,10 @@
   }
 
   &--buy{
-    border-left: 8px solid #88d5ad;
+    border-left: 8px solid var(--green);
   }
 
   &--sell{
-    border-left: 8px solid #c1556d;
+    border-left: 8px solid var(--red);
   }
 }
