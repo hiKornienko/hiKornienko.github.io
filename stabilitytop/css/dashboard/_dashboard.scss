@@ -5,7 +5,7 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
-    color: rgb(141, 147, 159);
+    color: var(--grey);
     display: block;
   }
 
@@ -13,7 +13,7 @@
     font-size: 32px;
     line-height: 40px;
     font-weight: 600;
-    color: rgb(3, 3, 3);
+    color: var(--white);
 
     @media(min-width: 1366px){
       font-size: 38px;
@@ -23,11 +23,11 @@
 }
 
 .d__info{
-  border: 1px solid rgb(216, 218, 222);
+  border: 1px solid var(--grey);
   border-radius: 8px;
   padding: 30px;
   height: 100%;
-  min-height: 220px;
+  min-height: 200px;
   position: relative;
 
   &--img{
@@ -53,12 +53,10 @@
     margin-bottom: 14px;
     color:black;
     text-align: left;
-    margin-left: 80px;
-    height: 70px;
+    color: var(--grey);
     @media(min-width: 1024px){
       font-size: 20px;
       line-height: 24px;
-      margin-left: 186px;
       height: auto;
     }
     @media(min-width: 1366px){
@@ -69,12 +67,11 @@
   &--text{
     font-size: 12px;
     line-height: 20px;
-    color: rgb(3, 3, 3);
+    color: var(--grey);
     padding: 10px 0;
     @media(min-width: 1024px){
       font-size: 14px;
       line-height: 20px;
-      margin-left: 186px;
     }
     @media(min-width: 1366px){
 
@@ -83,10 +80,10 @@
 }
 
 .d__block{
-  background: rgb(255, 255, 255);
+  background: var(--grey);
   box-shadow: rgba(124, 124, 149, 0.08) 0px 8px 30px;
   border-radius: 8px;
-  min-height: 210px;
+  min-height: 200px;
   height: 100%;
   padding: 20px 12px;
   display: flex;
@@ -113,13 +110,13 @@
       font-weight: 600;
       font-size: 16px;
       line-height: 20px;
-      color: rgb(3, 3, 3);
+      color: var(--dark);
     }
 
     & > span{
       display: block;
       text-transform: uppercase;
-      color: rgb(147, 169, 195);
+      color: var(--white);
       font-size: 13px;
       line-height: 17px;
     }
@@ -129,12 +126,12 @@
 .d__balance{
   font-size: 16px;
   line-height: 24px;
-  color: rgb(0, 0, 0);
+  color: var(--dark);
 }
 
 
 .d__title{
-  color: rgb(0, 0, 0);
+  color: var(--grey);
   font-weight: 600;
   font-size: 18px;
   line-height: 20px;
@@ -156,12 +153,12 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    color: rgb(157, 163, 184);
+    color: var(--grey);
     text-align: right;
     margin-left: 0px;
     text-decoration: none;
     &:hover{
-      color:#2e71f0;
+      color:var(--green-dark-hover);
     }
   }
 }
@@ -169,7 +166,7 @@
 .d__price{
   text-align: right;
   & > span{
-    color: rgb(0, 0, 0);
+    color: var(--dark);
     font-size: 16px;
     font-weight: 500;
     @media(min-width: 1024px){
@@ -202,7 +199,7 @@
   }
 }
 .d__total{
-  color: rgb(0, 0, 0);
+  color: var(--dark);
   font-size: 14px;
   font-weight: 400;
   text-align: left;
@@ -219,7 +216,7 @@
   border-radius: 8px;
   padding: 16px;
   margin-bottom: 12px;
-  background: white;
+  background: var(--grey);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -241,7 +238,7 @@
 
   &--price{
     font-size: 13px;
-    color: rgb(0, 0, 0);
+    color: var(--dark);
     font-weight: 500;
     text-transform: uppercase;
 
@@ -264,7 +261,7 @@
 
   &--balance{
     font-size: 13px;
-    color: rgb(157, 163, 184);
+    color: var(--white);
     font-weight: 400;
     text-transform: uppercase;
 
@@ -272,7 +269,8 @@
       font-size: 14px;
       display: flex;
       flex-direction: row-reverse;
-      justify-content: flex-end;
+      padding-right: 20px;
+      //justify-content: flex-end;
       width: 50%;
     }
 
@@ -288,9 +286,7 @@
   & > button{
     width: 32px;
     height: 32px;
-    border: 0;
     @media(min-width: 568px){
-      border: 1px solid #2e71f0;
       width: 100px;
       height: auto;
     }
@@ -307,6 +303,13 @@
         display: block;
       }
     }
+
+    &:disabled{
+      display: none;
+      @media(min-width: 568px){
+        display: block;
+      }
+    }
   }
 }
 
@@ -314,18 +317,49 @@
   border-radius: 8px;
   padding: 16px;
   margin-bottom: 12px;
-  background: white;
+  background: var(--grey);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   min-height: 64px;
 
-  &--td{
-    font-size: 13px;
-    color: #9da3b8;
-    font-weight: 400;
-    text-transform: uppercase;
+  @media(min-width: 768px){
+    flex-direction: row;
+    align-items: center;
+  }
 
+  &--td{
+    font-size: 14px;
+    color: var(--dark);
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    @media(min-width: 768px){
+      width: calc(100% / 5);
+    }
+  }
+
+  &--header{
+    border-left: 10px solid var(--grey);
+    display: none;
+    @media(min-width: 768px){
+      display: flex;
+    }
+
+    & > .d__history--td{
+      text-transform: none!important;
+    }
+  }
+
+  &--buy{
+    border-left: 10px solid var(--green);
+  }
+
+  &--sell{
+    border-left: 10px solid var(--red);
   }
 }

@@ -119,7 +119,6 @@
     <div class="row">
       <div class="col-md-8 mb-4 mb-md-0 order-md-2">
         <div class="d__info">
-          <img class="d__info--img" src="img/dashboard_clock.png" alt="image">
           <h1 class="d__info--title">
             Buy cryptocurrency in 2 steps:
           </h1>
@@ -145,15 +144,17 @@
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="d__balance">
-            <strong>Balance:</strong> 0.72 UAH
+            <div class="col-8">
+              <div class="d__price">
+                <span>159.06 UAH</span>
+                <div>Balance</div>
+              </div>
+            </div>
           </div>
 
           <div class="row">
-            <div class="col-6"><button class="btn btn--blue" data-modal="deposit">Deposit</button></div>
-            <div class="col-6"><button class="btn btn--blue" data-modal="exchange" data-exchange-key="uah">Exchange</button></div>
+            <div class="col-6"><button class="btn btn--green" data-modal="deposit">Deposit</button></div>
+            <div class="col-6"><button class="btn btn--green" data-modal="exchange" data-exchange-key="uah">Exchange</button></div>
           </div>
         </div>
       </div>
@@ -194,17 +195,7 @@
             </div>
           </div>
 
-          <div class="d__svg">
-            <svg viewBox="0 0 320 100" preserveAspectRatio="none">
-                <path class="line" d="M0,21.910828025477706L22.26086956521739,30.382165605095537L44.52173913043478,15L66.78260869565217,34.61783439490446L89.04347826086956,85L111.30434782608695,54.458598726114644L133.56521739130434,61.14649681528662L155.82608695652175,76.52866242038216L178.08695652173913,66.71974522292994L200.34782608695653,58.47133757961783L222.6086956521739,43.089171974522294L244.8695652173913,44.426751592356695L267.1304347826087,27.261146496815286L289.39130434782606,31.71974522292993L311.6521739130435,33.05732484076434L333.9130434782609,43.089171974522294L356.17391304347825,34.39490445859873L378.4347826086956,40.85987261146497L400.69565217391306,54.681528662420384L422.95652173913044,45.318471337579616L445.2173913043478,37.738853503184714L467.4782608695652,22.133757961783438L489.7391304347826,26.14649681528662L512,25.92356687898089" style="stroke: url('#line-gradient-btc');"></path>
-                  <linearGradient id="line-gradient-btc">
-                    <stop offset="0%" stop-color="#E65C00"></stop>
-                    <stop offset="100%" stop-color="#F9D423"></stop>
-                  </linearGradient>
-            </svg>
-          </div>
-
-          <div class="row">
+          <div class="row align-items-center">
             <div class="col-6">
               <div class="d__total">
                 <span>Balance:</span> 0.000157 BTC
@@ -237,18 +228,7 @@
             </div>
           </div>
 
-          <div class="d__svg">
-            <svg viewBox="0 0 320 100" preserveAspectRatio="none">
-                <path      d="M0,15L21.333333333333332,19.0373197625106L42.666666666666664,23.223070398642918L64,16.98897370653096L85.33333333333333,40.44105173876166L106.66666666666667,85L128,54.452926208651405L149.33333333333334,62.14164546225615L170.66666666666666,76.06446140797284L192,72.97709923664121L213.33333333333334,68.55385920271416L234.66666666666666,52.167090754877016L256,43.35029686174725L277.3333333333333,42.66751484308736L298.6666666666667,28.59626802374894L320,37.32400339270568L341.3333333333333,50.11874469889737L362.6666666666667,38.808312128922815L384,37.23494486853265L405.3333333333333,50.68278201865988L426.6666666666667,47.41730279898219L448,40.470737913486005L469.3333333333333,18.23579304495335L490.6666666666667,23.163698049194235L512,20.195080576759963" style="stroke: url('#line-gradient-eth');"></path>
-                <linearGradient id="line-gradient-eth">
-                  <stop offset="0%" stop-color="#091E3A"></stop>
-                  <stop offset="50%" stop-color="#2F80ED"></stop>
-                  <stop offset="100%" stop-color="#2D9EE0"></stop>
-                </linearGradient>
-            </svg>
-          </div>
-
-          <div class="row">
+          <div class="row align-items-center">
             <div class="col-6">
               <div class="d__total">
                 <span>Balance:</span> 0.000000 ETH
@@ -281,17 +261,7 @@
             </div>
           </div>
 
-          <div class="d__svg">
-            <svg viewBox="0 0 320 100" preserveAspectRatio="none">
-                <path  d="M0,20.1219512195121L21.333333333333332,15L42.666666666666664,25.243902439024346L64,28.658536585365887L85.33333333333333,45.73170731707317L106.66666666666667,85L128,76.46341463414636L149.33333333333334,74.75609756097566L170.66666666666666,79.8780487804879L192,74.75609756097566L213.33333333333334,64.51219512195131L234.66666666666666,47.43902439024388L256,40.60975609756093L277.3333333333333,42.31707317073163L298.6666666666667,28.658536585365887L320,30.365853658536594L341.3333333333333,44.02439024390248L362.6666666666667,45.73170731707317L384,54.43902439024396L405.3333333333333,50.85365853658543L426.6666666666667,50.85365853658543L448,44.02439024390248L469.3333333333333,42.31707317073163L490.6666666666667,30.536585365853572L512,28.658536585365887" style="stroke: url('#line-gradient-xrp');"></path>
-                <linearGradient id="line-gradient-xrp">
-                  <stop offset="0%" stop-color="#4B4F52"></stop>
-                  <stop offset="100%" stop-color="#989999"></stop>
-                </linearGradient>
-            </svg>
-          </div>
-
-          <div class="row">
+          <div class="row align-items-center">
             <div class="col-6">
               <div class="d__total">
                 <span>Balance:</span> 0.000000 XRP
@@ -324,17 +294,7 @@
             </div>
           </div>
 
-          <div class="d__svg">
-            <svg viewBox="0 0 320 100" preserveAspectRatio="none">
-                <path class="line" d="M0,85L21.333333333333332,83.95522388059723L42.666666666666664,80.82089552238814L64,77.68656716417905L85.33333333333333,64.10447761194031L106.66666666666667,58.8805970149253L128,73.5074626865672L149.33333333333334,69.32835820895532L170.66666666666666,64.10447761194031L192,51.56716417910435L213.33333333333334,58.8805970149253L234.66666666666666,52.61194029850751L256,15L277.3333333333333,27.537313432835585L298.6666666666667,49.477611940298424L320,60.97014925373123L341.3333333333333,20.223880597014645L362.6666666666667,29.626865671641887L384,55.74626865671659L405.3333333333333,41.1194029850747L426.6666666666667,55.74626865671659L448,44.25373134328341L469.3333333333333,67.2388059701494L490.6666666666667,43.208955223880636L512,54.701492537313435" style="stroke: url('#line-gradient-usdt');"></path>
-                <linearGradient id="line-gradient-usdt">
-                  <stop offset="0%" stop-color="#FFD77B"></stop>
-                  <stop offset="100%" stop-color="#FF858C"></stop>
-                </linearGradient>
-            </svg>
-          </div>
-
-          <div class="row">
+          <div class="row align-items-center">
             <div class="col-6">
               <div class="d__total">
                 <span>Balance:</span> 10.004500 USDT
@@ -351,7 +311,7 @@
 
     <!-- section -->
     <div class="row">
-      <div class="col-xl-6">
+      <div class="col-12">
         <!-- block -->
         <!-- title -->
         <div class="row">
@@ -456,18 +416,61 @@
 
         <!-- block -->
       </div>
-      <div class="col-xl-6">
+      <div class="col-12">
         <!-- block -->
         <!-- title -->
         <div class="row">
           <div class="col">
             <h2 class="d__title">Transaction History</h2>
           </div>
+          <div class="col">
+            <div class="d__link"><a href="javascript:void(0)">View all</a></div>
+          </div>
         </div>
         <!-- title -->
 
         <!-- block -->
-        <div class="d__history">
+        <div class="d__history d__history--header">
+          <div class="d__history--td">Time</div>
+          <div class="d__history--td">Price</div>
+          <div class="d__history--td">Base</div>
+          <div class="d__history--td">Quote</div>
+          <div class="d__history--td">Fee</div>
+        </div>
+        <!-- block -->
+
+        <!-- block -->
+        <div class="d__history d__history--buy">
+          <div class="d__history--td">2021-01-10 20:16:02</div>
+          <div class="d__history--td">1030429.0</div>
+          <div class="d__history--td">0.000158 BTC</div>
+          <div class="d__history--td">162.807782 UAH</div>
+          <div class="d__history--td">0.000000395 BTC</div>
+        </div>
+        <!-- block -->
+
+        <!-- block -->
+        <div class="d__history d__history--sell">
+          <div class="d__history--td">2021-01-10 20:16:02</div>
+          <div class="d__history--td">1030429.0</div>
+          <div class="d__history--td">0.000158 BTC</div>
+          <div class="d__history--td">162.807782 UAH</div>
+          <div class="d__history--td">0.000000395 BTC</div>
+        </div>
+        <!-- block -->
+
+        <!-- block -->
+        <div class="d__history d__history--buy">
+          <div class="d__history--td">2021-01-10 20:16:02</div>
+          <div class="d__history--td">1030429.0</div>
+          <div class="d__history--td">0.000158 BTC</div>
+          <div class="d__history--td">162.807782 UAH</div>
+          <div class="d__history--td">0.000000395 BTC</div>
+        </div>
+        <!-- block -->
+
+        <!-- block -->
+        <div class="d__history d__history--buy">
           <div class="d__history--td">2021-01-10 20:16:02</div>
           <div class="d__history--td">1030429.0</div>
           <div class="d__history--td">0.000158 BTC</div>

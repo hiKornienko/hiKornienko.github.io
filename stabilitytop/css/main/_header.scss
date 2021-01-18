@@ -11,7 +11,7 @@
     width: 100%;
     max-width: 1180px;
     margin: 0px auto;
-    color: rgb(51, 51, 51);
+    color: var(--dark);
     height: 68px;
 
     @media(min-width: 1024px){
@@ -32,7 +32,7 @@
       line-height: 20px;
       font-weight: 800;
       text-transform: uppercase;
-      color: black;
+      color: var(--dark);
       text-decoration: none;
       outline: 0;
       border: 0;

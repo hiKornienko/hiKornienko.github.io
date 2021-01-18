@@ -13,7 +13,7 @@
 
     & > span{
       display: block;
-      background: rgb(46, 113, 240);
+      background: var(--green-dark);
       height: 2px;
       width: 100%;
       pointer-events: none;
@@ -29,7 +29,7 @@
     padding: 5px;
 
     & > span{
-      background: rgb(13, 13, 63);
+      background: var(--green-dark);
       width: 2px;
       height: 15px;
       cursor: pointer;
@@ -117,7 +117,7 @@
         cursor: pointer;
         font-weight: 500;
         display: inline-block;
-        color: rgb(0, 0, 0);
+        color: var(--dark);
         padding: 8px 0;
         margin: 2px 0;
         transition: 0.3s;
@@ -127,12 +127,12 @@
         }
 
         &:hover{
-          color: rgb(46, 113, 240);
+          color: var(--green-dark-hover);
         }
 
         &.active{
-          color: rgb(46, 113, 240);
-          border-bottom: 2px solid rgb(46, 113, 240);
+          color: var(--green-dark);
+          border-bottom: 2px solid var(--green-dark);
         }
       }
     }

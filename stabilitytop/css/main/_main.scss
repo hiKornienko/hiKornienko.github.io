@@ -10,7 +10,7 @@ body{
   line-height: 1.4;
   color: #333333;
   font-weight: 400;
-  background: #f7f8fb;
+  background: var(--bg);
   overflow-x: hidden;
 
   &.nav--open{

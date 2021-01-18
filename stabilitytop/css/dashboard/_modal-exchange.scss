@@ -1,12 +1,14 @@
 .modal__exchange{
   position: relative;
+  padding-bottom: 2px;
+
   &--title{
     font-weight: 500;
     font-size: 26px;
     line-height: 34px;
     text-align: center;
     margin-bottom: 16px;
-    color: rgb(0, 0, 0);
+    color: var(--dark);
     position: relative;
   }
 
@@ -18,14 +20,14 @@
 
     & > input{
       text-align: right;
-      color: rgb(157, 163, 184);
+      color: var(--grey-lite);
       width: 50px;
       font-size: 60px;
       outline: 0;
       border: 0;
 
       &::placeholder {
-        color: rgb(157, 163, 184);
+        color: var(--grey-lite);
       }
     }
 
@@ -37,21 +39,21 @@
       margin-left: 5px;
       margin-top: 15px;
       min-width: 60px;
-      color: rgb(157, 163, 184);
+      color: var(--grey-lite);
       text-transform: uppercase;
     }
 
     &.active{
       & > input{
-        color: var(--blue);
+        color: var(--green-dark-hover);
 
         &::placeholder {
-          color: var(--blue);
+          color: var(--green-dark-hover);
         }
       }
 
       & > span{
-        color: var(--blue);
+        color: var(--green-dark-hover);
       }
     }
   }
@@ -101,26 +103,26 @@
     min-height: 56px;
     min-width: 232px;
     padding: 18px;
-    background: rgb(245, 245, 245);
-    color: rgb(103, 103, 147);
+    background: var(--grey-lite);
+    color: white;
     cursor: not-allowed;
     border: none;
-    outline: rgb(245, 245, 245);
+    outline: var(--grey-lite);
     pointer-events: none;
 
     &.active{
-      background: rgb(46, 113, 240);
+      background: var(--green-dark);
       color: rgb(255, 255, 255);
-      border: 1px solid rgb(46, 113, 240);
-      outline: rgb(46, 113, 240);
+      border: 0;
+      outline: 0;
       pointer-events: auto;
       cursor: pointer;
 
       &:hover{
-        background: rgb(62, 128, 255);
-        outline: rgb(62, 128, 255);
+        background: var(--green-dark-hover);
+        outline: 0;
         color: rgb(255, 255, 255);
-        border: 1px solid rgb(62, 128, 255);
+        border: 0;
       }
     }
   }
@@ -142,7 +144,7 @@
     font-size: 13px;
     line-height: 18px;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: var(--dark);
     padding: 10px 0;
   }
 
@@ -156,7 +158,7 @@
       font-weight: normal;
       font-size: 12px;
       line-height: 18px;
-      color: rgb(147, 169, 195);
+      color: var(--grey);
       margin-bottom: 5px;
     }
 
