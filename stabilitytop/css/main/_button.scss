@@ -50,14 +50,14 @@
 
   &--green{
     background: var(--green-dark);
-    color: rgb(255, 255, 255);
+    color: var(--white);
     border: 1px solid var(--green-dark);
     outline: var(--green-dark);
 
     &:hover{
       background: var(--green-dark-hover);
       outline: var(--green-dark-hover);
-      color: rgb(255, 255, 255);
+      color: var(--white);
       border: 1px solid var(--green-dark-hover);
     }
   }

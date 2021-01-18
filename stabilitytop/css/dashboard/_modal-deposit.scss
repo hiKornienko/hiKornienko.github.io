@@ -108,18 +108,18 @@
     pointer-events: none;
 
     &.active{
-      background: var(--green-dark);
+      background: var(--green-dark-hover);
       color: rgb(255, 255, 255);
-      border: 1px solid var(--green-dark);
-      outline: var(--green-dark);
+      border: 1px solid var(--green-dark-hover);
+      outline: var(--green-dark-hover);
       pointer-events: auto;
       cursor: pointer;
 
       &:hover{
-        background: var(--green-dark-hover);
-        outline: var(--green-dark-hover);
+        background: var(--green-dark-hover-lite);
+        outline: var(--green-dark-hover-lite);
         color: rgb(255, 255, 255);
-        border: 1px solid var(--green-dark-hover);
+        border: 1px solid var(--green-dark-hover-lite);
       }
     }
   }
