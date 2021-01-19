@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="notranslate" name="google">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- styles -->
+  <link rel="stylesheet" type="text/css" href="fonts/font.css">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <!-- styles -->
+
+  <title>Stability</title>
+</head>
+
+<body>
+
+  <!-- header -->
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__logo"><a href="javascript:void(0)">Stability</a></div>
+
+      <div class="header__lang">
+        <div class="lang">
+          <div class="lang__active">
+            <img class="lang__active--img" src="img/lang/uk.svg" alt="uk">
+            <span class="lang__active--name">uk</span>
+            <img class="lang__active--arrow" src="img/arrow/arrow_b.svg" alt="arrow">
+          </div>
+          <ul class="lang__select">
+            <li class="lang__select--li">
+              <img class="lang__select--img" src="img/lang/ru.svg" alt="ru">
+              <span class="lang__select--name">ru</span>
+            </li>
+            <li class="lang__select--li">
+              <img class="lang__select--img" src="img/lang/en.svg" alt="en">
+              <span class="lang__select--name">en</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="header__nav">
+        <div class="nav">
+          <div class="nav__burger"><span></span><span></span><span></span></div>
+
+          <div class="nav__inner">
+            <div class="nav__close__inner">
+              <div class="nav__close"><span></span><span></span></div>
+            </div>
+
+            <ul class="nav__menu">
+              <li>
+                <a href="javascript:void(0)">Dashboard</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)" class="active">Trades</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">Assets</a>
+              </li>
+            </ul>
+
+            <div class="lang">
+              <div class="lang__active">
+                <img class="lang__active--img" src="img/lang/uk.svg" alt="uk">
+                <span class="lang__active--name">uk</span>
+                <img class="lang__active--arrow" src="img/arrow/arrow_b.svg" alt="arrow">
+              </div>
+              <ul class="lang__select">
+                <li class="lang__select--li">
+                  <img class="lang__select--img" src="img/lang/ru.svg" alt="ru">
+                  <span class="lang__select--name">ru</span>
+                </li>
+                <li class="lang__select--li">
+                  <img class="lang__select--img" src="img/lang/en.svg" alt="en">
+                  <span class="lang__select--name">en</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="nav__profile">
+              <div class="nav__profile--btn">
+                <img class="nav__profile--img" src="img/user.svg" alt="user">
+                <span class="nav__profile--name">hi.kornienko@gmail.com</span>
+                <img class="nav__profile--arrow" src="img/arrow/arrow_b.svg" alt="arrow">
+              </div>
+
+              <ul class="nav__profile--nav">
+                <li>
+                  <a href="#" class="nav__profile--href"><img src="img/setting.svg" alt="setting"><span>Setting</span></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)" class="nav__profile--href nav__profile--exit"><img src="img/logout.svg" alt="logout"><span>Exit</span></a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <!-- header -->
+
+  <!-- main -->
+  <main class="main">
+    <!-- section -->
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <div class="d__you__balance">
+          <span>Balance of all assets</span>
+          <strong>159.06 UAH</strong>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row align-items-center">
+          <div class="col-6"><button class="btn btn--blue btn--l" data-modal="deposit">Deposit</button></div>
+          <div class="col-6"><button class="btn btn--green btn--l" data-modal="exchange" data-exchange-key="uah">Exchange</button></div>
+        </div>
+      </div>
+    </div>
+    <!-- section -->
+
+    <!-- title -->
+    <div class="row">
+      <div class="col">
+        <h2 class="d__title">Popular</h2>
+      </div>
+      <div class="col">
+        <div class="d__link"><a href="javascript:void(0)">View all</a></div>
+      </div>
+    </div>
+    <!-- title -->
+
+    <!-- section -->
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
+      <!-- block -->
+      <div class="col mb-4">
+        <div class="d__block">
+          <div class="row">
+            <div class="col-4">
+              <div class="d__coin">
+                <img src="img/coin/btc.svg" alt="coin">
+                <div>
+                  <strong>Bitcoin</strong>
+                  <span>btc</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="d__price">
+                <span>1,004,990.00 UAH</span>
+                <div class="d__price--low">-2.49%</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-6">
+              <div class="d__total">
+                <span>Balance:</span> 0.000157 BTC
+              </div>
+            </div>
+            <div class="col-6"><button class="btn btn--blue" data-modal="exchange" data-exchange-key="btc">Exchange</button></div>
+          </div>
+        </div>
+      </div>
+      <!-- block -->
+
+      <!-- block -->
+      <div class="col mb-4">
+        <div class="d__block">
+          <div class="row">
+            <div class="col-4">
+              <div class="d__coin">
+                <img src="img/coin/eth.svg" alt="coin">
+                <div>
+                  <strong>Ethereum</strong>
+                  <span>eth</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="d__price">
+                <span>32,708.00 UAH</span>
+                <div class="d__price--low">-0.44%</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-6">
+              <div class="d__total">
+                <span>Balance:</span> 0.000000 ETH
+              </div>
+            </div>
+            <div class="col-6"><button class="btn btn--blue" disabled>Exchange</button></div>
+          </div>
+        </div>
+      </div>
+      <!-- block -->
+
+      <!-- block -->
+      <div class="col mb-4">
+        <div class="d__block">
+          <div class="row">
+            <div class="col-4">
+              <div class="d__coin">
+                <img src="img/coin/xrp.svg" alt="coin">
+                <div>
+                  <strong>Ripple</strong>
+                  <span>XRP</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="d__price">
+                <span>7.77 UAH</span>
+                <div class="d__price--up">+1.02%</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-6">
+              <div class="d__total">
+                <span>Balance:</span> 0.000000 XRP
+              </div>
+            </div>
+            <div class="col-6"><button class="btn btn--blue" disabled>Exchange</button></div>
+          </div>
+        </div>
+      </div>
+      <!-- block -->
+
+      <!-- block -->
+      <div class="col mb-4">
+        <div class="d__block">
+          <div class="row">
+            <div class="col-4">
+              <div class="d__coin">
+                <img src="img/coin/usdt.svg" alt="coin">
+                <div>
+                  <strong>Tether</strong>
+                  <span>USDT</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="d__price">
+                <span>27.09 UAH</span>
+                <div class="d__price--low">-0.09%</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-6">
+              <div class="d__total">
+                <span>Balance:</span> 10.004500 USDT
+              </div>
+            </div>
+            <div class="col-6"><button class="btn btn--blue" data-modal="exchange" data-exchange-key="usdt">Exchange</button></div>
+          </div>
+        </div>
+      </div>
+      <!-- block -->
+
+      <!-- block -->
+      <div class="col mb-4">
+        <div class="d__block">
+          <div class="row">
+            <div class="col-4">
+              <div class="d__coin">
+                <img src="img/coin/uah.svg" alt="coin">
+                <div>
+                  <strong>Hrivhya</strong>
+                  <span>uah</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="d__price">
+                <span>0.09 UAH</span>
+                <div class="d__price--up">+0.59%</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-6">
+              <div class="d__total">
+                <span>Balance:</span> 200.50 uah
+              </div>
+            </div>
+            <div class="col-6"><button class="btn btn--blue" data-modal="exchange" data-exchange-key="uah">Exchange</button></div>
+          </div>
+        </div>
+      </div>
+      <!-- block -->
+
+      <!-- block -->
+      <div class="col mb-4">
+        <div class="d__block">
+          <div class="row">
+            <div class="col-4">
+              <div class="d__coin">
+                <img src="img/coin/rub.svg" alt="coin">
+                <div>
+                  <strong>Rubble</strong>
+                  <span>rub</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="d__price">
+                <span>7.19 rub</span>
+                <div class="d__price--up">0.02%</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-6">
+              <div class="d__total">
+                <span>Balance:</span> 30.000 rub
+              </div>
+            </div>
+            <div class="col-6"><button class="btn btn--blue" data-modal="exchange" data-exchange-key="rub">Exchange</button></div>
+          </div>
+        </div>
+      </div>
+      <!-- block -->
+
+    </div>
+    <!-- section -->
+
+    <!-- section -->
+    <div class="row">
+      <div class="col-12 col-lg-5">
+        <!-- block -->
+        <!-- title -->
+        <div class="row">
+          <div class="col">
+            <h2 class="d__title">Assets</h2>
+          </div>
+          <div class="col">
+            <div class="d__link"><a href="javascript:void(0)">View all</a></div>
+          </div>
+        </div>
+        <!-- title -->
+
+        <!-- block -->
+        <div class="d__assets">
+          <img src="img/coin/rub.svg" alt="coin">
+          <div class="d__assets--block">
+            <div class="d__assets--price">
+              <span>7.14</span><span>rub</span>
+            </div>
+            <div class="d__assets--balance">
+              <span>uah</span><span>0.00</span>
+            </div>
+          </div>
+          <button class="btn btn--blue" data-modal="exchange" data-exchange-key="rub">
+            <img src="img/exchange.svg" alt="image">
+            <span>Exchange</span>
+          </button>
+        </div>
+        <!-- block -->
+
+        <!-- block -->
+        <div class="d__assets">
+          <img src="img/coin/btc.svg" alt="coin">
+          <div class="d__assets--block">
+            <div class="d__assets--price">
+              <span>0.000157</span><span>btc</span>
+            </div>
+            <div class="d__assets--balance">
+              <span>uah</span><span>0.00</span>
+            </div>
+          </div>
+          <button class="btn btn--blue" data-modal="exchange" data-exchange-key="btc">
+            <img src="img/exchange.svg" alt="image">
+            <span>Exchange</span>
+          </button>
+        </div>
+        <!-- block -->
+
+        <!-- block -->
+        <div class="d__assets">
+          <img src="img/coin/eth.svg" alt="coin">
+          <div class="d__assets--block">
+            <div class="d__assets--price">
+              <span>0.00</span><span>eth</span>
+            </div>
+            <div class="d__assets--balance">
+              <span>uah</span><span>0.00</span>
+            </div>
+          </div>
+          <button class="btn btn--blue" disabled>
+            <img src="img/exchange.svg" alt="image">
+            <span>Exchange</span>
+          </button>
+        </div>
+        <!-- block -->
+
+        <!-- block -->
+        <div class="d__assets">
+          <img src="img/coin/xrp.svg" alt="coin">
+          <div class="d__assets--block">
+            <div class="d__assets--price">
+              <span>0.00</span><span>xrp</span>
+            </div>
+            <div class="d__assets--balance">
+              <span>uah</span><span>0.00</span>
+            </div>
+          </div>
+          <button class="btn btn--blue" disabled>
+            <img src="img/exchange.svg" alt="image">
+            <span>Exchange</span>
+          </button>
+        </div>
+        <!-- block -->
+
+        <!-- block -->
+        <div class="d__assets">
+          <img src="img/coin/usdt.svg" alt="coin">
+          <div class="d__assets--block">
+            <div class="d__assets--price">
+              <span>0.00</span><span>usdt</span>
+            </div>
+            <div class="d__assets--balance">
+              <span>uah</span><span>0.00</span>
+            </div>
+          </div>
+          <button class="btn btn--blue" disabled>
+            <img src="img/exchange.svg" alt="image">
+            <span>Exchange</span>
+          </button>
+        </div>
+        <!-- block -->
+
+        <!-- block -->
+      </div>
+      <div class="col-12 col-lg-7 d-flex flex-column align-items-stretch">
+        <!-- block -->
+        <!-- title -->
+        <div class="row">
+          <div class="col">
+            <h2 class="d__title">Transaction History</h2>
+          </div>
+          <div class="col">
+            <div class="d__link"><a href="javascript:void(0)">View all</a></div>
+          </div>
+        </div>
+        <!-- title -->
+
+        <!-- block -->
+        <div class="d__history">
+          <div class="d__history--row d__history--header">
+            <div class="d__history--td">Time</div>
+            <div class="d__history--td">Price</div>
+            <div class="d__history--td">Base</div>
+            <div class="d__history--td">Quote</div>
+            <div class="d__history--td">Fee</div>
+          </div>
+          <div class="d__history--row d__history--row--sell">
+            <div class="d__history--td"><span>2021.01.10</span> 20:16:02</div>
+            <div class="d__history--td">1030429.0</div>
+            <div class="d__history--td">0.000158 BTC</div>
+            <div class="d__history--td">162.807782025468848644612 UAH</div>
+            <div class="d__history--td">0.000000395 BTC</div>
+          </div>
+          <div class="d__history--row d__history--row--sell">
+            <div class="d__history--td"><span>2021.01.10</span> 20:16:02</div>
+            <div class="d__history--td">1030429.0</div>
+            <div class="d__history--td">0.000158 BTC</div>
+            <div class="d__history--td">162.807782 UAH</div>
+            <div class="d__history--td">0.000000395 BTC</div>
+          </div>
+          <div class="d__history--row d__history--row--buy">
+            <div class="d__history--td"><span>2021.01.10</span> 20:16:02</div>
+            <div class="d__history--td">1030429.0</div>
+            <div class="d__history--td">0.000158 BTC</div>
+            <div class="d__history--td">162.807782 UAH</div>
+            <div class="d__history--td">0.000000395 BTC</div>
+          </div>
+          <div class="d__history--row d__history--row--buy">
+            <div class="d__history--td"><span>2021.01.10</span> 20:16:02</div>
+            <div class="d__history--td">1030429.0</div>
+            <div class="d__history--td">0.000158 BTC</div>
+            <div class="d__history--td">162.807782 UAH</div>
+            <div class="d__history--td">0.000000395 BTC</div>
+          </div>
+          <div class="d__history--row d__history--row--buy">
+            <div class="d__history--td"><span>2021.01.10</span> 20:16:02</div>
+            <div class="d__history--td">1030429.0</div>
+            <div class="d__history--td">0.000158 BTC</div>
+            <div class="d__history--td">162.807782 UAH</div>
+            <div class="d__history--td">0.000000395 BTC</div>
+          </div>
+          <div class="d__history--row d__history--row--buy">
+            <div class="d__history--td"><span>2021.01.10</span> 20:16:02</div>
+            <div class="d__history--td">1030429.0</div>
+            <div class="d__history--td">0.000158 BTC</div>
+            <div class="d__history--td">162.807782 UAH</div>
+            <div class="d__history--td">0.000000395 BTC</div>
+          </div>
+          <div class="d__history--row d__history--row--buy">
+            <div class="d__history--td"><span>2021.01.10</span> 20:16:02</div>
+            <div class="d__history--td">1030429.0</div>
+            <div class="d__history--td">0.000158 BTC</div>
+            <div class="d__history--td">162.807782 UAH</div>
+            <div class="d__history--td">0.000000395 BTC</div>
+          </div>
+          <div class="d__history--row d__history--row--buy">
+            <div class="d__history--td"><span>2021.01.10</span> 20:16:02</div>
+            <div class="d__history--td">1030429.0</div>
+            <div class="d__history--td">0.000158 BTC</div>
+            <div class="d__history--td">162.807782 UAH</div>
+            <div class="d__history--td">0.000000395 BTC</div>
+          </div>
+          <div class="d__history--row d__history--row--buy">
+            <div class="d__history--td"><span>2021.01.10</span> 20:16:02</div>
+            <div class="d__history--td">1030429.0</div>
+            <div class="d__history--td">0.000158 BTC</div>
+            <div class="d__history--td">162.807782 UAH</div>
+            <div class="d__history--td">0.000000395 BTC</div>
+          </div>
+          <div class="d__history--row d__history--row--sell">
+            <div class="d__history--td"><span>2021.01.10</span> 20:16:02</div>
+            <div class="d__history--td">1030429.0</div>
+            <div class="d__history--td">0.000158 BTC</div>
+            <div class="d__history--td">162.807782 UAH</div>
+            <div class="d__history--td">0.000000395 BTC</div>
+          </div>
+          <div class="d__history--row d__history--row--sell">
+            <div class="d__history--td"><span>2021.01.10</span> 20:16:02</div>
+            <div class="d__history--td">1030429.0</div>
+            <div class="d__history--td">0.000158 BTC</div>
+            <div class="d__history--td">162.807782 UAH</div>
+            <div class="d__history--td">0.000000395 BTC</div>
+          </div>
+          <div class="d__history--row d__history--row--sell">
+            <div class="d__history--td"><span>2021.01.10</span> 20:16:02</div>
+            <div class="d__history--td">1030429.0</div>
+            <div class="d__history--td">0.000158 BTC</div>
+            <div class="d__history--td">162.807782 UAH</div>
+            <div class="d__history--td">0.000000395 BTC</div>
+          </div>
+        </div>
+        <!-- block -->
+
+        <!-- block -->
+      </div>
+    </div>
+    <!-- section -->
+  </main>
+  <!-- main -->
+
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer__inner footer__inner--space-between">
+      <div class="footer__logo">Stability</div>
+    </div>
+    <div class="footer__hr"></div>
+
+    <div class="footer__inner">
+      <div class="footer__menu">
+        <h3>Information</h3>
+        <ul>
+          <li><a href="javascript:void(0)">Buy Bitcoin</a></li>
+          <li><a href="javascript:void(0)">Sell Bitcoin</a></li>
+          <li><a href="javascript:void(0)">Email Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__menu">
+        <h3>Products</h3>
+        <ul>
+          <li><a href="javascript:void(0)">Trade</a></li>
+          <li><a href="javascript:void(0)">Fast buy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__menu">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="javascript:void(0)">About us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__hr footer__hr--none"></div>
+
+      <div class="footer__menu">
+        <h3>Documents</h3>
+        <ul>
+          <li><a href="javascript:void(0)">User agreement</a></li>
+          <li><a href="javascript:void(0)">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__menu footer__social">
+        <h3>Follow us</h3>
+        <ul>
+          <li><a href="javascript:void(0)" target="_blank" class="footer__social--telegram">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8 0C3.58267 0 0 3.58133 0 8C0 12.418 3.58267 16 8 16C12.418 16 16 12.418 16 8C16 3.58133 12.418 0 8 0ZM10.1493 11.914C10.2747 12.0027 10.436 12.0247 10.58 11.9707C10.7233 11.916 10.8293 11.7927 10.8613 11.6433C11.1993 10.0553 12.0193 6.03533 12.3267 4.59133C12.35 4.482 12.3113 4.36867 12.226 4.296C12.14 4.22333 12.0213 4.20267 11.916 4.24133C10.2853 4.84533 5.26333 6.72933 3.21067 7.48867C3.08067 7.53733 2.996 7.662 3 7.8C3.00467 7.93733 3.09733 8.05667 3.23067 8.09667C4.15133 8.372 5.35933 8.75533 5.35933 8.75533C5.35933 8.75533 5.924 10.4607 6.218 11.3273C6.25533 11.4367 6.34067 11.522 6.45267 11.5513C6.56533 11.5807 6.68467 11.55 6.76867 11.4707C7.24133 11.0247 7.972 10.3347 7.972 10.3347C7.972 10.3347 9.36133 11.3527 10.1493 11.914ZM5.86733 8.53933L6.52067 10.6933L6.666 9.32933C6.666 9.32933 9.188 7.054 10.6267 5.75733C10.6687 5.71933 10.674 5.65533 10.6393 5.61067C10.6047 5.566 10.5407 5.55533 10.4933 5.586C8.82667 6.65 5.86733 8.53933 5.86733 8.53933Z"
+                  fill="auto" />
+              </svg>
+              <span>Telegram</span>
+            </a></li>
+          <li><a href="javascript:void(0)" target="_blank" class="footer__social--twitter">
+              <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16 1.77474C15.4111 2.0759 14.7792 2.28015 14.1153 2.37133C14.7932 1.90282 15.3121 1.1597 15.5581 0.276936C14.9222 0.710806 14.2203 1.02585 13.4724 1.19663C12.8736 0.459276 12.0217 5.70917e-08 11.0769 5.70917e-08C9.26422 5.70917e-08 7.7945 1.69628 7.7945 3.78721C7.7945 4.08376 7.82349 4.3734 7.87949 4.65037C5.15201 4.49225 2.73347 2.98407 1.11477 0.692339C0.831818 1.25086 0.670851 1.90165 0.670851 2.59634C0.670851 3.91068 1.25075 5.07039 2.13059 5.74888C1.59268 5.72812 1.08677 5.55733 0.64387 5.27346V5.32077C0.64387 7.15552 1.77566 8.68678 3.27637 9.03529C3.00142 9.12068 2.71148 9.168 2.41153 9.168C2.19959 9.168 1.99462 9.14377 1.79365 9.0976C2.21156 10.6035 3.42335 11.6986 4.85909 11.7286C3.73629 12.7441 2.32055 13.3476 0.782851 13.3476C0.517909 13.3476 0.256942 13.3291 0 13.2956C1.45273 14.3723 3.17742 15 5.03107 15C11.0689 15 14.3693 9.22801 14.3693 4.22226L14.3583 3.73184C15.0032 3.20099 15.5611 2.53403 16 1.77474Z"
+                  fill="auto" />
+              </svg>
+              <span>Twitter</span>
+            </a></li>
+          <li><a href="javascript:void(0)" target="_blank" class="footer__social--facebook">
+              <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M16 2.69055C16 1.27685 14.7349 0 13.3333 0H2.66667C1.26507 0 0 1.27685 0 2.69055V13.4517C0 14.8654 1.26507 16.1422 2.66684 16.1422H8V10.0441H6.04444V7.35368H8V6.30551C8 4.49776 9.34542 2.86973 11 2.86973H13.1556V5.5601H11C10.7641 5.5601 10.4889 5.84905 10.4889 6.28184V7.35368H13.1556V10.0441H10.4889V16.1422H13.3333C14.7349 16.1422 16 14.8654 16 13.4517V2.69055Z"
+                  fill="auto" />
+              </svg>
+              <span>Facebook</span>
+            </a></li>
+          <li><a href="javascript:void(0)" target="_blank" class="footer__social--youtube">
+              <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M13.0767 0.122748C10.674 -0.0412493 5.32267 -0.0405826 2.92333 0.122748C0.325333 0.300079 0.0193333 1.86939 0 6C0.0193333 10.1233 0.322667 11.6993 2.92333 11.8773C5.32333 12.0406 10.674 12.0412 13.0767 11.8773C15.6747 11.6999 15.9807 10.1306 16 6C15.9807 1.87672 15.6773 0.300746 13.0767 0.122748ZM6 8.66663V3.33337L11.3333 5.99533L6 8.66663Z"
+                  fill="auto" />
+              </svg>
+              <span>Youtube</span>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__inner">
+      <div class="footer__copy">
+        © Stability, 2020—2140. All rights reserved
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+
+  <!-- modal -->
+    <div class="modal" data-modal-id='deposit'>
+      <div class="modal__body">
+        <div class="modal__deposit">
+          <div class="modal__deposit--title">Deposit UAH</div>
+          <div class="modal__deposit--input">
+            <input type="number" placeholder="0" autocomplete="off">
+            <span>uah</span>
+          </div>
+          <div class="modal__deposit--alert"></div>
+          <ul class="modal__deposit--nav">
+            <li data-deposit-nav="500">500 uah</li>
+            <li data-deposit-nav="1000">1000 uah</li>
+            <li data-deposit-nav="5000">5000 uah</li>
+          </ul>
+          <button class="modal__deposit--btn">Confirm</button>
+        </div>
+      </div>
+    </div>
+  <!-- modal -->
+
+  <!-- modal -->
+    <div class="modal" data-modal-id='exchange'>
+      <div class="modal__body">
+        <div class="modal__exchange">
+          <div class="modal__exchange--title">Exchange</div>
+          <div class="modal__exchange--input" data-exchange-input>
+            <input type="number" placeholder="0" autocomplete="off">
+            <span>uah</span>
+          </div>
+          <div class="modal__exchange--alert" data-exchange-alert>asdasd</div>
+          <div class="modal__exchange--buy" data-exchange-result>~0.158 BTC</div>
+
+          <div class="modal__exchange--select">
+            <span>Give</span>
+            <div class="modal__exchange--select--body" data-exchange-select-btn="give" data-exchange-give></div>
+          </div>
+
+          <img class="modal__exchange--reverse" src="img/arrow/reverse.svg" alt="image" data-exchange-reverse>
+
+          <div class="modal__exchange--select">
+            <span>Receive</span>
+            <div class="modal__exchange--select--body" data-exchange-select-btn="receive" data-exchange-receive></div>
+          </div>
+          <button class="modal__exchange--btn" data-exchange-btn>Confirm</button>
+
+          <div class="modal__exchange--list" data-exchange-select-list="give">
+            <div class="modal__exchange--list--header">
+              <img src="img/arrow/arrowback.svg" alt="image" data-exchange-select-close>
+              <span>We are giving</span>
+            </div>
+            <ul data-exchange-give-list></ul>
+          </div>
+
+          <div class="modal__exchange--list" data-exchange-select-list="receive">
+            <div class="modal__exchange--list--header">
+              <img src="img/arrow/arrowback.svg" alt="image" data-exchange-select-close>
+              <span>We are giving</span>
+            </div>
+            <ul data-exchange-receive-list></ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  <!-- modal -->
+
+  <script src="js/main.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+
+</html>
