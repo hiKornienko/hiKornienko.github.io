@@ -384,7 +384,7 @@ nav>.nav>.button>span {
   font-weight: 500;
 }
 
-@media(max-width:1200px) and (orientation: landscape) {
+@media(orientation: landscape) {
   nav {
     position: fixed;
     width: 20vw;
