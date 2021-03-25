@@ -291,8 +291,10 @@ header .slogan {
 nav {
   width: 100%;
   background-color: #E6DBDE;
-  position: sticky;
+  /* position: sticky; */
+  position: fixed;
   bottom: 0;
+  z-index: 2;
 }
 
 nav>.nav {
@@ -447,8 +449,10 @@ section>p {
 * form
 */
 form {
+  background: #f6eff1;
   min-height: 100vh;
   position: relative;
+  z-index: 10;
 }
 
 form>p {
@@ -536,7 +540,10 @@ form .checkbox {
 * footer
 */
 footer {
+  background: #f6eff1;
   padding-bottom: 50px!important;
+  position: relative;
+  z-index: 10;
 }
 
 footer .phone{
