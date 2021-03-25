@@ -22,6 +22,7 @@ html, body {
   font-weight: 500;
   position: relative;
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 h1 {
@@ -65,6 +66,26 @@ p {
 a{
   color:#701e4c;
 }
+
+.list{
+  display: block;
+  padding-left: 0;
+}
+ .list li{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+ }
+
+ .list li:before{
+    content: '';
+    min-width: 6px;
+    min-height: 6px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: black;
+    margin-right: 0.5rem;
+ }
 
 a:hover{
   color:#701e4c;
@@ -141,6 +162,10 @@ a:hover{
   margin: 2px;
   border: 1px solid #701E4C;
   border-radius: 2px;
+}
+
+.clear{
+  clear:both;
 }
 
 table {
@@ -269,11 +294,29 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(180deg, rgba(112, 30, 76, 0.25) 0%, rgba(112, 30, 76, 0.25) 100%), url('../img/header.jpg');
+  /* background: linear-gradient(180deg, rgba(112, 30, 76, 0.25) 0%, rgba(112, 30, 76, 0.25) 100%), url('../img/header.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   padding: 0 1.5rem;
+  position: relative;
+}
+
+header img{
+  position: absolute;
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+header:before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(112, 30, 76, 0.25) 0%, rgba(112, 30, 76, 0.25) 100%);
+  z-index: 2;
 }
 
 header .title {
@@ -282,12 +325,16 @@ header .title {
   color: white;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   max-width: var(--max-width);
+  position: relative;
+  z-index: 3;
 }
 
 header .slogan {
   color: white;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   max-width: var(--max-width);
+  position: relative;
+  z-index: 3;
 }
 
 /*
@@ -299,7 +346,7 @@ nav {
   background-color: #E6DBDE;
   position: fixed;
   bottom: 0;
-  z-index: 2;
+  z-index: 4
 }
 
 nav>.nav {
@@ -377,7 +424,6 @@ nav>.nav>.button {
   color: white;
   text-decoration: none;
   padding: 0.5rem;
-  transition: 0.3s;
 }
 
 nav>.nav>.button:hover {
@@ -415,6 +461,14 @@ nav>.nav>.button>span {
 */
 section>p {
   text-align: center;
+}
+
+.articles {
+  padding: 0;
+}
+
+.articles  li{
+  list-style-type: none;
 }
 
 .article {
@@ -467,7 +521,7 @@ form p {
   text-align: center;
 }
 
-form input[type=text] {
+form .input {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
@@ -476,6 +530,7 @@ form input[type=text] {
   border-bottom: 1px solid #701E4C;
   padding: 0 0.8rem;
   font-size: calc(26px + (60 - 26) * ((100vw - 300px) / (1440 - 300)));
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.3;
   font-weight: 500;
   display: block;
@@ -512,7 +567,7 @@ form .error.active {
   justify-content: center;
 }
 
-form button {
+form .button {
   padding: 0.6rem 0.8rem;
   color: white;
   text-transform: uppercase;
@@ -522,12 +577,12 @@ form button {
   cursor: pointer;
   font-weight: 800;
   font-size: calc(14px + (36 - 14) * ((100vw - 300px) / (1440 - 300)));
-  transition: 0.3s;
+  font-family: 'Montserrat', sans-serif;
   display: block;
   margin-bottom: 0.8rem;
 }
 
-form button:hover {
+form .button:hover {
   background: #360f25;
 }
 
@@ -553,6 +608,10 @@ footer {
   padding-bottom: 50px!important;
   position: relative;
   z-index: 10;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
 }
 
 footer .phone{
@@ -622,6 +681,110 @@ footer .copy a{
   }
 }
 
+/*
+* page
+*/
+.page__header{
+  position: fixed;
+  z-index: 8;
+  width: 100%;
+  background: #F6EFF1;
+  padding: 0.8rem 0;
+}
+
+.page__header--inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page__title{
+  font-size: calc(14px + (36 - 14) * ((100vw - 300px) / (1440 - 300)));
+  line-height: 1.4;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.page__link{
+  padding: 0.5rem;
+  background-image: url("data:image/svg+xml,%3Csvg width='23' height='14' viewBox='0 0 23 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.5607 0.93934C11.9749 0.353553 11.0251 0.353553 10.4393 0.93934L0.893398 10.4853C0.307611 11.0711 0.307611 12.0208 0.893398 12.6066C1.47919 13.1924 2.42893 13.1924 3.01472 12.6066L11.5 4.12132L19.9853 12.6066C20.5711 13.1924 21.5208 13.1924 22.1066 12.6066C22.6924 12.0208 22.6924 11.0711 22.1066 10.4853L12.5607 0.93934ZM13 3V2H10V3H13Z' fill='black'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  transform: rotate(180deg);
+  background-position: center;
+}
+
+.page{
+  padding-top: 3.4rem;
+}
+
+@media(min-width:1024px){
+  .page{
+    padding-top: 6rem;
+  }
+}
+
+.page img{
+  display: block;
+  width:100%;
+  max-width: 500px;
+  padding-bottom: 1rem;
+}
+
+.img-left{
+  float: left;
+  margin-right: 1rem;
+}
+
+.img-right{
+  float: right;
+  margin-left: 1rem;
+}
+
+/*
+* good
+*/
+.good{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.good__title{
+    font-size: calc(24px + (36 - 24) * ((100vw - 300px) / (1440 - 300)));
+    line-height: 1;
+    font-weight: 800;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.good__text{
+    font-size: calc(18px + (36 - 18) * ((100vw - 300px) / (1440 - 300)));
+    line-height: 1;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.good__close{
+  font-size: 24px;
+  color: #701E4C;
+  text-decoration: none;
+  border-bottom: 2px dashed #701E4C;
+  margin-top: 50px;
+}
+
+.good__close:hover{
+  text-decoration: none;
+}
+
+.timer{
+  font-size: calc(48px + (64 - 48) * ((100vw - 300px) / (1440 - 300)));
+  line-height: 1;
+}
 
 /*
 * max font-size
@@ -647,6 +810,10 @@ footer .copy a{
     font-size: 24px;
   }
 
+  details summary {
+    font-size: 30px;
+  }
+
   header .title {
     font-size: 48px;
   }
@@ -659,7 +826,7 @@ footer .copy a{
     font-size: 14px;
   }
 
-  nav>.nav>.phone>strong {
+  nav>.nav>.phone>a {
     font-size: 36px;
   }
 
@@ -673,5 +840,45 @@ footer .copy a{
 
   nav>.nav>.button>span {
     font-size: 18px;
+  }
+
+  form .input{
+    font-size: 18px;
+  }
+
+  form .error{
+    font-size: 14px;
+  }
+
+  form .button{
+    font-size: 36px;
+  }
+
+  form .checkbox {
+    font-size:12px;
+  }
+
+  footer .phone{
+    font-size: 36px;
+  }
+
+  footer .copy{
+    font-size: 12px;
+  }
+
+  .page__title{
+    font-size: 36px;
+  }
+
+  .good__title{
+      font-size: 36px;
+  }
+
+  .good__text{
+      font-size: 36px;
+  }
+
+  .timer{
+    font-size: 64px;
   }
 }
