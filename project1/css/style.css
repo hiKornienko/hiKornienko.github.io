@@ -453,13 +453,15 @@ form {
   min-height: 100vh;
   position: relative;
   z-index: 10;
+  display: flex;
+  align-items: center;
 }
 
-form>p {
+form p {
   text-align: center;
 }
 
-form>input[type=text] {
+form input[type=text] {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
@@ -474,13 +476,13 @@ form>input[type=text] {
   margin-top: 1.1rem;
 }
 
-form>input::placeholder {
+form input::placeholder {
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
   color: rgba(0, 0, 0, 0.3);
 }
 
-form>.error {
+form .error {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
@@ -491,7 +493,7 @@ form>.error {
   line-height: 1.5;
 }
 
-form>.error.active {
+form .error.active {
   display: block;
 }
 
