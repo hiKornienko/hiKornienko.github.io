@@ -345,7 +345,7 @@ nav>.nav>.phone {
 
 nav>.nav>.phone>a {
   display: block;
-  font-size: calc(10px + (36 - 10) * ((100vw - 300px) / (1440 - 300)));
+  font-size: calc(8px + (36 - 8) * ((100vw - 300px) / (1440 - 300)));
   font-weight: 700;
   line-height: 1;
   text-decoration: none;
