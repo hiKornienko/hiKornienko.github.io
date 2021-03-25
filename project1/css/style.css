@@ -112,7 +112,7 @@ a:hover{
   }
 }
 
-hr {
+.hr {
   background: none;
   outline: 0;
   border: 0;
@@ -121,7 +121,7 @@ hr {
   margin: 2rem 0;
 }
 
-hr:before {
+.hr:before {
   content: '';
   width: 90px;
   height: 3px;
@@ -130,7 +130,7 @@ hr:before {
   margin: 2px;
 }
 
-hr:after {
+.hr:after {
   content: '';
   width: 30px;
   height: 3px;
