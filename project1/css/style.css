@@ -503,7 +503,7 @@ form .error.active {
   width: 100%;
   position: relative;
   padding: 2rem 0;
-  min-height: 150px;
+  min-height: 220px;
 }
 
 .form__inner {
