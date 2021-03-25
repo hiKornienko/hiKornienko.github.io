@@ -386,7 +386,7 @@ nav>.nav>.button>span {
   font-weight: 500;
 }
 
-@media(orientation: landscape) {
+/* @media(orientation: landscape) {
   nav {
     position: fixed;
     width: 20vw;
@@ -402,7 +402,7 @@ nav>.nav>.button>span {
   body {
     width: 80vw;
   }
-}
+} */
 
 /*
 * section
