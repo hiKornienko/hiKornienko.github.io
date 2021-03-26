@@ -721,11 +721,14 @@ footer .copy a {
 .page img {
   display: block;
   width: 100%;
-  max-width: 500px;
   padding-bottom: 1rem;
 }
 
 @media(min-width:1024px) {
+  .page img {
+    max-width: 500px;
+  }
+
   .img-left {
     float: left;
     padding-right: 1rem;
