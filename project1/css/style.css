@@ -499,9 +499,12 @@ form .input {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
+}
+
+form .input > input {
+  width: 100%;
   outline: 0;
   border: 0;
-  border-bottom: 1px solid #701E4C;
   padding: 0 0.8rem;
   font-size: calc(26px + (60 - 26) * ((100vw - 300px) / (1440 - 300)));
   font-family: 'Montserrat', sans-serif;
@@ -509,10 +512,19 @@ form .input {
   font-weight: 500;
   display: block;
   margin-top: 1.1rem;
+  margin-bottom: 2px;
+  border-bottom: 1px solid #701E4C;
 }
 
-form .input:focus {
+form .input > input:focus {
   border-bottom: 3px solid #701E4C;
+  margin-bottom: 0px;
+}
+
+form .input > input ~ span {
+  display: block;
+  width: 100%;
+  height: 3px;
 }
 
 form input::placeholder {
@@ -576,6 +588,7 @@ form .checkbox {
 form .checkbox span {
   position: absolute;
   margin-left: 24px;
+  white-space: nowrap;
 }
 
 /*
@@ -712,16 +725,19 @@ footer .copy a {
   padding-bottom: 1rem;
 }
 
-.img-left {
-  float: left;
-  margin-right: 1rem;
-}
+@media(min-width:1024px) {
+  .img-left {
+    float: left;
+    padding-right: 1rem;
+    margin-right: 1rem;
+  }
 
-.img-right {
-  float: right;
-  margin-left: 1rem;
+  .img-right {
+    float: right;
+    padding-left: 1rem;
+    margin-right: 1rem;
+  }
 }
-
 /*
 * good
 */

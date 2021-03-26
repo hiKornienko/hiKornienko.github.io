@@ -54,7 +54,7 @@
 
     <!-- article -->
     <article class="container page">
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-1-w1">
           <img class="img-left" srcset="img/page-320w.jpg 320w,
                  img/page-480w.jpg 480w,
@@ -112,7 +112,63 @@
             </li>
           </ul>
         </div>
-      </div>
+      </div> -->
+
+      <img class="img-left" srcset="img/page-320w.jpg 320w,
+             img/page-480w.jpg 480w,
+             img/page-800w.jpg 800w" src="img/page-800w.jpg" alt="image">
+
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tortor ligula, luctus vel porttitor in, efficitur id velit. In sapien metus, sagittis eget sodales eget, congue sit amet tortor. In finibus arcu eros, a pretium ligula
+        suscipit at. Quisque a efficitur elit. Aliquam erat volutpat amet.</p>
+      <ul class="list default">
+        <li>Пункт 1</li>
+        <li>Пункт 1</li>
+        <li>Пункт 1</li>
+        <li>Пункт 1</li>
+        <li>Пункт 1</li>
+      </ul>
+
+      <ol class="list number">
+        <li>Пункт 1</li>
+        <li>Пункт 1</li>
+        <li>Пункт 1</li>
+        <li>Пункт 1</li>
+        <li>Пункт 1</li>
+      </ol>
+
+      <ul class="list castom">
+        <li>
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-1"></use>
+          </svg>
+          Пункт 1
+        </li>
+        <li>
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-1"></use>
+          </svg>
+          Пункт 1
+        </li>
+        <li>
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-1"></use>
+          </svg>
+          Пункт 1
+        </li>
+        <li>
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-1"></use>
+          </svg>
+          Пункт 1
+        </li>
+        <li>
+          <svg>
+            <use xlink:href="img/sprite.svg#icon-1"></use>
+          </svg>
+          Пункт 1
+        </li>
+      </ul>
 
       <div class="clear"></div>
       <div class="hr"></div>
@@ -197,10 +253,16 @@
         Ut ultricies mi sed ex.
       </p>
 
-      <input class="input" name="name" type="text" placeholder="Имя">
+      <div class="input">
+        <input name="name" type="text" placeholder="Имя">
+        <span></span>
+      </div>
       <div class="error">Необходимо ввести имя</div>
 
-      <input class="input" name="phone" type="text" placeholder="+38(0__) ___ __ __">
+      <div class="input">
+        <input name="phone" type="text" placeholder="+38(0__) ___ __ __">
+        <span></span>
+      </div>
       <div class="error">Необходимо ввести номер телефона</div>
 
       <div class="form__wrap">
