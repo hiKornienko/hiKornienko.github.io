@@ -338,7 +338,7 @@ nav {
   width: 100%;
   display: block;
   background-color: #E6DBDE;
-  /* position: fixed; */
+  position: fixed;
   bottom: 0;
   z-index: 4
 }
