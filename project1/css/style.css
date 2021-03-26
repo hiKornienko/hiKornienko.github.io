@@ -261,24 +261,24 @@ input[type=checkbox]+label::before {
   content: '';
   display: inline-flex;
   width: 16px;
-  height: 12px;
-  padding-bottom: 4px;
+  height: 16px;
   flex-shrink: 0;
   flex-grow: 0;
   border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 0;
   margin-right: 0.5em;
   cursor: pointer;
-  align-items: center;
-  justify-content: center;
 }
 
-input[type=checkbox]:checked+label::before {
-  content: '\25A0';
-  font-size: 24px;
-  line-height: 0;
-  border-color: #bfbfbf;
-  color: #bfbfbf;
+input[type=checkbox]:checked+label::after {
+  content: '';
+  width: 14px;
+  height: 14px;
+  border-radius: 0;
+  cursor: pointer;
+  position: absolute;
+  left: 2px;
+  background: rgba(0, 0, 0, 0.25);
 }
 
 /*
@@ -292,10 +292,6 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* background: linear-gradient(180deg, rgba(112, 30, 76, 0.25) 0%, rgba(112, 30, 76, 0.25) 100%), url('../img/header.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; */
   padding: 0 1.5rem;
   position: relative;
 }
@@ -574,6 +570,7 @@ form .checkbox {
   font-size: calc(6px + (12 - 6) * ((100vw - 300px) / (1440 - 300)));
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 form .checkbox span {
