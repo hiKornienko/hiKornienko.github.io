@@ -723,12 +723,10 @@ footer .copy a {
   width: 100%;
   padding-bottom: 1rem;
 }
-
-@media(min-width:1024px) {
+@media(min-width:768px){
   .page img {
-    max-width: 500px;
+    max-width: calc(100% / 3);
   }
-
   .img-left {
     float: left;
     padding-right: 1rem;
@@ -741,6 +739,7 @@ footer .copy a {
     margin-right: 1rem;
   }
 }
+
 /*
 * good
 */
