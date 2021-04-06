@@ -1,0 +1,25 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.maze{
+  width:600px;
+  height: 600px;
+  position: relative;
+}
+
+.maze > canvas{
+  position: absolute;
+  left: 0;
+  top: 0;
+}

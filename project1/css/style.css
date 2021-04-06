@@ -329,6 +329,7 @@ header .slogan {
   max-width: var(--max-width);
   position: relative;
   z-index: 3;
+  width: 100%;
 }
 
 /*
@@ -464,6 +465,10 @@ section>p {
 }
 
 .article>p {
+  padding-left: 5rem;
+  margin-bottom: 1.6rem;
+}
+.article>ul {
   padding-left: 5rem;
   margin-bottom: 1.6rem;
 }
@@ -693,6 +698,7 @@ footer .copy a {
   line-height: 1.4;
   font-weight: 800;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .page__link {
