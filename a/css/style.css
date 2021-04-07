@@ -350,6 +350,10 @@ input, textarea, select {
   box-shadow: 0;
 }
 
+.input_password{
+  padding-right: 4em!important;
+}
+
 .form .forgot-password {
   position: absolute;
   top: .3em;
