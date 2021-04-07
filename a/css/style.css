@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: futura-pt;
   src: url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/l?fvd=n7&primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&v=3) format("woff2"), url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/d?fvd=n7&primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&v=3) format("woff"), url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/a?fvd=n7&primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&v=3) format("opentype");
@@ -69,13 +68,13 @@
   font-weight: 700
 }
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-:root{
+:root {
   --dark-gradient: linear-gradient(50deg, #171b21 0%, hsl(216, 17.9%, 14.3%) 100%);
   --primary-color: #7e33ee;
   --primary-gradient: linear-gradient(50deg, #7e33ee 0%, hsl(264.1, 84.6%, 90.7%) 100%);
@@ -86,7 +85,6 @@
   --button-text-color: #fff;
   --button-gradient: linear-gradient(50deg, #7e33ee 0%, hsl(264.1, 84.6%, 73.7%) 100%);
   --gray-light-color: hsl(0, 0%, 60.7%);
-
   --size-base: 16px;
   --size-tiny: 0.25em;
   --size-xxsmall: 0.5em;
@@ -115,7 +113,7 @@ body, html {
   height: 100%;
 }
 
-@media (min-width: 460px){
+@media (min-width: 460px) {
   body {
     display: flex;
     align-items: center;
@@ -143,8 +141,7 @@ a:hover {
 /*
 * preloader
 */
-
-.preloader{
+.preloader {
   position: fixed;
   top: 0;
   left: 0;
@@ -152,13 +149,13 @@ a:hover {
   width: 100%;
   height: 100%;
   background: var(--dark-gradient);
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.preloader.load{
+.preloader.load {
   display: none;
 }
 
@@ -204,40 +201,37 @@ a:hover {
 /*
 * preloader
 */
-
-
 /*
 * main
 */
-@media (min-width: 460px){
-main {
+@media (min-width: 460px) {
+  main {
     width: 414px;
     height: 98%;
-    max-height: 736px!important;
+    max-height: 736px !important;
     border-radius: 10px;
     z-index: 1;
     position: relative;
     background-color: #fff;
     box-sizing: border-box;
     overflow-y: auto;
-
   }
 }
+
 /*
 * main
 */
-
 /*
 * form
 */
-.container{
+.container {
   flex: 1;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
 }
 
-.form{
+.form {
   display: flex;
   flex-flow: column;
   height: 100%;
@@ -246,14 +240,30 @@ main {
   width: 100%
 }
 
-.form__line{
-  background: var(--primary-gradient);
-  min-height: 1em;
-  font-size: var(--size-xsmall);
+.form__line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: .75em;
+  background-color: #f8f8f9;
+  min-height: 2.5em;
+  font-size: var(--size-xsmall);
 }
 
-.form__header{
+.form__line a {
+  display: flex;
+  align-items: center;
+  color: #9b9b9b;
+  text-decoration: none;
+}
+
+.form__line img {
+  width: 8px;
+  margin-left: .3em;
+  margin-right: .25em;
+}
+
+.form__header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -261,42 +271,42 @@ main {
   margin-top: 3em;
 }
 
-.form h1{
+.form h1 {
   font-size: var(--size-large);
   margin-top: var(--size-small);
 }
 
-.form__inner{
+.form__inner {
   position: relative;
   padding-top: 1.5em;
 }
 
-.input{
+.input {
   margin-bottom: .8em;
   padding-bottom: 1.2em;
   position: relative;
 }
 
-.input label{
+.input label {
   display: block;
   margin-bottom: .5em;
   font-size: var(--size-medium);
 }
 
-.input__wrap{
+.input__wrap {
   position: relative;
   resize: none;
 }
 
-.input__wrap--error input{
-  border-color: var(--error-color)!important;
+.input__wrap--error input {
+  border-color: var(--error-color) !important;
 }
 
-.input__wrap--error .input__error{
+.input__wrap--error .input__error {
   display: block;
 }
 
-.input__error{
+.input__error {
   display: none;
   position: absolute;
   left: 0;
@@ -331,8 +341,8 @@ main {
 }
 
 input, textarea, select {
-    -webkit-appearance: none;
-    outline-offset: 0;
+  -webkit-appearance: none;
+  outline-offset: 0;
 }
 
 :focus-visible {
@@ -340,28 +350,27 @@ input, textarea, select {
   box-shadow: 0;
 }
 
-
 .form .forgot-password {
-    position: absolute;
-    top: .3em;
-    right: 0;
+  position: absolute;
+  top: .3em;
+  right: 0;
 }
 
-.form .show-password{
+.form .show-password {
   position: absolute;
   right: 0;
   top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(0,0,0,.5);
+  color: rgba(0, 0, 0, .5);
   width: 60px;
   height: 100%;
   cursor: pointer;
   transition: color .3s ease;
 }
 
-.form .show-password svg{
+.form .show-password svg {
   overflow: visible;
   width: 1.125em;
   display: inline-block;
@@ -374,12 +383,12 @@ input, textarea, select {
   color: #000
 }
 
-.form .actions{
+.form .actions {
   text-align: center;
   margin-top: 0;
 }
 
-.form .actions button{
+.form .actions button {
   display: flex;
   margin: 0 auto;
   position: relative;
@@ -398,7 +407,7 @@ input, textarea, select {
   transition: box-shadow .3s ease;
 }
 
-.form .actions button.is-disabled{
+.form .actions button.is-disabled {
   opacity: .5;
   cursor: not-allowed;
 }
@@ -452,37 +461,38 @@ input, textarea, select {
 }
 
 .form .actions a {
-    margin-top: 1em;
-    display: inline-block;
+  margin-top: 1em;
+  display: inline-block;
 }
 
-.form .error{
+.form .error {
   color: var(--error-color);
   width: 100%;
   text-align: center;
   height: 16px;
 }
 
-.form .error span{
+.form .error span {
   display: none;
 }
-.form .error.show span{
+
+.form .error.show span {
   display: block;
 }
 
 .form .copyright {
-    text-align: center;
-    padding: 2em 0;
-    width: 100%;
-    color: rgba(0,0,0,.5);
-    font-size: var(--size-xsmall);
+  text-align: center;
+  padding: 2em 0;
+  width: 100%;
+  color: rgba(0, 0, 0, .5);
+  font-size: var(--size-xsmall);
 }
 
-.capcha{
+.capcha {
   height: 81px;
 }
 
-textarea{
+textarea {
   border: 1px solid #dbdbdb;
   border-radius: 3px;
   resize: vertical;
@@ -496,10 +506,10 @@ textarea{
 }
 
 .contact {
-    padding-bottom: var(--size-medium);
+  padding-bottom: var(--size-medium);
 }
 
-.contact svg{
+.contact svg {
   overflow: visible;
   width: 1em;
   margin-right: 1em;
@@ -509,10 +519,11 @@ textarea{
   vertical-align: -0.125em;
 }
 
-.m_b{
+.m_b {
   margin-bottom: 1.2rem;
 }
-.capcha_h{
+
+.capcha_h {
   height: 48px;
 }
 
@@ -525,6 +536,6 @@ textarea{
   color: var(--error-color)
 }
 
-.hide{
+.hide {
   display: none;
 }
