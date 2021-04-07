@@ -383,6 +383,18 @@ input, textarea, select {
   color: #000
 }
 
+.form .show-password svg:last-child{
+  display: none
+}
+
+.form .show-password.show-password-true svg:first-child{
+  display: none;
+}
+
+.form .show-password.show-password-true svg:last-child{
+  display: block;
+}
+
 .form .actions {
   text-align: center;
   margin-top: 0;

@@ -1,10 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   const email = document.querySelector('[data-el="input_email"]')
   const emailInput = email.querySelector('input')
-  const password = document.querySelector('[data-el="input_password"]')
+  const password = document.querySelectorAll('[data-el="input_password"]')
+  // const passwordInput = password.querySelector('input')
   const error = document.querySelector('[data-el="error"]')
   const btn = document.querySelector('[data-el="button"]')
   const dots = document.querySelector('[data-el="dots"]')
+  const showPass = document.querySelector('[data-el="show-password"]')
 
   emailInput.addEventListener('input', (e) => {
     if (validateEmail(e.target.value) == false) {
@@ -17,14 +19,34 @@ document.addEventListener("DOMContentLoaded", () => {
     validate()
   })
 
-  password.addEventListener('input', (e) => {
-    if (e.target.value.length >= 1) {
-      password.dataset.validate = true
-    } else {
-      password.dataset.validate = false
-    }
-    validate()
+  console.log(password)
+  password.forEach((el,index) =>{
+    const input = el.querySelector('input')
+    input.addEventListener('input', (e) => {
+      if (e.target.value.length >= 1) {
+        el.classList.remove('input__wrap--error')
+        el.dataset.validate = true
+      } else {
+        el.classList.add('input__wrap--error')
+        el.dataset.validate = false
+      }
+      validate()
+    })
+
+    const view = el.querySelector('[data-el="show-password"]')
+    console.log(view)
+    view.addEventListener('click', (e)=> {
+      if(input.type == 'password'){
+        input.type = 'text'
+        view.classList.add('show-password-true')
+      }
+      else{
+        input.type = 'password'
+        view.classList.remove('show-password-true')
+      }
+    })
   })
+
 
   btn.addEventListener('click', (e) => {
     e.preventDefault()
@@ -68,7 +90,27 @@ document.addEventListener("DOMContentLoaded", () => {
       })
 
       tabs[e.target.dataset.tabOpen].classList.remove('hide')
+
+      if(e.target.dataset.tabOpen == 0){
+        setLocation('/')
+      }
+
+      if(e.target.dataset.tabOpen == 1){
+        setLocation('forgot-password')
+      }
+
+      if(e.target.dataset.tabOpen == 2){
+        setLocation('register')
+      }
     })
   )
 
 })
+
+function setLocation(curLoc){
+    try {
+      history.pushState(null, null, curLoc);
+      return;
+    } catch(e) {}
+    location.hash = '#' + curLoc;
+}
