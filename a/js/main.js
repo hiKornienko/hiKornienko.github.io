@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const email = document.querySelector('[data-el="input_email"]')
   const emailInput = email.querySelector('input')
+  const emailError= document.querySelector('[data-el="email_error"]')
   const password = document.querySelectorAll('[data-el="input_password"]')
-  // const passwordInput = password.querySelector('input')
   const error = document.querySelector('[data-el="error"]')
   const btn = document.querySelector('[data-el="button"]')
   const dots = document.querySelector('[data-el="dots"]')
@@ -10,16 +10,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
   emailInput.addEventListener('input', (e) => {
     if (validateEmail(e.target.value) == false) {
+      emailError.innerHTML = 'Invalid email address'
       email.classList.add('input__wrap--error')
       email.dataset.validate = false
     } else {
       email.classList.remove('input__wrap--error')
       email.dataset.validate = true
     }
+
+    if(e.target.value.length == 0){
+        emailError.innerHTML = 'Your email is required'
+    }
     validate()
   })
 
-  console.log(password)
   password.forEach((el,index) =>{
     const input = el.querySelector('input')
     input.addEventListener('input', (e) => {
