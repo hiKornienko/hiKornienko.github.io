@@ -5,7 +5,7 @@
 }
 
 body{
-  background: green;
+  background: #2c2a3a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,4 +22,59 @@ body{
   position: absolute;
   left: 0;
   top: 0;
+}
+
+.level{
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.level > li {
+  list-style-type: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #4f486d;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.level > li > span{
+  display: none;
+  position: absolute;
+  left: 0;
+  top: -30px;
+  z-index: 2;
+  background: #4f486d;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: verdana,sans-serif;
+  color: #787197;
+  white-space: nowrap;
+  border-radius: 4px;
+
+}
+
+.level > li:hover > span{
+  display: block;
+}
+
+.level > li:nth-child(1):hover{
+  background: green;
+}
+
+.level > li:nth-child(2):hover{
+  background: blue;
+}
+
+.level > li:nth-child(3):hover{
+  background: orange;
+}
+
+.level > li:nth-child(4):hover{
+  background: red
 }
